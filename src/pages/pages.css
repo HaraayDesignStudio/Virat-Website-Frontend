@@ -1,4 +1,71 @@
-.image-container-homepage img{
+@font-face {
+  font-family: virat;
+  src: url(../../public/fonts/zacbelx-medium.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+.image-container-homepage img {
+  width: 100%;
+  height: auto;
+}
+.image-container-homepage {
+  position: relative;
+  z-index: 0;
+}
+.homepage-image-text {
+    font-family: virat;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  color: white;
+  line-height: 20px;
+}
+.homepage-image-text::after {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: 15%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.homapage-headtext{
+    padding: 35px;
+    display: flex;
     width: 100%;
-    height: auto;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+}
+.homapage-headtext::after{
+    content: "";
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height: 1px;
+    background-image: repeating-linear-gradient(90deg, gray, gray 5px, transparent 5px, transparent 10px);
+}
+.homepage-headtext-p{
+    font-size: 75px;
+    font-family: 'Libre Baskerville', serif;
+}
+.homepage-headtext-content{
+    cursor: pointer;
+    display: flex;
+    width: 170px;
+    align-items: center;
+    gap: 3px;
+    background-color: #F75825;
+    padding: 10px 10px;
+    outline: 2px solid black;
+}
+.homepage-headtext-content p {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: virat;
+}
+.homepage-headtext-icon{
+    font-size: 30px;
 }

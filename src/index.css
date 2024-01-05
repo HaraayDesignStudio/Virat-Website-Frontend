@@ -3,3 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: virat;
+  src: url(../public/fonts/zacbelx-medium.ttf);
+}
