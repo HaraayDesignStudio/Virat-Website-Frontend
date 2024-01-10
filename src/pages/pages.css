@@ -2,7 +2,7 @@
   font-family: virat;
   src: url(../../public/fonts/zacbelx-medium.ttf);
 }
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap");
 .image-container-homepage img {
   width: 100%;
   height: auto;
@@ -10,9 +10,10 @@
 .image-container-homepage {
   position: relative;
   z-index: 0;
+  font-family: virat;
 }
 .homepage-image-text {
-    font-family: virat;
+  font-family: virat;
   position: absolute;
   bottom: 10%;
   left: 5%;
@@ -29,43 +30,153 @@
   height: 1px;
   background-color: rgba(255, 255, 255, 0.5);
 }
-.homapage-headtext{
-    padding: 35px;
-    display: flex;
-    width: 100%;
-    align-items: flex-end;
-    justify-content: space-between;
-    position: relative;
+.homapage-headtext {
+  padding: 40px 50px;
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
 }
-.homapage-headtext::after{
-    content: "";
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 95%;
-    height: 1px;
-    background-image: repeating-linear-gradient(90deg, gray, gray 5px, transparent 5px, transparent 10px);
+.homepage-headtext-p {
+  font-size: 75px;
+  font-family: "Libre Baskerville", serif;
 }
-.homepage-headtext-p{
-    font-size: 75px;
-    font-family: 'Libre Baskerville', serif;
+.homepage-headtext-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.homepage-headtext-content{
-    cursor: pointer;
-    display: flex;
-    width: 170px;
-    align-items: center;
-    gap: 3px;
-    background-color: #F75825;
-    padding: 10px 10px;
-    outline: 2px solid black;
+.homepage-headtext-content {
+  text-align: center;
+  color: #f75825;
+  cursor: pointer;
+  display: flex;
+  width: 120px;
+  align-items: center;
+  gap: 3px;
+  background-color: white;
+  padding: 10px 10px;
+  outline: 2px solid #f75825;
+}
+.circular-button {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #f75825;
+  border-radius: 50%;
+}
+.transpirant .homepage-headtext-content {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  outline: 2px solid white;
+  color: white;
+  outline: 1px solid white;
+  width: 140px;
+}
+.transpirant .circular-button {
+  background-color: rgba(255, 255, 255, 0.5);
+  outline: 2px solid white;
 }
 .homepage-headtext-content p {
-    font-size: 20px;
-    font-weight: bold;
-    font-family: virat;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: virat;
 }
-.homepage-headtext-icon{
-    font-size: 30px;
+.homepage-headtext-icon {
+  font-size: 35px;
+  color: white;
+}
+
+/* ----- About Section Style */
+
+.about-us-section {
+  position: relative;
+  margin: 40px 50px;
+}
+.about-us-section .about-background-img {
+  width: 100%;
+}
+.about-section-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.about-heading-img {
+  height: 40px;
+  width: 35px;
+}
+.about-section-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 40px;
+  justify-content: space-between;
+}
+.about-heading {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+  gap: 20px;
+}
+.about-content-part {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.about-content-heading {
+  font-size: 80px;
+  font-family: "Libre Baskerville", serif;
+  color: white;
+  width: 35%;
+}
+.about-content-text {
+  font-family: virat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-content-text p {
+  text-align: left;
+  width: 700px;
+  line-height: 30px;
+}
+
+/* ----service page style---- */
+
+.our-services-section {
+  margin: 100px 50px;
+}
+.our-services-headings-part {
+  display: flex;
+  align-items: self-start;
+}
+.our-services-headings-part div {
+  width: 50%;
+}
+.service-heading {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.out-service-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.out-service-content .service-content-heading {
+  width: 100%;
+  font-size: 75px;
+  font-weight: 600;
+}
+.out-service-content p {
+  font-family: virat;
+  font-weight: 500;
+  font-size: 18px;
 }

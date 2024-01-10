@@ -23,11 +23,16 @@
   font-family: virat;
   font-weight: bold;
 }
-
 .navbar-menu p {
   cursor: pointer;
+  z-index: 200;
+  opacity: 1;
+  transition: opacity 0.3s ease; /* Add a smooth transition for opacity */
 }
 
+.navbar-menu p.hidden {
+  opacity: 0;
+}
 .navbar-menu::after {
   content: "";
   position: absolute;
@@ -42,28 +47,28 @@
 .navbar-icon-open {
   font-size: 20px;
   cursor: pointer;
+  z-index: 200;
   transition: transform 0.3s ease; /* Add a smooth transition for the rotation */
 }
 
 .rotate {
   transform: rotate(180deg); /* Rotate the icon when the drawer is open */
 }
-
 .drawer-overlay {
   position: fixed;
-  max-width: 400px; /* Maximum width for the drawer */
+  max-width: 400px;
   top: 0;
-  left: 0;
+  left: -100%; /* Set initial position to -100% */
   width: 100%;
   height: 100%;
-  background: linear-gradient(145deg, #7A2A10 30%, #D9D9D9);
+  background: linear-gradient(145deg, #7a2a10 30%, #d9d9d9);
   backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 99;
-  opacity: 0; /* Start with opacity 0 */
-  transition: transform 2s ease; /* Add a smooth transition for opacity */
+  z-index: -1;
+  opacity: 0;
+  transition: left 0.5s ease, opacity 0.5s ease;
 }
 
 .drawer-content {
@@ -71,24 +76,19 @@
   background-color: white;
   padding: 20px;
   position: relative;
-  transform: translateY(-20px); /* Start slightly above and move down */
-  opacity: 0; /* Start with opacity 0 */
-  transition: transform 2s ease, opacity 2s ease; /* Add a smooth transition for transform and opacity */
-}
-
-.close-icon {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
-  cursor: pointer;
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .drawer-overlay.open {
-  opacity: 1; /* Make the overlay fully visible when the drawer is open */
+  opacity: 1;
+  left: 0; /* Set the final position to 0% */
 }
 
 .drawer-content.open {
-  transform: translateY(0); /* Move the content down to its original position */
-  opacity: 1; /* Make the content fully visible when the drawer is open */
+  opacity: 1;
+}
+
+.drawer-content.closed {
+  opacity: 0;
 }

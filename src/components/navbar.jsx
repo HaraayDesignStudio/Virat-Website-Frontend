@@ -14,7 +14,6 @@ const Navbar = () => {
   };
 
   const handleOverlayClick = (e) => {
-    // Close the drawer if clicked outside its content
     if (e.target.classList.contains("drawer-overlay")) {
       handleCloseDrawer();
     }
@@ -26,14 +25,19 @@ const Navbar = () => {
         <IoReturnUpBack
           className={`navbar-icon-open ${drawerOpen ? "rotate" : ""}`}
         />
-        <p>Menu</p>
+        <p className={drawerOpen ? "hidden" : ""}>
+          {!drawerOpen ? "Menu" : ""}
+        </p>
+        <p>{drawerOpen ? "Close" : ""}</p>
       </span>
 
       {drawerOpen && (
-        <div className="drawer-overlay open" onClick={handleOverlayClick}>
-          <div className="drawer-content open">
+        <div
+          className={`drawer-overlay ${drawerOpen ? "open" : ""}`}
+          onClick={handleOverlayClick}
+        >
+          <div className={`drawer-content ${drawerOpen ? "open" : "closed"}`}>
             <IoClose className="close-icon" onClick={handleCloseDrawer} />
-            {/* Content of the Drawer */}
             <p>Drawer Content</p>
           </div>
         </div>
