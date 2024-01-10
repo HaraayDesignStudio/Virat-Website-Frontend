@@ -92,14 +92,17 @@
 
 /* ----- About Section Style */
 
-.about-us-section {
+.about-us-section,
+.testimonila-section {
   position: relative;
   margin: 40px 50px;
 }
-.about-us-section .about-background-img {
+.about-us-section .about-background-img,
+.testimonila-section .about-background-img {
   width: 100%;
 }
-.about-section-content {
+.about-section-content,
+.testimonial-section-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -108,14 +111,16 @@
   height: 40px;
   width: 35px;
 }
-.about-section-content {
+.about-section-content,
+.testimonial-section-content {
   height: 100%;
   display: flex;
   flex-direction: column;
   padding: 40px 40px;
   justify-content: space-between;
 }
-.about-heading {
+.about-heading,
+.testimonila-heading {
   display: flex;
   align-items: center;
   font-size: 25px;
@@ -151,6 +156,9 @@
 
 .our-services-section {
   margin: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 .our-services-headings-part {
   display: flex;
@@ -179,4 +187,54 @@
   font-family: virat;
   font-weight: 500;
   font-size: 18px;
+}
+.services-cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+}
+.service-brand-scroller {
+  display: flex;
+}
+.brand-scroller-head {
+  font-size: 90px;
+  font-weight: bold;
+}
+.brand-line {
+  width: 1px;
+  background-color: black;
+}
+
+/* ---- Testimonial style ---- */
+.testimonial-section-content {
+  width: 100%;
+  justify-content: flex-start;
+  gap: 75px;
+}
+.testimonila-trust-client {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.testimonila-trust-client p {
+  width: 50%;
+  font-size: 80px;
+  color: white;
+  font-weight: bold;
+}
+.testimonial-card-one {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+}
+.testimonial-test {
+  color: white;
+  max-width: 400px;
+  width: 100%;
+}
+.testimonial-test p {
+  font-size: 25px;
+  font-family: virat;
 }
