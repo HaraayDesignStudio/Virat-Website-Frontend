@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { IoReturnUpBack, IoClose } from "react-icons/io5";
+import { IoReturnUpBack } from "react-icons/io5";
 import "./compenents.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -37,8 +38,7 @@ const Navbar = () => {
           onClick={handleOverlayClick}
         >
           <div className={`drawer-content ${drawerOpen ? "open" : "closed"}`}>
-            <IoClose className="close-icon" onClick={handleCloseDrawer} />
-            <p>Drawer Content</p>
+            <Link to="/about">About</Link>
           </div>
         </div>
       )}

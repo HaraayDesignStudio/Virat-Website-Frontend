@@ -18,7 +18,8 @@
   bottom: 10%;
   left: 5%;
   color: white;
-  line-height: 20px;
+  line-height: 30px;
+  font-size: 20px;
 }
 .homepage-image-text::after {
   content: "";
@@ -95,7 +96,7 @@
 .about-us-section,
 .testimonila-section {
   position: relative;
-  margin: 40px 50px;
+  margin: 40px 0px;
 }
 .about-us-section .about-background-img,
 .testimonila-section .about-background-img {
@@ -116,14 +117,14 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 40px 40px;
+  padding: 40px 80px;
   justify-content: space-between;
 }
 .about-heading,
 .testimonila-heading {
   display: flex;
   align-items: center;
-  font-size: 25px;
+  font-size: 45px;
   color: white;
   gap: 20px;
 }
@@ -150,6 +151,7 @@
   text-align: left;
   width: 700px;
   line-height: 30px;
+  font-size: 24px;
 }
 
 /* ----service page style---- */
@@ -168,7 +170,7 @@
   width: 50%;
 }
 .service-heading {
-  font-size: 25px;
+  font-size: 45px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -213,7 +215,7 @@
 .testimonial-section-content {
   width: 100%;
   justify-content: flex-start;
-  gap: 75px;
+  gap: 60px;
 }
 .testimonila-trust-client {
   width: 100%;
@@ -222,7 +224,7 @@
 }
 .testimonila-trust-client p {
   width: 50%;
-  font-size: 80px;
+  font-size: 90px;
   color: white;
   font-weight: bold;
 }
@@ -355,7 +357,7 @@
     font-size: 30px;
   }
   .about-us-section {
-    margin: 30px 10px;
+    margin: 30px 0;
   }
   .about-content-heading {
     width: 100%;
@@ -376,7 +378,7 @@
     font-size: 55px;
   }
   .testimonila-section {
-    margin: 100px 10px;
+    margin: 100px 0;
   }
   .testimonila-trust-client p {
     font-size: 50px;

@@ -1,16 +1,11 @@
 import React from "react";
-import { IoIosArrowRoundForward } from "react-icons/io";
 import "../pages/pages.css";
 
-const ButtonComponents2 = ({ name, onClickFun }) => {
+const ButtonComponents2 = ({ name, link }) => {
+  const handleClick = () => {};
   return (
-    <div className="homepage-headtext-button transpirant" onClick={onClickFun}>
-      <span className="homepage-headtext-content">
-        <p>{name}</p>
-      </span>
-      <div className="circular-button">
-        <IoIosArrowRoundForward className="homepage-headtext-icon" />
-      </div>
+    <div className="button-for-landing button-for-landing-two" onClick={handleClick}>
+      {name}
     </div>
   );
 };

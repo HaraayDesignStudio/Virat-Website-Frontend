@@ -8,11 +8,11 @@ import card2 from "../assets/Rectangle 134 (1).png";
 import card3 from "../assets/Rectangle 134 (2).png";
 import test1 from "../assets/tesimonilas/Ellipse 26.png";
 import "./pages.css";
-import ButtonComponents from "../components/buttonComponents";
 import ButtonComponents2 from "../components/buttonComponents2";
 import ServiceCard from "../components/serviceCard";
 import ServiceBrandCarousel from "../components/serviceBrandCarousel";
 import TestimonialsCard from "../components/testimonilaCard";
+import ButtonCom from "../components/buttonCom";
 
 const HomePage = () => {
   return (
@@ -30,7 +30,7 @@ const HomePage = () => {
         <span className="homepage-headtext-p">
           Where Expertise Convergence with Experience
         </span>
-        <ButtonComponents name={"About Us"} onClickFun={() => {}} />
+        <ButtonCom name={"Explore now"} link={""} />
       </div>
       <div className="about-us-section">
         <img
@@ -54,7 +54,7 @@ const HomePage = () => {
                 facility-related support, we have got you covered.
               </p>
               <ButtonComponents2
-                name={"Know more"}
+                name={"Explore now"}
                 onClickFun={() => {}}
                 className="about-us-button"
               />

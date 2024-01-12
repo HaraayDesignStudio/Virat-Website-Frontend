@@ -64,22 +64,24 @@
   background: linear-gradient(145deg, #7a2a10 30%, #d9d9d9);
   backdrop-filter: blur(10px);
   display: flex;
-  align-items: center;
-  justify-content: center;
   z-index: -1;
   opacity: 0;
   transition: left 0.5s ease, opacity 0.5s ease;
 }
 
 .drawer-content {
-  width: 40%;
-  background-color: white;
-  padding: 20px;
   position: relative;
-  opacity: 0;
   transition: transform 0.5s ease, opacity 0.5s ease;
+  padding: 100px 50px;
+  width: 100%;
+  display: flex;
+  align-items: self-start;
+  justify-content: flex-end;
 }
-
+.drawer-content a {
+  text-decoration: none;
+  color: white;
+}
 .drawer-overlay.open {
   opacity: 1;
   left: 0; /* Set the final position to 0% */
@@ -119,6 +121,28 @@
 }
 .card-wrapper div {
   float: right;
+}
+.button-for-landing {
+  display: flex;
+  width: 234px;
+  height: 59px;
+  padding: 0px 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: #9dabb366;
+  color: #000000;
+  font-weight: bold;
+  font-family: virat;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 92% 100%, 0% 100%, 0% 50%);
+}
+.button-for-landing-two {
+  background: rgba(255, 255, 255, 0.4);
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 100%; /* 18px */
+  font-family: virat;
 }
 @media (max-width: 768px) {
   .card-wrapper {
@@ -188,22 +212,30 @@
   width: 100%;
 }
 .testimonial-card img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
 }
 .testimonial-name {
   font-family: virat;
-  font-weight: bold;
   color: #f75825;
-  font-size: 20px;
+  font-size: 32px;
+  font-style: normal;
+  line-height: 40px; /* 125% */
+  letter-spacing: -0.352px;
 }
 .testimonial-name span {
-  color: black;
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 40px; /* 166.667% */
+  letter-spacing: -0.264px;
 }
 .testimonila-disc {
-  font-size: 18px;
+  color: #000;
   font-family: virat;
-  line-height: 30px;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 40px; /* 200% */
 }
 
 /* ---- Footer Styling ---- */
@@ -213,7 +245,7 @@
 }
 .footer-wrapper .footer-background {
   width: 100%;
-  height: 100%;
+  height: 1030px;
 }
 .footer-content {
   width: 100%;
@@ -223,7 +255,8 @@
   color: white;
   display: flex;
   font-family: virat;
-  padding: 100px 50px;
+  padding: 0 50px;
+  padding-top: 100px;
 }
 .footer-left {
   width: 50%;
@@ -231,34 +264,59 @@
   flex-direction: column;
   gap: 50px;
 }
+.logo-name-div {
+  position: absolute;
+  top: 120%;
+  margin: 0;
+  padding: 0;
+}
+.virat-logo-name {
+  color: rgba(255, 255, 255, 0.1);
+  font-size: 350px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 11.429% */
+  letter-spacing: 24.5px;
+  user-select: none;
+}
 .footer-get-in-touch {
-  font-size: 80px;
-  font-family: "Libre Baskerville", serif;
   position: relative;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: Bw Gradual DEMO;
+  font-size: 108px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 119px; /* 110.185% */
+  letter-spacing: -1.188px;
 }
 .footer-get-in-touch::after {
   content: "";
   position: absolute;
   bottom: -10%;
-  right: 20%;
+  right: 16%;
   width: 42%;
   height: 2px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.85);
 }
 .footer-disc {
-  color: rgba(255, 255, 255, 0.827);
-  line-height: 30px;
+  color: #fff;
+  font-family: virat;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 40px; /* 166.667% */
+  letter-spacing: -0.264px;
 }
 .footer-download {
   background-color: transparent;
   border: 2px solid white;
   align-self: start;
-  padding: 10px 20px;
-  border-radius: 30px;
+  padding: 20px 60px;
+  border-radius: 100px;
   display: flex;
   gap: 5px;
   justify-content: center;
   cursor: pointer;
+  font-size: 20px;
 }
 .footer-download-icon {
   align-self: center;
@@ -278,7 +336,7 @@
   gap: 50px;
 }
 .footercom {
-  width: 350px;
+  width: 420px;
   display: flex;
   padding: 20px 40px;
   background-color: transparent;
@@ -287,7 +345,7 @@
   justify-content: space-between;
 }
 .footercom-name {
-  font-size: 20px;
+  font-size: 30px;
   margin-left: 20px;
 }
 .footercom-arrow {
@@ -299,6 +357,10 @@
   align-self: self-end;
   padding: 5px;
   cursor: pointer;
+}
+.footercom-iamge {
+  height: 100px;
+  width: 100px;
 }
 .footercom-icon {
   font-size: 70px;
@@ -312,7 +374,7 @@
 }
 .socialmedia-head {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 24px;
 }
 .socialmedia-icons {
   display: flex;

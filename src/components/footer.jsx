@@ -15,9 +15,8 @@ const Footer = () => {
           <p className="footer-get-in-touch">Get in Touch</p>
           <p className="footer-disc">
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            <br />
-            industry. Lorem Ipsum has been the industry's standard dummy
-            <br /> text ever since{" "}
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since{" "}
           </p>
           <div className="footer-download">
             <FaArrowDownLong className="footer-download-icon" />
@@ -40,6 +39,9 @@ const Footer = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div className="logo-name-div">
+          <p className="virat-logo-name">Virat</p>
         </div>
       </div>
     </div>
