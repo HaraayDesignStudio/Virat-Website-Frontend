@@ -53,7 +53,11 @@ const HomePage = () => {
                 cleaning services, security solutions, or any other
                 facility-related support, we have got you covered.
               </p>
-              <ButtonComponents2 name={"Know more"} onClickFun={() => {}} />
+              <ButtonComponents2
+                name={"Know more"}
+                onClickFun={() => {}}
+                className="about-us-button"
+              />
             </div>
           </div>
         </div>
@@ -152,6 +156,40 @@ const HomePage = () => {
             />
           </div>
           <div className="testimonial-card-one testimonial-card-two">
+            <TestimonialsCard
+              image={test1}
+              name={"Albert Flores"}
+              role={"SME store owner"}
+              disc={
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+              }
+            />
+            <TestimonialsCard
+              image={test1}
+              name={"Albert Flores"}
+              role={"SME store owner"}
+              disc={
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+              }
+            />
+          </div>
+          <div className="testimonial-mobile-view ">
+            <TestimonialsCard
+              image={test1}
+              name={"Albert Flores"}
+              role={"SME store owner"}
+              disc={
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+              }
+            />
+            <TestimonialsCard
+              image={test1}
+              name={"Albert Flores"}
+              role={"SME store owner"}
+              disc={
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+              }
+            />
             <TestimonialsCard
               image={test1}
               name={"Albert Flores"}

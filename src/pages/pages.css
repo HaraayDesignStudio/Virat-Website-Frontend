@@ -207,6 +207,9 @@
 }
 
 /* ---- Testimonial style ---- */
+.testimonial-mobile-view {
+  display: none;
+}
 .testimonial-section-content {
   width: 100%;
   justify-content: flex-start;
@@ -237,4 +240,148 @@
 .testimonial-test p {
   font-size: 25px;
   font-family: virat;
+}
+@media (max-width: 700px) {
+  .image-container-homepage img {
+    object-fit: cover;
+    height: 600px;
+  }
+  .homapage-headtext {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .homepage-headtext-p {
+    font-size: 40px;
+  }
+  .about-us-section .about-background-img {
+    height: 700px;
+    object-fit: cover;
+  }
+  .about-content-part {
+    gap: 80px;
+    flex-direction: column;
+  }
+  .about-section-content,
+  .testimonial-section-content {
+    padding: 20px 20px;
+  }
+  .about-section-content {
+    justify-content: space-between;
+  }
+  .about-content-heading {
+    position: relative;
+    width: 70%;
+    font-size: 60px;
+  }
+  .about-content-heading::after {
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: 0%;
+    width: 42%;
+    height: 2px;
+    background-color: white;
+  }
+  .about-content-text p {
+    width: auto;
+  }
+  .about-us-button {
+    display: none;
+  }
+  .transpirant {
+    display: none;
+  }
+  .our-services-headings-part {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .our-services-headings-part div {
+    width: 100%;
+  }
+  .our-services-section {
+    gap: 50px;
+  }
+  .service-brand-scroller {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .testimonial-section-content {
+    gap: 20px;
+  }
+  .testimonila-trust-client {
+    justify-content: flex-start;
+  }
+  .testimonila-trust-client p {
+    width: 100%;
+    font-size: 60px;
+  }
+  .testimonial-card-one {
+    display: none;
+  }
+  .testimonial-mobile-view {
+    display: flex;
+    overflow-x: auto;
+    gap: 50px;
+    white-space: nowrap;
+
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: transparent transparent; /* For Firefox */
+
+    /* For WebKit browsers (Chrome, Safari) */
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+  }
+
+  .testimonila-section .about-background-img {
+    height: 700px;
+    object-fit: cover;
+  }
+}
+@media (max-width: 500px) {
+  .homapage-headtext {
+    padding: 10px;
+  }
+  .homepage-headtext-p {
+    font-size: 30px;
+  }
+  .about-us-section {
+    margin: 30px 10px;
+  }
+  .about-content-heading {
+    width: 100%;
+  }
+  .our-services-section {
+    margin: 40px 10px;
+  }
+  .out-service-content {
+    gap: 15px;
+  }
+  .out-service-content .service-content-heading {
+    font-size: 55px;
+  }
+  .out-service-content p {
+    font-size: 15px;
+  }
+  .brand-scroller-head {
+    font-size: 55px;
+  }
+  .testimonila-section {
+    margin: 100px 10px;
+  }
+  .testimonila-trust-client p {
+    font-size: 50px;
+  }
+  .testimonial-mobile-view {
+    gap: 25px;
+  }
 }
