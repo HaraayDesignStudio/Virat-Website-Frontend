@@ -13,6 +13,7 @@ import ServiceCard from "../components/serviceCard";
 import ServiceBrandCarousel from "../components/serviceBrandCarousel";
 import TestimonialsCard from "../components/testimonilaCard";
 import ButtonCom from "../components/buttonCom";
+import ServiceBrandCarousel2 from "../components/serviceBrandCarousel2";
 
 const HomePage = () => {
   return (
@@ -20,9 +21,8 @@ const HomePage = () => {
       <div className="image-container-homepage">
         <img src={homepageimage} alt="homepage" />
         <p className="homepage-image-text">
-          Lorem Ipsum is simply dummy text of the <br /> printing and
-          typesetting industry. <br />
-          Lorem Ipsum has been the industry's standard <br /> dummy text ever
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s
         </p>
       </div>
@@ -111,6 +111,9 @@ const HomePage = () => {
           </div>
           <div className="brand-line"></div>
           <ServiceBrandCarousel />
+          <div className="wrapper-two">
+            <ServiceBrandCarousel2 />
+          </div>
         </div>
       </div>
       <div className="testimonila-section">

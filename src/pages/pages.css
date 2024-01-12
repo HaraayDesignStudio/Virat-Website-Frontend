@@ -13,6 +13,7 @@
   font-family: virat;
 }
 .homepage-image-text {
+  width: 29%;
   font-family: virat;
   position: absolute;
   bottom: 10%;
@@ -257,7 +258,7 @@
     font-size: 40px;
   }
   .about-us-section .about-background-img {
-    height: 700px;
+    height: 800px;
     object-fit: cover;
   }
   .about-content-part {
@@ -274,7 +275,7 @@
   .about-content-heading {
     position: relative;
     width: 70%;
-    font-size: 60px;
+    font-size: 53px;
   }
   .about-content-heading::after {
     content: "";
@@ -287,6 +288,7 @@
   }
   .about-content-text p {
     width: auto;
+    font-size: 18px;
   }
   .about-us-button {
     display: none;
@@ -300,6 +302,7 @@
   }
   .our-services-headings-part div {
     width: 100%;
+    font-size: 30px;
   }
   .our-services-section {
     gap: 50px;
@@ -349,6 +352,11 @@
     object-fit: cover;
   }
 }
+
+.wrapper-two {
+  display: none !important;
+}
+
 @media (max-width: 500px) {
   .homapage-headtext {
     padding: 10px;
@@ -385,5 +393,26 @@
   }
   .testimonial-mobile-view {
     gap: 25px;
+  }
+  .homepage-image-text {
+    width: 90%;
+    font-size: 16px;
+  }
+  .homepage-image-text::after {
+    content: "";
+    position: absolute;
+    top: -15%;
+    left: 22%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .about-heading,
+  .testimonila-heading {
+    font-size: 30px;
+  }
+  .wrapper-two {
+    display: flex !important;
   }
 }
