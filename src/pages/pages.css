@@ -601,7 +601,63 @@
   width: 50%;
   height: auto;
 }
-.stroy-scroller-mobile{
+.stroy-scroller-mobile {
+  display: none;
+}
+
+.about-values-container {
+  width: 100%;
+  background: #f5f5f5;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.about-values-header {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.about-values-hading {
+  color: #000;
+  font-size: 92px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 84px;
+  position: relative;
+}
+.about-values-hading::after {
+  content: "";
+  position: absolute;
+  bottom: -40%;
+  left: 65%;
+  transform: translateX(-50%);
+  width: 30%;
+  background: black;
+  height: 1px;
+}
+.about-values-disc{
+  width: 50%;
+  align-self: flex-end;
+  color: #000;
+font-size: 24px;
+font-style: normal;
+line-height: 30px; /* 125% */
+}
+.values-card-one{
+  display: flex;
+  gap: 30px;
+}
+.values-card-two{
+  padding-right: 9.5%;
+  justify-content: flex-end;
+}
+.cards-value-container{
+  display: flex;
+flex-direction: column;
+gap: 40px;
+}
+.card-values-scroll-container{
   display: none;
 }
 @media (max-width: 1000px) {
@@ -689,11 +745,68 @@
     display: none;
   }
 }
+@media (max-width: 900px) {
+  .cards-value-container{
+    display: none;
+  }
+
+  .card-values-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    max-width: 100%;
+  }
+  
+  .card-values-container-mobile {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .scroll-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .scroll-buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0 10px;
+  }
+  
+}
+
 @media (max-width: 500px) {
   .about-wrapper {
     padding: 130px 10px;
   }
-  .stroy-scroller-mobile{
+  .stroy-scroller-mobile {
     display: flex;
   }
+  .about-values-container{
+    padding: 40px 10px;
+  }
+  .about-values-header{
+    gap: 25px;
+  }
+  .about-values-hading{
+    font-size: 64px;
+  }
+  .about-values-hading::after {
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: 55%;
+    transform: translateX(-50%);
+    width: 49%;
+    background: black;
+    height: 1px;
+}
+  .about-values-disc{
+    width: 70%;
+font-size: 14px;
+line-height: 20px; /* 142.857% */
+  }
+  
 }
