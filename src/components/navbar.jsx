@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { IoReturnUpBack } from "react-icons/io5";
 import "./compenents.css";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [selectedTab, setSelectedTab] = useState(null);
 
   const handleDrawerToggle = () => {
     setDrawerOpen(!drawerOpen);
@@ -20,16 +22,26 @@ const Navbar = () => {
     }
   };
 
+  const handleTabClick = (tab) => {
+    setSelectedTab(tab);
+    handleCloseDrawer();
+  };
+
   return (
     <div className="navbar-container">
       <span className="navbar-menu" onClick={handleDrawerToggle}>
-        <IoReturnUpBack
-          className={`navbar-icon-open ${drawerOpen ? "rotate" : ""}`}
-        />
-        <p className={drawerOpen ? "hidden" : ""}>
-          {!drawerOpen ? "Menu" : ""}
-        </p>
-        <p>{drawerOpen ? "Close" : ""}</p>
+        <div className="navbar-logo">
+          <img src={logo} alt="logo" className="logo" />
+        </div>
+        <div>
+          <IoReturnUpBack
+            className={`navbar-icon-open ${drawerOpen ? "rotate" : ""}`}
+          />
+          <p className={drawerOpen ? "hidden" : ""}>
+            {!drawerOpen ? "Menu" : ""}
+          </p>
+          <p>{drawerOpen ? "Close" : ""}</p>
+        </div>
       </span>
 
       {drawerOpen && (
@@ -38,7 +50,62 @@ const Navbar = () => {
           onClick={handleOverlayClick}
         >
           <div className={`drawer-content ${drawerOpen ? "open" : "closed"}`}>
-            <Link to="/about">About</Link>
+            <Link
+              to="/about"
+              onClick={() => handleTabClick("about")}
+              className={selectedTab === "about" ? "selected" : ""}
+            >
+              <div
+                className={
+                  selectedTab === "about"
+                    ? "line-indication selected-line"
+                    : "line-indication"
+                }
+              ></div>
+              About
+            </Link>
+            <Link
+              to="/services"
+              onClick={() => handleTabClick("services")}
+              className={selectedTab === "services" ? "selected" : ""}
+            >
+              <div
+                className={
+                  selectedTab === "services"
+                    ? "line-indication selected-line"
+                    : "line-indication"
+                }
+              ></div>
+              Services
+            </Link>
+            <Link
+              to="/download-brochure"
+              onClick={() => handleTabClick("download-brochure")}
+              className={selectedTab === "download-brochure" ? "selected" : ""}
+            >
+              <div
+                className={
+                  selectedTab === "download-brochure"
+                    ? "line-indication selected-line"
+                    : "line-indication"
+                }
+              ></div>
+              Download Brochure
+            </Link>
+            <Link
+              to="/contact"
+              onClick={() => handleTabClick("contact")}
+              className={selectedTab === "contact" ? "selected" : ""}
+            >
+              <div
+                className={
+                  selectedTab === "contact"
+                    ? "line-indication selected-line"
+                    : "line-indication"
+                }
+              ></div>
+              Contact us
+            </Link>
           </div>
         </div>
       )}

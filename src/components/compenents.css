@@ -9,19 +9,35 @@
 }
 
 .navbar-menu {
-  padding: 0 100px;
-  padding-top: 30px;
-  width: 100%;
+  margin-top: 5px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 95%;
   height: 70px;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%, 10px);
   display: flex;
   align-items: center;
   gap: 10px;
   color: white;
   font-family: virat;
   font-weight: bold;
+  border: 0.5px solid #afafaf;
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0.06) 0.02%,
+    rgba(255, 255, 255, 0) 109.38%
+  );
+  box-shadow: -57.833px 57.833px 57.833px 0px rgba(255, 255, 255, 0.14) inset,
+    57.833px -57.833px 57.833px 0px rgba(194, 194, 194, 0.14) inset;
+  backdrop-filter: blur(56.676666259765625px);
+}
+.navbar-menu div{
+  display: flex;
+  gap: 10px;
 }
 .navbar-menu p {
   cursor: pointer;
@@ -29,7 +45,11 @@
   opacity: 1;
   transition: opacity 0.3s ease; /* Add a smooth transition for opacity */
 }
-
+.logo{
+  width: 142.222px;
+height: 80px;
+flex-shrink: 0;
+}
 .navbar-menu p.hidden {
   opacity: 0;
 }
@@ -41,7 +61,7 @@
   transform: translateX(-50%);
   width: 90%;
   height: 0.1px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #afafaf;
 }
 
 .navbar-icon-open {
@@ -58,11 +78,15 @@
   position: fixed;
   max-width: 400px;
   top: 0;
-  left: -100%; /* Set initial position to -100% */
+  right: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(145deg, #7a2a10 30%, #d9d9d9);
-  backdrop-filter: blur(10px);
+  background: linear-gradient(
+    332deg,
+    rgba(108, 26, 0, 0.44) 40%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  backdrop-filter: blur(77.42933654785156px);
   display: flex;
   z-index: -1;
   opacity: 0;
@@ -72,27 +96,44 @@
 .drawer-content {
   position: relative;
   transition: transform 0.5s ease, opacity 0.5s ease;
-  padding: 100px 50px;
+  padding: 140px 50px;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: self-start;
-  justify-content: flex-end;
+  gap: 40px;
 }
 .drawer-content a {
   text-decoration: none;
-  color: white;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  line-height: 18.548px; /* 38.642% */
+  letter-spacing: -0.528px;
+  opacity: 0.55;
+  display: flex;
+  gap: 40px;
+}
+.selected {
+  opacity: 1 !important;
 }
 .drawer-overlay.open {
   opacity: 1;
-  left: 0; /* Set the final position to 0% */
+  right: 0; /* Set the final position to 0% */
 }
 
 .drawer-content.open {
   opacity: 1;
 }
 
-.drawer-content.closed {
-  opacity: 0;
+.line-indication {
+  height: 316%;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.7);
+}
+.selected-line {
+  background-color: #fff !important;
 }
 
 /* ---- card style ---- */
