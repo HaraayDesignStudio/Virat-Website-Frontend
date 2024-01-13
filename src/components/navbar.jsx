@@ -3,10 +3,12 @@ import { IoReturnUpBack } from "react-icons/io5";
 import "./compenents.css";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [selectedTab, setSelectedTab] = useState(null);
+  const navigate = useNavigate();
 
   const handleDrawerToggle = () => {
     setDrawerOpen(!drawerOpen);
@@ -27,13 +29,22 @@ const Navbar = () => {
     handleCloseDrawer();
   };
 
+  const navigationLink = () => {
+    navigate("/");
+  };
+
   return (
     <div className="navbar-container">
-      <span className="navbar-menu" onClick={handleDrawerToggle}>
+      <span className="navbar-menu" >
         <div className="navbar-logo">
-          <img src={logo} alt="logo" className="logo" />
+          <img
+            src={logo}
+            alt="logo"
+            className="logo"
+            onClick={navigationLink}
+          />
         </div>
-        <div>
+        <div onClick={handleDrawerToggle}>
           <IoReturnUpBack
             className={`navbar-icon-open ${drawerOpen ? "rotate" : ""}`}
           />
