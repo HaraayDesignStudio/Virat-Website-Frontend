@@ -8,6 +8,10 @@
   src: url(../../public/fonts/zacbelx-extrabold.ttf);
 }
 
+@font-face {
+  font-family: bwvirat;
+  src: url(../../public/fonts/bw/BwGradualDEMO-Bold.ttf);
+}
 .navbar-menu {
   margin-top: 5px;
   align-items: center;
@@ -104,10 +108,11 @@
   gap: 40px;
 }
 .drawer-content a {
+  font-family: virat;
   text-decoration: none;
   color: #fff;
   text-align: center;
-  font-size: 30px;
+  font-size: 27px;
   font-style: normal;
   line-height: 18.548px; /* 38.642% */
   letter-spacing: -0.528px;
@@ -151,6 +156,7 @@
   width: 100%;
 }
 .heading-card {
+  font-family: virat;
   font-size: 30px;
   font-weight: bold;
 }
@@ -312,6 +318,7 @@
   padding: 0;
 }
 .virat-logo-name {
+  font-family: bwvirat;
   color: rgba(255, 255, 255, 0.1);
   font-size: 350px;
   font-style: normal;
@@ -321,9 +328,10 @@
   user-select: none;
 }
 .footer-get-in-touch {
+
   position: relative;
   color: rgba(255, 255, 255, 0.85);
-  font-family: Bw Gradual DEMO;
+  font-family: bwvirat;
   font-size: 108px;
   font-style: normal;
   font-weight: 700;
@@ -334,8 +342,8 @@
   content: "";
   position: absolute;
   bottom: -10%;
-  right: 16%;
-  width: 42%;
+  right: 11%;
+  width: 45%;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.85);
 }
@@ -386,6 +394,7 @@
   justify-content: space-between;
 }
 .footercom-name {
+  font-family: virat;
   font-size: 30px;
   margin-left: 20px;
 }
@@ -518,6 +527,9 @@
   .drawer-content a {
     gap: 20px;
     font-size: 25px;
+  }
+  .testimonial-name span {
+    font-size: 20px;
   }
   .card-wrapper {
     height: 520px;

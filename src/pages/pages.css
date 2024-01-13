@@ -2,6 +2,10 @@
   font-family: virat;
   src: url(../../public/fonts/zacbelx-medium.ttf);
 }
+@font-face {
+  font-family: bwvirat;
+  src: url(../../public/fonts/bw/BwGradualDEMO-Bold.ttf);
+}
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap");
 .image-container-homepage img {
   width: 100%;
@@ -42,7 +46,7 @@
 }
 .homepage-headtext-p {
   font-size: 75px;
-  font-family: "Libre Baskerville", serif;
+  font-family: bwvirat;
 }
 .homepage-headtext-button {
   display: flex;
@@ -123,6 +127,7 @@
 }
 .about-heading,
 .testimonila-heading {
+  font-family: virat;
   display: flex;
   align-items: center;
   font-size: 45px;
@@ -136,8 +141,8 @@
   gap: 100px;
 }
 .about-content-heading {
-  font-size: 80px;
-  font-family: "Libre Baskerville", serif;
+  font-size: 92px;
+  font-family: bwvirat;
   color: white;
   width: 35%;
 }
@@ -170,6 +175,10 @@
 .our-services-headings-part div {
   width: 50%;
 }
+.brand-scroller-head p{
+  font-family: bwvirat;
+  font-size: 90px;
+}
 .service-heading {
   font-size: 45px;
   display: flex;
@@ -183,7 +192,8 @@
 }
 .out-service-content .service-content-heading {
   width: 100%;
-  font-size: 75px;
+  font-size: 90px;
+  font-family: bwvirat;
   font-weight: 600;
 }
 .out-service-content p {
@@ -224,6 +234,7 @@
   justify-content: flex-end;
 }
 .testimonila-trust-client p {
+  font-family: bwvirat;
   width: 50%;
   font-size: 90px;
   color: white;
@@ -361,6 +372,9 @@
   .homapage-headtext {
     padding: 10px;
   }
+  .brand-scroller-head p{
+    font-size: 64px;
+  }
   .homepage-headtext-p {
     font-size: 30px;
   }
@@ -441,6 +455,7 @@
 }
 .about-vision-heading,
 .about-mission-heading {
+  font-family: bwvirat;
   color: #000;
   font-size: 92px;
   font-style: normal;
@@ -513,6 +528,7 @@
   gap: 60px;
 }
 .story-heading {
+  font-family: bwvirat;
   color: #000;
   font-size: 92px;
   font-style: normal;
@@ -619,6 +635,7 @@
   gap: 50px;
 }
 .about-values-hading {
+  font-family: bwvirat;
   color: #000;
   font-size: 92px;
   font-style: normal;
