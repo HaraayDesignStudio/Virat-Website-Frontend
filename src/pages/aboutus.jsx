@@ -3,6 +3,7 @@ import img1 from "../assets/Rectangle 162.png";
 import movimg1 from "../assets/about/14_HVAC-MEP_143280593 1.png";
 import movimg2 from "../assets/about/picxy_DD228481 2.png";
 import movimg3 from "../assets/about/team-1 1.png";
+import HorizantalScroll from "../components/horizantalscoll";
 
 const Aboutus = () => {
   return (
@@ -54,6 +55,7 @@ const Aboutus = () => {
             solutions tailored to meet your specific needs.
           </p>
         </div>
+          
         <div className="story-image-vertical-moving">
           <div className="image-move-heading">
             <p>Together is how we make it happen.</p>
@@ -92,6 +94,9 @@ const Aboutus = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="stroy-scroller-mobile">
+      <HorizantalScroll />
         </div>
       </div>
     </div>
