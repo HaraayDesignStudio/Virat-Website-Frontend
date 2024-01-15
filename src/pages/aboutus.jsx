@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import img1 from "../assets/Rectangle 162.png";
 import movimg1 from "../assets/about/14_HVAC-MEP_143280593 1.png";
 import movimg2 from "../assets/about/picxy_DD228481 2.png";
@@ -6,9 +6,29 @@ import movimg3 from "../assets/about/team-1 1.png";
 import HorizantalScroll from "../components/horizantalscoll";
 import ValuesCard from "../components/valuesCard";
 import cardImage from "../assets/SVG.png";
+import { useNavigate } from "react-router-dom";
 
 const Aboutus = () => {
   const containerRef = useRef(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [navigate]);
+  // eslint-disable-next-line
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="about-wrapper">
       <div className="about-container">
@@ -93,6 +113,9 @@ const Aboutus = () => {
                 <div className="two-image">
                   <img src={movimg2} alt="mov" />
                   <img src={movimg2} alt="mov" />
+                </div>
+                <div className="one-image">
+                  <img src={movimg3} alt="mov" />
                 </div>
               </div>
             </div>

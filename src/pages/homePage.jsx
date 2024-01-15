@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import homepageimage from "../assets/image 8.png";
 import aboutsection from "../assets/Rectangle 137.png";
 import testimonials from "../assets/126276-abstract-3d-orange-black-and-white-curved-lines-texture-background 1 (1).png";
@@ -14,8 +14,28 @@ import ServiceBrandCarousel from "../components/serviceBrandCarousel";
 import TestimonialsCard from "../components/testimonilaCard";
 import ButtonCom from "../components/buttonCom";
 import ServiceBrandCarousel2 from "../components/serviceBrandCarousel2";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [navigate]);
+  // eslint-disable-next-line
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="homepage-container">
       <div className="image-container-homepage">

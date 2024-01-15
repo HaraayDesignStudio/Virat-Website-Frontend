@@ -1,6 +1,6 @@
 import React from "react";
-import ButtonComponents from "./buttonComponents";
 import "./compenents.css";
+import ButtonCom from "./buttonCom";
 
 const ServiceCard = ({ image, heading, disc, func }) => {
   return (
@@ -9,11 +9,7 @@ const ServiceCard = ({ image, heading, disc, func }) => {
       <p className="heading-card">{heading}</p>
       <p className="disc-card">{disc}</p>
       <div>
-        <ButtonComponents
-          className="card-button"
-          name={"About Us"}
-          onClickFun={func}
-        />
+        <ButtonCom name={"About Us"} link={""} />
       </div>
     </div>
   );

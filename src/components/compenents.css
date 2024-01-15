@@ -53,6 +53,7 @@
   width: 142.222px;
   height: 80px;
   flex-shrink: 0;
+  cursor: pointer;
 }
 .navbar-menu p.hidden {
   opacity: 0;
@@ -181,6 +182,7 @@
   font-weight: bold;
   font-family: virat;
   clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 92% 100%, 0% 100%, 0% 50%);
+  cursor: pointer;
 }
 .button-for-landing-two {
   background: rgba(255, 255, 255, 0.4);
@@ -190,6 +192,7 @@
   font-style: normal;
   line-height: 100%; /* 18px */
   font-family: virat;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   .card-wrapper {
@@ -224,8 +227,8 @@
   width: 250px;
 }
 
-.slider .slide img {
-  width: 80%;
+.slider .slide img { 
+  width: 97%;
   height: 100px;
 }
 
@@ -621,5 +624,13 @@ justify-content: space-between;
   }
   .values-card-disc{
     font-size: 14px;
+  }
+}
+@media (max-width: 1500px){
+  .card-wrapper{
+    max-width: 430px;
+  }
+  .testimonial-card{
+    gap: 30px;
   }
 }
