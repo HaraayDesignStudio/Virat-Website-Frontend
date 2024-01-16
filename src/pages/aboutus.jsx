@@ -59,23 +59,17 @@ const Aboutus = () => {
             management in ensuring the smooth operation and success of your
             business. With our comprehensive range of services, we are committed
             to providing you with top-notch solutions tailored to meet your
-            specific needs.At Virat, we understand the importance of efficient
-            facility management in ensuring the smooth operation and success of
-            your business. With our comprehensive range of services, we are
-            committed to providing you with top-notch solutions tailored to meet
-            your specific needs.At Virat, we understand the importance of
-            efficient facility management in ensuring the smooth operation and
-            success of your business. With our comprehensive range of services,
-            we are committed to providing you with top-notch solutions tailored
-            to meet your specific needs.At Virat, we understand the importance
-            of efficient facility management in ensuring the smooth operation
-            and success of your business. With our comprehensive range of
-            services, we are committed to providing you with top-notch solutions
-            tailored to meet your specific needs.At Virat, we understand the
-            importance of efficient facility management in ensuring the smooth
-            operation and success of your business. With our comprehensive range
-            of services, we are committed to providing you with top-notch
-            solutions tailored to meet your specific needs.
+            specific needs.
+            <br /> Our team of highly skilled professionals possesses extensive
+            knowledge and expertise in facility management across various
+            industries. Whether you require maintenance and repairs, cleaning
+            services, security solutions, or any other facility-related support,
+            we have got you covered.
+            <br /> With a focus on delivering excellence, we prioritize quality
+            in every aspect of our work. We utilize state-of-the-art technology
+            and innovative strategies to optimize efficiency while minimizing
+            costs. Our proactive approach allows us to identify potential issues
+            before they become major problems.
           </p>
         </div>
 
@@ -191,8 +185,8 @@ const Aboutus = () => {
           </div>
         </div>
         <div className="card-values-scroll-container">
-        <div className="card-values-container-mobile" ref={containerRef}>
-        <ValuesCard
+          <div className="card-values-container-mobile" ref={containerRef}>
+            <ValuesCard
               image={cardImage}
               name={"Quality service"}
               disc={
@@ -206,7 +200,7 @@ const Aboutus = () => {
                 "Placing a strong emphasis on meeting and exceeding customer expectations. Understanding and fulfilling the unique needs of each client, ensuring their satisfaction with the services provided."
               }
             />
-             <ValuesCard
+            <ValuesCard
               image={cardImage}
               name={"Professionalism"}
               disc={
@@ -241,7 +235,7 @@ const Aboutus = () => {
                 "Prioritizing the health and safety of both clients and employees by adhering to safety protocols, using appropriate equipment, and following industry best practices."
               }
             />
-        </div>
+          </div>
         </div>
       </div>
     </div>
