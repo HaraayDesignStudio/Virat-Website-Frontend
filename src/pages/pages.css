@@ -368,6 +368,11 @@
   display: none !important;
 }
 
+@media (max-width: 1500px) {
+  .brand-scroller-head p {
+    font-size: 80px;
+  }
+}
 @media (max-width: 500px) {
   .homapage-headtext {
     padding: 10px;
@@ -832,9 +837,6 @@
   }
 }
 @media (max-width: 1500px) {
-  .brand-scroller-head p {
-    font-size: 80px;
-  }
   .testimonial-card-one {
     gap: 35px;
   }
