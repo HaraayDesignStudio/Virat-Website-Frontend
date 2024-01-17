@@ -7,10 +7,16 @@ import HorizantalScroll from "../components/horizantalscoll";
 import ValuesCard from "../components/valuesCard";
 import cardImage from "../assets/SVG.png";
 import { useNavigate } from "react-router-dom";
+import { BsArrowUp } from "react-icons/bs";
 
 const Aboutus = () => {
   const containerRef = useRef(null);
   const navigate = useNavigate();
+  const [showFirstSet, setShowFirstSet] = useState(true);
+
+  const handleCircularButtonClick = () => {
+    setShowFirstSet((prevShowFirstSet) => !prevShowFirstSet);
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -29,8 +35,45 @@ const Aboutus = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <div className="about-wrapper">
+      <div className="about-section-animation">
+        <div className="about-animation-image"></div>
+      <div className= {showFirstSet ? "about-animation-container" : "about-animation-container about-animation-container-ss"}>
+        <div className={showFirstSet ? "visible" : "hidden"}>
+          <p className="why-us">Why Us ?</p>
+          <p className="why-us-disc">
+            Virat Facility Management is one of the leading facility management
+            companies in India, offering a wide range of services to various
+            industries. We also aim to have a modern vision and add new
+            components to the existing solutions in the market by collaborating
+            with international machinery brands for complete customer
+            satisfaction.
+          </p>
+        </div>
+        <div>
+          <p className={showFirstSet ? "why-us-two" : "why-us"}>
+            Why do we stand out as the best ?
+          </p>
+          <p className={showFirstSet ? "why-us-disc why-us-disc2" : "why-us-disc2-two"}>
+            Virat Facility Management is one of the leading facility management
+            companies in India, offering a wide range of services to various
+            industries. We also aim to have a modern vision and add new
+            components to the existing solutions in the market by collaborating
+            with international machinery brands for complete customer
+            satisfaction.
+          </p>
+        </div>
+        <div
+          className="about-circular-button"
+          onClick={handleCircularButtonClick}
+        >
+          <BsArrowUp />
+        </div>
+      </div>
+      </div>
+      
       <div className="about-container">
         <div className="about-vision">
           <p className="about-vision-heading">Vision</p>

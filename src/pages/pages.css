@@ -444,6 +444,100 @@
   flex-direction: column;
   gap: 40px;
 }
+.about-section-animation {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.about-animation-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 580px;
+  gap: 100px;
+  justify-content: space-evenly;
+}
+.about-animation-container-ss {
+  justify-content: flex-start;
+}
+.why-us {
+  color: #000;
+  font-family: bwvirat;
+  font-size: 92px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 118px; /* 128.261% */
+  letter-spacing: -1.012px;
+  transition: all 1s ease;
+}
+.why-us-two {
+  color: #000;
+  font-family: virat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 30px; /* 93.75% */
+  letter-spacing: -0.352px;
+  transition: all 1s ease;
+}
+.why-us-disc {
+  color: #000;
+  font-family: virat;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 30px;
+  letter-spacing: -0.264px;
+  opacity: 1;
+  transform: all 1s ease;
+}
+.why-us-disc2 {
+  opacity: 0;
+  display: none;
+  transform: all 1s ease;
+}
+.why-us-disc2-two {
+  color: #000;
+  font-family: virat;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 30px;
+  letter-spacing: -0.264px;
+  opacity: 1;
+  transform: all 1s ease;
+}
+.about-circular-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  font-size: 40px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.about-circular-button:hover {
+  background: black;
+  color: white;
+}
+/* New classes for transition effect */
+.visible {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+}
 .about-container {
   background: #f5f5f5;
   display: flex;
@@ -684,7 +778,7 @@
   display: none;
 }
 @media (max-width: 1500px) {
-  .about-one-img img{
+  .about-one-img img {
     width: 490px;
   }
 }
@@ -805,6 +899,38 @@
 }
 
 @media (max-width: 500px) {
+  .about-section-animation {
+    gap: 0;
+  }
+  .about-animation-container {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 70px;
+    height: 450px;
+  }
+  .visible {
+    gap: 0;
+  }
+  .why-us {
+    font-family: bwvirat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 75px; /* 184.375% */
+    letter-spacing: -0.704px;
+  }
+  .why-us-disc,.why-us-disc2-two {
+    color: #000;
+    font-family: virat;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 22px; /* 137.5% */
+  }
+  .about-circular-button {
+    width: 90px;
+    height: 90px;
+    font-size: 35px;
+  }
   .about-wrapper {
     padding: 130px 10px;
   }
@@ -834,6 +960,11 @@
     width: 70%;
     font-size: 14px;
     line-height: 20px; /* 142.857% */
+  }
+}
+@media (max-width: 400px) {
+  .about-animation-container {
+    height: 500px;
   }
 }
 @media (max-width: 1500px) {
