@@ -919,7 +919,8 @@
     line-height: 75px; /* 184.375% */
     letter-spacing: -0.704px;
   }
-  .why-us-disc,.why-us-disc2-two {
+  .why-us-disc,
+  .why-us-disc2-two {
     color: #000;
     font-family: virat;
     font-size: 16px;
@@ -983,4 +984,102 @@
   .values-card-two {
     padding-right: 3.8%;
   }
+}
+
+/* ---- Contact Us ---- */
+
+.contact-container {
+  position: relative;
+  background-image: url("../assets/footer-mobile.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  padding: 60px 60px;
+  padding-top: 150px;
+}
+
+.contact-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(30px);
+}
+
+.contact-container > div {
+  position: relative;
+  z-index: 1;
+  width: 50%;
+}
+.contact-first {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-first div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-heading {
+  color: #000;
+  font-family: bwvirat;
+  font-size: 92px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.contact-disc {
+  color: #000;
+  font-family: virat;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 40px;
+}
+.links-mobile {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 20px;
+}
+.link-mobile {
+  background-color: #d9d9d9;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+  padding: 0 80px;
+}
+.form-contact input, .form-contact textarea {
+  background-color: transparent;
+  border: none;
+  color: black;
+  padding: 20px;
+  font-size: 25px;
+  line-height: 40px;
+  padding-left: 0;
+}
+input::placeholder , textarea::placeholder{
+  color: black;
+  font-family: virat;
+  font-size: 25px;
+  font-style: normal;
+  line-height: 40px;
+}
+.form-contact input:focus-visible,
+.form-contact input:focus,
+.form-contact input:active {
+  outline: none !important;
+}
+.hr-input {
+  /* width: 569.032px; */
+  height: 1px;
+  background: #000;
 }

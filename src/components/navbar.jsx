@@ -104,7 +104,7 @@ const Navbar = () => {
               Download Brochure
             </Link>
             <Link
-              to="/contact"
+              to="/contact-us"
               onClick={() => handleTabClick("contact")}
               className={selectedTab === "contact" ? "selected" : ""}
             >
