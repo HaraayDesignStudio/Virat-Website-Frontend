@@ -653,101 +653,103 @@
 
 /* ---- Footer Mobile ---- */
 
-.footer-wrapper-mobile {
-  display: flex;
-  flex-direction: column;
-}
-.footer-image-mobile {
-  position: relative;
-  object-fit: cover;
-}
-.footer-image-mobile img {
-  width: 100%;
-}
-.footer-mobile-heading {
-  position: absolute;
-  width: 100%;
-  padding-left: 50px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #000;
-  font-family: bwvirat;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 51px;
-  letter-spacing: -0.396px;
-}
-.footer-mobile-content {
-  background: black;
-  margin-top: -5px;
-  padding: 30px 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.footer-mobile-text {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: virat;
-  font-size: 14px;
-  font-style: normal;
-  line-height: 20px;
-  letter-spacing: -0.154px;
-}
-.footer-mobile-text .footer-download span {
-  color: white !important;
-  font-family: virat;
-  font-size: 9.619px;
-  font-style: normal;
-  line-height: 30.781px;
-  letter-spacing: -0.106px;
-}
-.hr-div {
-  background: rgba(255, 255, 255, 0.6);
-  height: 0.5px;
-}
-.footer-mobile-getintouch {
-  color: #fff;
-  font-family: virat;
-  font-size: 20px;
-  font-style: normal;
-  line-height: 26px;
-  letter-spacing: -0.22px;
-}
-.footer-mobile-email {
-  color: rgba(255, 255, 255, 0.7);
-  font-family: virat;
-  font-size: 14px;
-  font-style: normal;
-  line-height: 26px;
-  letter-spacing: -0.154px;
-  position: relative;
-}
-.footer-mobile-email::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 112px;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.7);
-}
-.follow-us-on {
-  color: #fff;
-  font-family: virat;
-  font-size: 16px;
-  font-style: normal;
-  line-height: 26px; /* 162.5% */
-  letter-spacing: -0.176px;
-}
-.links-mobile{
-  display: flex;
-  gap: 20px;
-}
-.link-mobile{
-  background-color: white;
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
+@media (max-width: 500px){
+  .footer-wrapper-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-image-mobile {
+    position: relative;
+    object-fit: cover;
+  }
+  .footer-image-mobile img {
+    width: 100%;
+  }
+  .footer-mobile-heading {
+    position: absolute;
+    width: 100%;
+    padding-left: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-family: bwvirat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 51px;
+    letter-spacing: -0.396px;
+  }
+  .footer-mobile-content {
+    background: black;
+    margin-top: -5px;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-mobile-text {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: virat;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: -0.154px;
+  }
+  .footer-mobile-text .footer-download span {
+    color: white !important;
+    font-family: virat;
+    font-size: 9.619px;
+    font-style: normal;
+    line-height: 30.781px;
+    letter-spacing: -0.106px;
+  }
+  .hr-div {
+    background: rgba(255, 255, 255, 0.6);
+    height: 0.5px;
+  }
+  .footer-mobile-getintouch {
+    color: #fff;
+    font-family: virat;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 26px;
+    letter-spacing: -0.22px;
+  }
+  .footer-mobile-email {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: virat;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 26px;
+    letter-spacing: -0.154px;
+    position: relative;
+  }
+  .footer-mobile-email::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 112px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.7);
+  }
+  .follow-us-on {
+    color: #fff;
+    font-family: virat;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 26px;
+    letter-spacing: -0.176px;
+  }
+  .links-mobile{
+    display: flex;
+    gap: 20px;
+  }
+  .link-mobile{
+    background-color: white;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+  }
 }
