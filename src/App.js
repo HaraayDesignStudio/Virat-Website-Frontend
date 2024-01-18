@@ -4,6 +4,7 @@ import HomePage from "./pages/homePage";
 import Footer from "./components/footer";
 import Aboutus from "./pages/aboutus";
 import ContactUs from "./pages/contactus";
+import HumanSustainbility from "./pages/humanSustainbility";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<Aboutus />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/human-sustainability" element={<HumanSustainbility />} />
       </Routes>
       <Footer />
     </BrowserRouter>

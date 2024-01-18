@@ -1057,7 +1057,8 @@
   align-items: flex-end;
   padding: 0 80px;
 }
-.form-contact input, .form-contact textarea {
+.form-contact input,
+.form-contact textarea {
   background-color: transparent;
   border: none;
   color: black;
@@ -1066,7 +1067,8 @@
   line-height: 40px;
   padding-left: 0;
 }
-input::placeholder , textarea::placeholder{
+input::placeholder,
+textarea::placeholder {
   color: black;
   font-family: virat;
   font-size: 25px;
@@ -1082,4 +1084,88 @@ input::placeholder , textarea::placeholder{
   /* width: 569.032px; */
   height: 1px;
   background: #000;
+}
+
+/* ---- Human Sustainability ---- */
+
+.sustain-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 140px 60px;
+  padding-bottom: 40px;
+}
+.heading-sustain {
+  display: flex;
+  align-items: flex-end;
+}
+.heading-sustain p {
+  width: 50%;
+}
+.heading-text-sustain {
+  color: #000;
+  font-family: bwvirat;
+  font-size: 92px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.disc-text-sustain {
+  color: #000;
+  font-family: virat;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: -0.176px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.disc-text-sustain::after {
+  content: "";
+  position: absolute;
+  top: -15%;
+  left: 20%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 1px;
+  background-color: #000;
+}
+.images-sustain {
+  display: flex;
+  gap: 20px;
+}
+.images-sustain img {
+  width: 50%;
+  height: 400px;
+  object-fit: cover;
+}
+.next-part-sustain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sustain-how {
+  color: #000;
+  font-family: virat;
+  font-size: 48px;
+  font-style: normal;
+  line-height: 50px;
+  font-weight: bold;
+  letter-spacing: -0.528px;
+}
+.sustain-circular-button {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  font-size: 40px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.sustain-circular-button:hover{
+  background-color: black;
+  color: white;
 }
