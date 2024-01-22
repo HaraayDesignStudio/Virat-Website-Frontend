@@ -7,6 +7,7 @@ import footermobile from "../assets/footer-mobile.png";
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { Link } from "react-router-dom";
+import footerImage from "../assets/elastrations/Profesionalism.png"
 
 const Footer = () => {
   return (
@@ -28,8 +29,8 @@ const Footer = () => {
           </div>
           <div className="footer-right">
             <div className="footer-box">
-              <FooterCom name={"Email us"} link={""} />
-              <FooterCom name={"Visit us"} link={""} />
+              <FooterCom name={"Email us"} link={""} img={footerImage} />
+              <FooterCom name={"Visit us"} link={""} img={footerImage}/>
             </div>
             <div className="footer-social">
               <p className="socialmedia-head">Socialmedia</p>

@@ -5,7 +5,12 @@ import movimg2 from "../assets/about/picxy_DD228481 2.png";
 import movimg3 from "../assets/about/team-1 1.png";
 import HorizantalScroll from "../components/horizantalscoll";
 import ValuesCard from "../components/valuesCard";
-import cardImage from "../assets/SVG.png";
+import card1 from "../assets/elastrations/Profesionalism.png";
+import card2 from "../assets/elastrations/Profesionalism_02.png";
+import card4 from "../assets/elastrations/Reliablity & Consistency.png";
+import card5 from "../assets/elastrations/Customer Satisfaction.png";
+import card6 from "../assets/elastrations/Customer Satisfaction_02.png";
+import mainImage from "../assets/elastrations/Continuous Improvement.png";
 import { useNavigate } from "react-router-dom";
 import { BsArrowUp } from "react-icons/bs";
 
@@ -39,41 +44,53 @@ const Aboutus = () => {
   return (
     <div className="about-wrapper">
       <div className="about-section-animation">
-        <div className="about-animation-image"></div>
-      <div className= {showFirstSet ? "about-animation-container" : "about-animation-container about-animation-container-ss"}>
-        <div className={showFirstSet ? "visible" : "hidden"}>
-          <p className="why-us">Why Us ?</p>
-          <p className="why-us-disc">
-            Virat Facility Management is one of the leading facility management
-            companies in India, offering a wide range of services to various
-            industries. We also aim to have a modern vision and add new
-            components to the existing solutions in the market by collaborating
-            with international machinery brands for complete customer
-            satisfaction.
-          </p>
-        </div>
-        <div>
-          <p className={showFirstSet ? "why-us-two" : "why-us"}>
-            Why do we stand out as the best ?
-          </p>
-          <p className={showFirstSet ? "why-us-disc why-us-disc2" : "why-us-disc2-two"}>
-            Virat Facility Management is one of the leading facility management
-            companies in India, offering a wide range of services to various
-            industries. We also aim to have a modern vision and add new
-            components to the existing solutions in the market by collaborating
-            with international machinery brands for complete customer
-            satisfaction.
-          </p>
+        <div className="about-animation-image">
+          <img src={mainImage} alt="mainimage" />
         </div>
         <div
-          className="about-circular-button"
-          onClick={handleCircularButtonClick}
+          className={
+            showFirstSet
+              ? "about-animation-container"
+              : "about-animation-container about-animation-container-ss"
+          }
         >
-          <BsArrowUp />
+          <div className={showFirstSet ? "visible" : "hidden"}>
+            <p className="why-us">Why Us ?</p>
+            <p className="why-us-disc">
+              Virat Facility Management is one of the leading facility
+              management companies in India, offering a wide range of services
+              to various industries. We also aim to have a modern vision and add
+              new components to the existing solutions in the market by
+              collaborating with international machinery brands for complete
+              customer satisfaction.
+            </p>
+          </div>
+          <div>
+            <p className={showFirstSet ? "why-us-two" : "why-us"}>
+              Why do we stand out as the best ?
+            </p>
+            <p
+              className={
+                showFirstSet ? "why-us-disc why-us-disc2" : "why-us-disc2-two"
+              }
+            >
+              Virat Facility Management is one of the leading facility
+              management companies in India, offering a wide range of services
+              to various industries. We also aim to have a modern vision and add
+              new components to the existing solutions in the market by
+              collaborating with international machinery brands for complete
+              customer satisfaction.
+            </p>
+          </div>
+          <div
+            className="about-circular-button"
+            onClick={handleCircularButtonClick}
+          >
+            <BsArrowUp />
+          </div>
         </div>
       </div>
-      </div>
-      
+
       <div className="about-container">
         <div className="about-vision">
           <p className="about-vision-heading">Vision</p>
@@ -173,14 +190,14 @@ const Aboutus = () => {
         <div className="cards-value-container">
           <div className="values-card-one">
             <ValuesCard
-              image={cardImage}
+              image={card1}
               name={"Quality service"}
               disc={
                 "Providing high-quality cleaning and housekeeping services is paramount. This involves attention to detail, thoroughness, and consistency in maintaining cleanliness."
               }
             />
             <ValuesCard
-              image={cardImage}
+              image={card2}
               name={"Customer Satisfaction"}
               disc={
                 "Placing a strong emphasis on meeting and exceeding customer expectations. Understanding and fulfilling the unique needs of each client, ensuring their satisfaction with the services provided."
@@ -189,14 +206,14 @@ const Aboutus = () => {
           </div>
           <div className="values-card-one values-card-two">
             <ValuesCard
-              image={cardImage}
+              image={mainImage}
               name={"Professionalism"}
               disc={
                 "Upholding professional standards in all aspects of the business, including staff conduct, communication, punctuality, and reliability."
               }
             />
             <ValuesCard
-              image={cardImage}
+              image={card4}
               name={"Continuous Improvement"}
               disc={
                 "Striving for ongoing improvement by seeking feedback from clients, evaluating processes, and implementing innovative approaches to enhance service quality."
@@ -205,21 +222,21 @@ const Aboutus = () => {
           </div>
           <div className="values-card-one values-card-two">
             <ValuesCard
-              image={cardImage}
+              image={card5}
               name={"Reliability & Consistency"}
               disc={
                 "Being dependable and consistent in delivering services as promised, maintaining a reliable schedule, and ensuring consistent quality standards."
               }
             />
             <ValuesCard
-              image={cardImage}
+              image={card6}
               name={"Training & Development"}
               disc={
                 "Investing in staff training to ensure they are equipped with the necessary skills, knowledge, and techniques to perform their duties effectively and efficiently."
               }
             />
             <ValuesCard
-              image={cardImage}
+              image={card5}
               name={"Health & Safety"}
               disc={
                 "Prioritizing the health and safety of both clients and employees by adhering to safety protocols, using appropriate equipment, and following industry best practices."
@@ -230,49 +247,49 @@ const Aboutus = () => {
         <div className="card-values-scroll-container">
           <div className="card-values-container-mobile" ref={containerRef}>
             <ValuesCard
-              image={cardImage}
+              image={card1}
               name={"Quality service"}
               disc={
                 "Providing high-quality cleaning and housekeeping services is paramount. This involves attention to detail, thoroughness, and consistency in maintaining cleanliness."
               }
             />
             <ValuesCard
-              image={cardImage}
+              image={card2}
               name={"Customer Satisfaction"}
               disc={
                 "Placing a strong emphasis on meeting and exceeding customer expectations. Understanding and fulfilling the unique needs of each client, ensuring their satisfaction with the services provided."
               }
             />
             <ValuesCard
-              image={cardImage}
+              image={mainImage}
               name={"Professionalism"}
               disc={
                 "Upholding professional standards in all aspects of the business, including staff conduct, communication, punctuality, and reliability."
               }
             />
             <ValuesCard
-              image={cardImage}
+              image={card4}
               name={"Continuous Improvement"}
               disc={
                 "Striving for ongoing improvement by seeking feedback from clients, evaluating processes, and implementing innovative approaches to enhance service quality."
               }
             />
             <ValuesCard
-              image={cardImage}
+              image={card5}
               name={"Reliability & Consistency"}
               disc={
                 "Being dependable and consistent in delivering services as promised, maintaining a reliable schedule, and ensuring consistent quality standards."
               }
             />
             <ValuesCard
-              image={cardImage}
+              image={card6}
               name={"Training & Development"}
               disc={
                 "Investing in staff training to ensure they are equipped with the necessary skills, knowledge, and techniques to perform their duties effectively and efficiently."
               }
             />
             <ValuesCard
-              image={cardImage}
+              image={card5}
               name={"Health & Safety"}
               disc={
                 "Prioritizing the health and safety of both clients and employees by adhering to safety protocols, using appropriate equipment, and following industry best practices."

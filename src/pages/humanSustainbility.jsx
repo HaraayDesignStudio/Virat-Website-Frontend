@@ -25,7 +25,7 @@ const HumanSustainbility = () => {
       <div className="next-part-sustain">
         <p className="sustain-how">And how do we do it ?</p>
         <div className="sustain-circular-button">
-          <BsArrowUp />j
+          <BsArrowUp />
         </div>
       </div>
     </div>

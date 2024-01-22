@@ -143,27 +143,77 @@
 }
 
 /* ---- card style ---- */
-
+.card-container-service {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  transition: margin-right 0.5s ease;
+}
 .card-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 60px 30px;
-  background-color: #f3f3f3;
-  flex-grow: 1;
+  position: relative;
+  height: auto;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
-.card-wrapper {
+.card-wrapper:hover {
+  filter: grayscale(0);
+}
+.card-wrapper img {
   max-width: 450px;
-  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+.card-sidebar {
+  position: absolute;
+  right: -70%;
+  bottom: -50%;
+  z-index: 100;
+  transition: all 1s ease;
+  background-color: white;
+}
+.card-sidebar3 {
+  position: absolute;
+  left: -70%;
+  bottom: -50%;
+  z-index: 100;
+  transition: all 1s ease;
+  background-color: white;
 }
 .heading-card {
+  position: absolute;
   font-family: virat;
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+}
+.card-disc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  padding: 5px;
+  justify-content: flex-end;
+}
+.heading-card2 {
+  font-family: virat;
+  font-size: 20px;
   font-weight: bold;
 }
 .disc-card {
   font-family: virat;
 }
+.card-container-service:hover .card-sidebar,
+.card-container-service:hover .card-sidebar3 {
+  bottom: 0;
+}
+
 .card-button {
   float: right;
 }
@@ -177,7 +227,7 @@
   padding: 0px 40px;
   justify-content: center;
   align-items: center;
-  background-color: #FF5A3666;
+  background-color: #ff5a3666;
   color: #000000;
   font-weight: bold;
   font-family: virat;
@@ -653,7 +703,7 @@
 
 /* ---- Footer Mobile ---- */
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
   .footer-wrapper-mobile {
     display: flex;
     flex-direction: column;
@@ -742,11 +792,11 @@
     line-height: 26px;
     letter-spacing: -0.176px;
   }
-  .links-mobile{
+  .links-mobile {
     display: flex;
     gap: 20px;
   }
-  .link-mobile{
+  .link-mobile {
     background-color: white;
     height: 70px;
     width: 70px;

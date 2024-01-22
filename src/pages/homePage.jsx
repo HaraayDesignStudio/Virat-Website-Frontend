@@ -107,6 +107,7 @@ const HomePage = () => {
               "where  we provide cleaning services to our clients with a combination of machinery and manpower"
             }
             func={() => {}}
+            id={1}
           />
           <ServiceCard
             image={card2}
@@ -115,6 +116,7 @@ const HomePage = () => {
               "services for maintenance of properties at a given point of time when deployed on site."
             }
             func={() => {}}
+            id={2}
           />
           <ServiceCard
             image={card3}
@@ -123,6 +125,7 @@ const HomePage = () => {
               "providing gardening services for companies, societies and realty developers looking to change their landscaping structure."
             }
             func={() => {}}
+            id={3}
           />
         </div>
         <div className="service-brand-scroller">
