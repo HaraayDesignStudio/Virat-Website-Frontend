@@ -168,20 +168,27 @@
   object-fit: cover;
 }
 .card-sidebar {
-  position: absolute;
-  right: -70%;
-  bottom: -50%;
-  z-index: 100;
-  transition: all 1s ease;
-  background-color: white;
+    position: absolute;
+    right: -108%;
+    bottom: -100%;
+    z-index: 97;
+    height: 100%;
+    width: 480px;
+    transition: all 1s ease;
+    background-color: white;
+    opacity: 0;
 }
 .card-sidebar3 {
   position: absolute;
-  left: -70%;
-  bottom: -50%;
-  z-index: 100;
+  left: -108%;
+  bottom: -100%;
+  z-index: 96;
+  height: 100%;
+  width: 480px;
   transition: all 1s ease;
+  align-items: flex-end;
   background-color: white;
+  opacity: 0;
 }
 .heading-card {
   position: absolute;
@@ -200,6 +207,7 @@
   max-width: 300px;
   padding: 5px;
   justify-content: flex-end;
+  height: 100%;
 }
 .heading-card2 {
   font-family: virat;
@@ -212,6 +220,7 @@
 .card-container-service:hover .card-sidebar,
 .card-container-service:hover .card-sidebar3 {
   bottom: 0;
+  opacity: 1;
 }
 
 .card-button {
