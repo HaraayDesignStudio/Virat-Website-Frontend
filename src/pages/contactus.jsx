@@ -1,13 +1,19 @@
 // ContactUs.js
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./pages.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import ButtonComponents2 from "../components/buttonComponents2";
 
 // API key
 // https://virat-backend.onrender.com/
 
 const ContactUs = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [navigate]);
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [company, setCompany] = useState("");

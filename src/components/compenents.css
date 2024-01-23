@@ -158,6 +158,7 @@
   filter: grayscale(100%);
   cursor: pointer;
   transition: all 0.5s ease;
+  border: 1px solid black;
 }
 .card-wrapper:hover {
   filter: grayscale(0);
@@ -168,15 +169,15 @@
   object-fit: cover;
 }
 .card-sidebar {
-    position: absolute;
-    right: -108%;
-    bottom: -100%;
-    z-index: 97;
-    height: 100%;
-    width: 480px;
-    transition: all 1s ease;
-    background-color: white;
-    opacity: 0;
+  position: absolute;
+  right: -108%;
+  bottom: -100%;
+  z-index: 97;
+  height: 100%;
+  width: 480px;
+  transition: all 1s ease;
+  background-color: white;
+  opacity: 0;
 }
 .card-sidebar3 {
   position: absolute;
