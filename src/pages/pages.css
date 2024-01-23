@@ -1014,7 +1014,7 @@
   height: 100vh;
   display: flex;
   padding: 60px 60px;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 .contact-container::before {
@@ -1081,7 +1081,7 @@
   background-color: transparent;
   border: none;
   color: black;
-  padding: 20px;
+  padding-top: 20px;
   font-size: 25px;
   line-height: 40px;
   padding-left: 0;
@@ -1139,6 +1139,9 @@ textarea::placeholder {
   margin-bottom: 15px;
   position: relative;
 }
+.message-input{
+  margin-top: 100px;
+}
 .disc-text-sustain::after {
   content: "";
   position: absolute;
@@ -1187,4 +1190,23 @@ textarea::placeholder {
 .sustain-circular-button:hover{
   background-color: black;
   color: white;
+}
+.alertContainer {
+  position: fixed;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%, -6%);
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: top 0.5s ease-in-out;
+  z-index: 9999;
+}
+.alertSuccess {
+  color: green;
+}
+.alertError {
+  color: red;
+  background-color: white;
 }

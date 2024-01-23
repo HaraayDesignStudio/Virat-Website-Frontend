@@ -19,6 +19,61 @@ const ContactUs = () => {
   const [company, setCompany] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const [isSuccessAlert, setIsSuccessAlert] = useState(false);
+  const [isErrorAlert, setIsErrorAlert] = useState(false);
+  const [errormsg, setErrormsg] = useState(
+    "Submission failed. Please try again."
+  );
+
+  const handleSubmission = async (e) => {
+    e.preventDefault();
+
+    if (
+      name.trim() === "" ||
+      email.trim() === "" ||
+      phone.trim() === "" ||
+      message.trim() === ""
+    ) {
+      setErrormsg("Please fill in all required fields.");
+      setIsErrorAlert(true);
+      setTimeout(() => {
+        setIsErrorAlert(false);
+      }, 2000);
+      return;
+    }
+
+    const data = {
+      name,
+      email,
+      number:phone,
+      company,
+      message,
+    }
+
+    try {
+      await fetch("https://virat-backend.onrender.com/api/contact",{
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+      setIsSuccessAlert(true);
+      setTimeout(() => {
+        setIsSuccessAlert(false);
+        setTimeout(() => {
+          navigate("/");
+          window.scrollTo(0, 0);
+        }, 1000);
+      }, 2000);
+    } catch (error) {
+      setErrormsg("Network Error!");
+      setIsErrorAlert(true);
+      setTimeout(() => {
+        setIsErrorAlert(false);
+      }, 2000);
+    }
+  };
 
   return (
     <div className="contact-container">
@@ -52,7 +107,7 @@ const ContactUs = () => {
           </div>
           <div className="input-contact">
             <input
-              type="text"
+              type="email"
               id="textInput"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -80,7 +135,7 @@ const ContactUs = () => {
             />
             <div className="hr-input"></div>
           </div>
-          <div className="input-contact">
+          <div className="input-contact message-input">
             <input
               type="text"
               id="textInput"
@@ -90,9 +145,23 @@ const ContactUs = () => {
             />
             <div className="hr-input"></div>
           </div>
-         <ButtonComponents2 name={"Explore now"} link={""}/>
+          <ButtonComponents2 name={"Submit now"} link={handleSubmission} />
         </form>
       </div>
+      {isSuccessAlert && (
+          <section
+            className="alertContainer alertSuccess slideIn"
+          >
+            Successfully submitted!
+          </section>
+        )}
+        {isErrorAlert && (
+          <section
+            className="alertContainer alertError slideIn"
+          >
+            {errormsg}
+          </section>
+        )}
     </div>
   );
 };
