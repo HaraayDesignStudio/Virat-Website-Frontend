@@ -46,6 +46,7 @@ const Footer = () => {
           </div>
           <div className="logo-name-div">
             <p className="virat-logo-name">Virat</p>
+            <Link className="haraay" to="https://haraaydesignstudio.com/">Made by HaraayDesignStudio</Link>
           </div>
         </div>
       </div>
