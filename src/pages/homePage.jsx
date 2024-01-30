@@ -93,9 +93,8 @@ const HomePage = () => {
               The Hero to your Rescue
             </div>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever{" "}
+              We love being the helping hand you need, here are few services
+              where we offer our expertise.
             </p>
           </div>
         </div>

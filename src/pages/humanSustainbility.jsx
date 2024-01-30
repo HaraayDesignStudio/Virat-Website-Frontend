@@ -10,7 +10,7 @@ const HumanSustainbility = () => {
         <p className="heading-text-sustain">Human Sustainability </p>
         <p className="disc-text-sustain">
           Virat facility management services are based on teamwork. At virat we
-          encourage and believe in equality, unity and value for all. Human
+          encourage and believe in equality ,unity and value for all. Human
           sustainability is important for overall Growth of the company. Virat
           Facility Management is a company that recognizes the importance of
           human sustainability. By taking care of its employees and promoting a
@@ -27,6 +27,40 @@ const HumanSustainbility = () => {
         <div className="sustain-circular-button">
           <BsArrowUp />
         </div>
+      </div>
+      <div className="sustain-main-disc">
+        <p>
+        Our enterprise acknowledges that our triumph is indebted to the
+        unstinting patronage of the community, and hence we are devoted to
+        reciprocating that support in manifold ways. We offer a gamut of
+        services such as maintenance and cleaning, fundraising for
+        non-governmental organizations, sponsorships, scholarships, investments
+        in local public projects, and more. Our ambition transcends merely
+        becoming a preeminent brand in facility management services. We aspire
+        to set a standard for others by promoting sustainability. We endeavor to
+        disseminate awareness about the paramount importance of sustainability
+        and its pervasive impact on individuals, corporations, and the
+        environment. By espousing sustainability through multifarious means, we
+        seek to instigate businesses and individuals to work towards human
+        sustainability, growth, opportunity, and parity. We adopt measures to
+        preserve the environment and devise enduring solutions that will
+        bequeath benefits to posterity. Furthermore, our enterprise partakes in
+        community service initiatives unequivocal manifestation of our
+        unwavering commitment to human sustainability. Virat Facility
+        Management's dedication to human sustainability is exemplified by its
+        unwavering focus on customer satisfaction. The company prides itself on
+        thoroughly comprehending the needs and expectations of its customers,
+        and consistently providing superlative services that meet and exceed
+        those expectations. This approach cultivates an exceptional experience
+        for customers, resulting in augmented loyalty and repeat patronage. 
+        <br /><br />In
+        addition, Virat Facility Management's commitment to human sustainability
+        extends beyond its employees, as it strives to contribute towards the
+        betterment of society as a whole. The company values its employees with
+        the same level of esteem as its clients, as it recognizes that
+        successful companies are built upon a foundation of successful
+        employees.
+        </p>
       </div>
     </div>
   );

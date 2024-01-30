@@ -405,6 +405,12 @@
   font-family: bwvirat;
   color: rgba(255, 255, 255, 0.1);
 }
+.haraay-mobile{
+  font-size: 18px;
+  text-decoration: none;
+  font-family: bwvirat;
+  color: rgba(255, 255, 255, 0.1);
+}
 .virat-logo-name {
   font-family: bwvirat;
   color: rgba(255, 255, 255, 0.1);
@@ -761,6 +767,7 @@
     background: black;
     margin-top: -5px;
     padding: 30px 30px;
+    padding-bottom: 5px;
     display: flex;
     flex-direction: column;
     gap: 20px;

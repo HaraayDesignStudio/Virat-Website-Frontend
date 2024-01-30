@@ -193,14 +193,14 @@ const Aboutus = () => {
               image={card1}
               name={"Quality service"}
               disc={
-                "Providing high-quality cleaning and housekeeping services is paramount. This involves attention to detail, thoroughness, and consistency in maintaining cleanliness."
+                "Delivering top-notch cleaning and housekeeping services is of utmost importance. It requires meticulous attention to detail, a thorough approach, and a consistent effort to maintain immaculate cleanliness."
               }
             />
             <ValuesCard
               image={card2}
               name={"Customer Satisfaction"}
               disc={
-                "Placing a strong emphasis on meeting and exceeding customer expectations. Understanding and fulfilling the unique needs of each client, ensuring their satisfaction with the services provided."
+                "Our organization places a great deal of emphasis on satisfying our clients by comprehending and fulfilling their distinctive requests. We endeavor to surpass their expectations through our services and ensure that they are content with the outcome."
               }
             />
           </div>
@@ -209,14 +209,14 @@ const Aboutus = () => {
               image={mainImage}
               name={"Professionalism"}
               disc={
-                "Upholding professional standards in all aspects of the business, including staff conduct, communication, punctuality, and reliability."
+                "We strive to maintain the highest professional standards in all aspects of our business operations, including the conduct of our staff, the quality of our communication, and the reliability and punctuality of our services."
               }
             />
             <ValuesCard
               image={card4}
               name={"Continuous Improvement"}
               disc={
-                "Striving for ongoing improvement by seeking feedback from clients, evaluating processes, and implementing innovative approaches to enhance service quality."
+                "Our steadfast dedication to continuous improvement is a testament to our unwavering commitment to upholding the highest standards of excellence and sophistication in every facet of our endeavors."
               }
             />
           </div>
@@ -225,7 +225,7 @@ const Aboutus = () => {
               image={card5}
               name={"Reliability & Consistency"}
               disc={
-                "Being dependable and consistent in delivering services as promised, maintaining a reliable schedule, and ensuring consistent quality standards."
+                "We take great pride in our steadfast commitment to the punctual delivery of services and the unwavering adherence to the most stringent quality standards."
               }
             />
             <ValuesCard
@@ -239,7 +239,7 @@ const Aboutus = () => {
               image={card5}
               name={"Health & Safety"}
               disc={
-                "Prioritizing the health and safety of both clients and employees by adhering to safety protocols, using appropriate equipment, and following industry best practices."
+                "We meticulously adhere to stringent safety protocols, employ state-of-the-art equipment and adhere to industry best practices, thus enabling us to maintain an environment that is safe and secure for all."
               }
             />
           </div>
@@ -250,35 +250,35 @@ const Aboutus = () => {
               image={card1}
               name={"Quality service"}
               disc={
-                "Providing high-quality cleaning and housekeeping services is paramount. This involves attention to detail, thoroughness, and consistency in maintaining cleanliness."
+                "Delivering top-notch cleaning and housekeeping services is of utmost importance. It requires meticulous attention to detail, a thorough approach, and a consistent effort to maintain immaculate cleanliness."
               }
             />
             <ValuesCard
               image={card2}
               name={"Customer Satisfaction"}
               disc={
-                "Placing a strong emphasis on meeting and exceeding customer expectations. Understanding and fulfilling the unique needs of each client, ensuring their satisfaction with the services provided."
+                "Our organization places a great deal of emphasis on satisfying our clients by comprehending and fulfilling their distinctive requests. We endeavor to surpass their expectations through our services and ensure that they are content with the outcome."
               }
             />
             <ValuesCard
               image={mainImage}
               name={"Professionalism"}
               disc={
-                "Upholding professional standards in all aspects of the business, including staff conduct, communication, punctuality, and reliability."
+                "We strive to maintain the highest professional standards in all aspects of our business operations, including the conduct of our staff, the quality of our communication, and the reliability and punctuality of our services."
               }
             />
             <ValuesCard
               image={card4}
               name={"Continuous Improvement"}
               disc={
-                "Striving for ongoing improvement by seeking feedback from clients, evaluating processes, and implementing innovative approaches to enhance service quality."
+                "Our steadfast dedication to continuous improvement is a testament to our unwavering commitment to upholding the highest standards of excellence and sophistication in every facet of our endeavors."
               }
             />
             <ValuesCard
               image={card5}
               name={"Reliability & Consistency"}
               disc={
-                "Being dependable and consistent in delivering services as promised, maintaining a reliable schedule, and ensuring consistent quality standards."
+                "We take great pride in our steadfast commitment to the punctual delivery of services and the unwavering adherence to the most stringent quality standards."
               }
             />
             <ValuesCard
@@ -292,7 +292,7 @@ const Aboutus = () => {
               image={card5}
               name={"Health & Safety"}
               disc={
-                "Prioritizing the health and safety of both clients and employees by adhering to safety protocols, using appropriate equipment, and following industry best practices."
+                "We meticulously adhere to stringent safety protocols, employ state-of-the-art equipment and adhere to industry best practices, thus enabling us to maintain an environment that is safe and secure for all."
               }
             />
           </div>

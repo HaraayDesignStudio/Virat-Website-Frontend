@@ -7,7 +7,7 @@ import footermobile from "../assets/footer-mobile.png";
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { Link } from "react-router-dom";
-import footerImage from "../assets/elastrations/Profesionalism.png"
+import footerImage from "../assets/elastrations/Profesionalism.png";
 
 const Footer = () => {
   return (
@@ -18,9 +18,7 @@ const Footer = () => {
           <div className="footer-left">
             <p className="footer-get-in-touch">Get in Touch</p>
             <p className="footer-disc">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since{" "}
+            We believe in Growth & Success, and together we can create a place for all to Grow.
             </p>
             <div className="footer-download">
               <FaArrowDownLong className="footer-download-icon" />
@@ -30,7 +28,7 @@ const Footer = () => {
           <div className="footer-right">
             <div className="footer-box">
               <FooterCom name={"Email us"} link={""} img={footerImage} />
-              <FooterCom name={"Visit us"} link={""} img={footerImage}/>
+              <FooterCom name={"Visit us"} link={""} img={footerImage} />
             </div>
             <div className="footer-social">
               <p className="socialmedia-head">Socialmedia</p>
@@ -46,7 +44,9 @@ const Footer = () => {
           </div>
           <div className="logo-name-div">
             <p className="virat-logo-name">Virat</p>
-            <Link className="haraay" to="https://haraaydesignstudio.com/">Made by HaraayDesignStudio</Link>
+            <Link className="haraay" to="https://haraaydesignstudio.com/">
+              Made by HaraayDesignStudio
+            </Link>
           </div>
         </div>
       </div>
@@ -59,9 +59,7 @@ const Footer = () => {
         </div>
         <div className="footer-mobile-content">
           <p className="footer-mobile-text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since{" "}
+          We believe in Growth & Success, and together we can create a place for all to Grow.
           </p>
           <div className="footer-download">
             <FaArrowDownLong className="footer-download-icon" />
@@ -77,6 +75,9 @@ const Footer = () => {
             <Link className="link-mobile" to="/"></Link>
             <Link className="link-mobile" to="/"></Link>
           </div>
+          <Link className="haraay-mobile" to="https://haraaydesignstudio.com/">
+            Made by HaraayDesignStudio
+          </Link>
         </div>
       </div>
     </>
