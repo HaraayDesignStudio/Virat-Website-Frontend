@@ -144,24 +144,17 @@
 
 /* ---- card style ---- */
 .card-container-service {
-  position: relative;
   display: flex;
   justify-content: flex-end;
   gap: 20px;
   transition: margin-right 0.5s ease;
 }
 .card-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   position: relative;
-  height: auto;
-  filter: grayscale(100%);
-  cursor: pointer;
   transition: all 0.5s ease;
-  border: 1px solid black;
-}
-.card-wrapper:hover {
-  filter: grayscale(0);
 }
 .card-wrapper img {
   max-width: 450px;
@@ -221,12 +214,35 @@
 .disc-card {
   font-family: virat;
 }
-.card-container-service:hover .card-sidebar,
-.card-container-service:hover .card-sidebar3 {
-  bottom: 0;
-  opacity: 1;
+.card-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  font-size: 80px;
+  width: 180px;
+  border: 2px solid white;
+  color: white;
+  border-radius: 50%;
+  transition: display 0.3s ease;
+  cursor: pointer;
 }
-
+.card-circle p{
+  font-family: virat;
+  font-size: 24px;
+  margin-top: -30px;
+}
+.card-wrapper:hover {
+  filter: grayscale(100%);
+}
+.card-wrapper:hover .card-circle {
+  display: flex;
+  flex-direction: column;
+}
 .card-button {
   float: right;
 }
@@ -396,7 +412,7 @@
   width: 95%;
   justify-content: space-between;
 }
-.haraay{
+.haraay {
   position: absolute;
   bottom: -50%;
   right: 0;
@@ -405,7 +421,7 @@
   font-family: bwvirat;
   color: rgba(255, 255, 255, 0.1);
 }
-.haraay-mobile{
+.haraay-mobile {
   font-size: 18px;
   text-decoration: none;
   font-family: bwvirat;
@@ -635,10 +651,9 @@
   }
   .card-wrapper {
     height: 520px;
-    padding: 10px;
   }
   .heading-card {
-    font-size: 25px;
+    font-size: 16px;
   }
   .disc-card {
     font-size: 15px;
@@ -726,9 +741,9 @@
   }
 }
 @media (max-width: 1500px) {
-  .card-wrapper {
+  /* .card-wrapper {
     max-width: 430px;
-  }
+  } */
   .testimonial-card {
     gap: 30px;
   }
@@ -740,6 +755,9 @@
   .footer-wrapper-mobile {
     display: flex;
     flex-direction: column;
+  }
+  .card-circle{
+    left: 41%;
   }
   .footer-image-mobile {
     position: relative;

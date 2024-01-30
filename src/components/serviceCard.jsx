@@ -1,5 +1,6 @@
 import React from "react";
 import "./compenents.css";
+import { HiArrowLongRight } from "react-icons/hi2";
 
 const ServiceCard = ({ image, heading, disc, func, id }) => {
   return (
@@ -7,12 +8,9 @@ const ServiceCard = ({ image, heading, disc, func, id }) => {
       <div className="card-wrapper">
         <img src={image} alt={heading} />
         <span className="heading-card">{heading}</span>
-      </div>
-      <div className={`${id === 3 ? "card-sidebar3" : "card-sidebar"}`}>
-        <div className="card-service-line"></div>
-        <div className="card-disc">
-          <span className="heading-card2">{heading}</span>
-          <p className="disc-card">{disc}</p>
+        <div className="card-circle">
+        <HiArrowLongRight />
+        <p>Know more</p>
         </div>
       </div>
     </div>

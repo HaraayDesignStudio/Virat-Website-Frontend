@@ -203,6 +203,7 @@
 }
 .services-cards {
   display: flex;
+  flex-wrap: wrap;
   overflow: hidden;
   width: 100%;
   gap: 20px;
