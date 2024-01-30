@@ -147,17 +147,23 @@
   width: 35%;
 }
 .about-content-text {
+  margin: -25px -65px;
+  padding: 50px;
   font-family: virat;
   color: white;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background: rgba(217, 217, 217, 0.10);
+box-shadow: -49.633px 49.633px 49.633px 0px rgba(255, 255, 255, 0.10) inset, 49.633px -49.633px 49.633px 0px rgba(165, 165, 165, 0.10) inset;
+backdrop-filter: blur(49.63333511352539px);
 }
 .about-content-text p {
   text-align: left;
   width: 700px;
-  line-height: 30px;
   font-size: 24px;
+  font-style: normal;
+  line-height: 38px;
 }
 
 /* ----service page style---- */
@@ -270,12 +276,13 @@
     font-size: 40px;
   }
   .about-us-section .about-background-img {
-    height: 800px;
+    height: 900px;
     object-fit: cover;
   }
   .about-content-part {
     gap: 80px;
     flex-direction: column;
+    margin-bottom: 50px;
   }
   .about-section-content,
   .testimonial-section-content {
@@ -287,7 +294,7 @@
   .about-content-heading {
     position: relative;
     width: 70%;
-    font-size: 53px;
+    font-size: 64px;
   }
   .about-content-heading::after {
     content: "";
@@ -300,7 +307,8 @@
   }
   .about-content-text p {
     width: auto;
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 30px;
   }
   .about-us-button {
     display: none;
@@ -981,6 +989,11 @@
     width: 70%;
     font-size: 14px;
     line-height: 20px; /* 142.857% */
+  }
+  .about-content-text{
+    width: 100%;
+    padding: 20px;
+    margin-left: -15px;
   }
 }
 @media (max-width: 400px) {

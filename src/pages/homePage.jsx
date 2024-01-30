@@ -67,11 +67,12 @@ const HomePage = () => {
             <div className="about-content-heading">Learn About us.</div>
             <div className="about-content-text">
               <p>
-                Team of highly skilled professionals possesses extensive
-                knowledge and expertise in facility management across various
-                industries. Whether you require maintenance and repairs,
-                cleaning services, security solutions, or any other
-                facility-related support, we have got you covered.
+                Our brand positioning is centered around providing Quality
+                services for various other businesses. We are the professional
+                helping hand for your business, we aim to provide you with
+                services that simplify your work. With an approach that is well
+                organized, well executed. We strive to encourage individuals to
+                understand and embrace the sustainable side of living.
               </p>
               <ButtonComponents2
                 name={"Explore now"}
