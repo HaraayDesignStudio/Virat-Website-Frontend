@@ -246,12 +246,15 @@ backdrop-filter: blur(49.63333511352539px);
   font-size: 90px;
   color: white;
   font-weight: bold;
+  margin-right: 220px;
+  margin-top: -98px;
+
 }
 .testimonial-card-one {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  gap: 35px;
+  gap: 20px;
 }
 .testimonial-test {
   color: white;
@@ -261,6 +264,7 @@ backdrop-filter: blur(49.63333511352539px);
 .testimonial-test p {
   font-size: 25px;
   font-family: virat;
+  margin-top: -150px;
 }
 @media (max-width: 700px) {
   .image-container-homepage img {
@@ -276,13 +280,13 @@ backdrop-filter: blur(49.63333511352539px);
     font-size: 40px;
   }
   .about-us-section .about-background-img {
-    height: 900px;
+    height: 950px;
     object-fit: cover;
   }
   .about-content-part {
     gap: 80px;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
   .about-section-content,
   .testimonial-section-content {
@@ -332,7 +336,7 @@ backdrop-filter: blur(49.63333511352539px);
     gap: 30px;
   }
   .testimonial-section-content {
-    gap: 20px;
+    gap: 70px;
   }
   .testimonila-trust-client {
     justify-content: flex-start;
@@ -418,6 +422,7 @@ backdrop-filter: blur(49.63333511352539px);
   }
   .testimonila-trust-client p {
     font-size: 50px;
+    margin: 0;
   }
   .testimonial-mobile-view {
     gap: 25px;
@@ -991,9 +996,9 @@ backdrop-filter: blur(49.63333511352539px);
     line-height: 20px; /* 142.857% */
   }
   .about-content-text{
-    width: 100%;
+    width: 90%;
     padding: 20px;
-    margin-left: -15px;
+    margin-left: -20px;
   }
 }
 @media (max-width: 400px) {
