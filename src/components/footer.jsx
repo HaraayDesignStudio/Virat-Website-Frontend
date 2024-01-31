@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
           <div className="logo-name-div">
             <p className="virat-logo-name">Virat</p>
-            <Link className="haraay" to="https://haraaydesignstudio.com/">
+            <Link className="haraay" to="https://haraaydesignstudio.com/" target="_blank">
               Made by HaraayDesignStudio
             </Link>
           </div>
@@ -75,7 +75,7 @@ const Footer = () => {
             <Link className="link-mobile" to="/"></Link>
             <Link className="link-mobile" to="/"></Link>
           </div>
-          <Link className="haraay-mobile" to="https://haraaydesignstudio.com/">
+          <Link className="haraay-mobile" to="https://haraaydesignstudio.com/" target="_blank">
             Made by HaraayDesignStudio
           </Link>
         </div>
