@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar-container">
-      <span className="navbar-menu" >
+      <span className="navbar-menu">
         <div className="navbar-logo">
           <img
             src={logo}
@@ -73,7 +73,7 @@ const Navbar = () => {
                     : "line-indication"
                 }
               ></div>
-              About
+              <p>About</p>
             </Link>
             <Link
               to="/services"
@@ -87,7 +87,23 @@ const Navbar = () => {
                     : "line-indication"
                 }
               ></div>
-              Services
+              <p>Services</p>
+            </Link>
+            <Link
+              to="/human-sustainability"
+              onClick={() => handleTabClick("human-sustainability")}
+              className={
+                selectedTab === "human-sustainability" ? "selected" : ""
+              }
+            >
+              <div
+                className={
+                  selectedTab === "human-sustainability"
+                    ? "line-indication selected-line"
+                    : "line-indication"
+                }
+              ></div>
+              <p>Human Sustainability</p>
             </Link>
             <Link
               to="/download-brochure"
@@ -101,7 +117,7 @@ const Navbar = () => {
                     : "line-indication"
                 }
               ></div>
-              Download Brochure
+              <p>Download Brochure</p>
             </Link>
             <Link
               to="/contact-us"
@@ -115,7 +131,7 @@ const Navbar = () => {
                     : "line-indication"
                 }
               ></div>
-              Contact us
+              <p>Contact us</p>
             </Link>
           </div>
         </div>

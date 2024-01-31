@@ -1082,7 +1082,7 @@
   line-height: 40px;
 }
 .links-mobile {
-  display: flex ;
+  display: flex;
   flex-direction: row !important;
   gap: 20px;
 }
@@ -1356,7 +1356,7 @@ textarea::placeholder {
   border-color: black;
   background: black;
 }
-.links-mobile2{
+.links-mobile2 {
   display: none !important;
 }
 @media (max-width: 800px) {
@@ -1386,20 +1386,77 @@ textarea::placeholder {
     font-style: normal;
     line-height: 24px;
   }
-  .links-mobile{
+  .links-mobile {
     display: none !important;
   }
-  .links-mobile2{
+  .links-mobile2 {
     width: auto !important;
     display: flex !important;
     position: absolute !important;
     bottom: 20px;
     gap: 10px;
   }
-  .form-contact input, .form-contact textarea {
+  .form-contact input,
+  .form-contact textarea {
     font-size: 18px;
   }
-  .input-contact{
+  .input-contact {
     width: 100%;
+  }
+  .sustain-wrapper {
+    padding: 100px 10px;
+  }
+  .heading-sustain {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .heading-sustain p {
+    width: 100%;
+  }
+  .heading-text-sustain {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: -0.352px;
+  }
+  .disc-text-sustain::after {
+    content: "";
+    position: absolute;
+    top: -15%;
+    left: 20%;
+    width: 0;
+    transform: translateX(-50%);
+    height: 1px;
+    background-color: #000;
+  }
+  .disc-text-sustain {
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: -0.176px;
+  }
+  .images-sustain {
+    flex-direction: column;
+  }
+  .images-sustain img {
+    width: 100%;
+  }
+  .sustain-how {
+    font-size: 32px;
+    font-style: normal;
+    line-height: 50px; /* 156.25% */
+    letter-spacing: -0.352px;
+  }
+  .sustain-circular-button {
+    height: 100px;
+    width: 120px;
+  }
+  .sustain-main-disc p {
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.176px;
   }
 }

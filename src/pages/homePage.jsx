@@ -6,7 +6,10 @@ import cub from "../assets/Cub.png";
 import card1 from "../assets/Rectangle 134.png";
 import card2 from "../assets/Rectangle 134 (1).png";
 import card3 from "../assets/Rectangle 134 (2).png";
-import test1 from "../assets/tesimonilas/Ellipse 26.png";
+import test1 from "../assets/brnads/356674 1.png";
+import test3 from "../assets/brnads/hdfc-bank-logo-removebg-preview 1.png"
+import test4 from "../assets/brnads/CBRE_Group_logo_(till_2021) 1.png"
+import test5 from "../assets/brnads/oberoi-realty5010-removebg-preview 1.png"
 import "./pages.css";
 import ButtonComponents2 from "../components/buttonComponents2";
 import ServiceCard from "../components/serviceCard";
@@ -41,9 +44,9 @@ const HomePage = () => {
       <div className="image-container-homepage">
         <img src={homepageimage} alt="homepage" />
         <p className="homepage-image-text">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s
+          Virat was founded because of our passion for hygiene ,organizing and
+          creating a healthy space for all, which we developed into a much
+          larger scale that today is known as virat facility management.
         </p>
       </div>
       <div className="homapage-headtext">
@@ -159,77 +162,74 @@ const HomePage = () => {
           <div className="testimonial-card-one">
             <div className="testimonial-test">
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s
+                Virat has been in facility management for a long time now, In
+                this journey of us we have created some long lasting connections
+                through our reliability , ability, and of course our services.
+                Don’t believe us, hear it from our clients:
               </p>
             </div>
             <TestimonialsCard
               image={test1}
-              name={"Albert Flores"}
-              role={"SME store owner"}
               disc={
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                "Absolutely outstanding service! We've been partnered with Virat Facility Management Services for our facility management needs, and they have exceeded our expectations. The attention to detail in their housekeeping services is unparalleled. Our facility has never looked cleaner or more organized. Professionalism and efficiency are their hallmarks. Highly recommended"
               }
             />
             <TestimonialsCard
               image={test1}
-              name={"Albert Flores"}
-              role={"SME store owner"}
               disc={
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                "Their housekeeping services are not only thorough but also done with a smile. The team is reliable, and their dedication to maintaining a clean and welcoming environment is commendable. It's a pleasure working with them!"
               }
             />
           </div>
           <div className="testimonial-card-one testimonial-card-two">
             <TestimonialsCard
-              image={test1}
-              name={"Albert Flores"}
-              role={"SME store owner"}
+              image={test3}
               disc={
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                "Exceptional service from Virat As a bank, maintaining a clean and secure environment is of utmost importance. We trust Virat for their outstanding facility management services. Their attention to detail, professionalism, and commitment to security protocols have surpassed our expectations. It's a pleasure working with a company that understands the unique needs of a financial institution"
               }
             />
             <TestimonialsCard
-              image={test1}
-              name={"Albert Flores"}
-              role={"SME store owner"}
+              image={test4}
               disc={
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                " VFM has been an invaluable partner in maintaining our office spaces. Their housekeeping services are top-notch, and their facility management expertise is evident in the seamless operation of our facilities. We appreciate the personalized attention they provide, ensuring our unique needs are always met. Highly recommended for anyone seeking a reliable and professional service!"
+              }
+            />
+            <TestimonialsCard
+              image={test5}
+              disc={
+                "As a property manager, finding a reliable facility management company is crucial. Virat has consistently delivered exceptional service. The professionalism, punctuality, and attention to detail have made them our go-to choice. Our tenants have also noticed the positive change in the cleanliness and functionality of our properties"
               }
             />
           </div>
           <div className="testimonial-mobile-view ">
             <TestimonialsCard
               image={test1}
-              name={"Albert Flores"}
-              role={"SME store owner"}
               disc={
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                "Absolutely outstanding service! We've been partnered with Virat Facility Management Services for our facility management needs, and they have exceeded our expectations. The attention to detail in their housekeeping services is unparalleled. Our facility has never looked cleaner or more organized. Professionalism and efficiency are their hallmarks. Highly recommended"
               }
             />
             <TestimonialsCard
               image={test1}
-              name={"Albert Flores"}
-              role={"SME store owner"}
               disc={
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                "Their housekeeping services are not only thorough but also done with a smile. The team is reliable, and their dedication to maintaining a clean and welcoming environment is commendable. It's a pleasure working with them!"
               }
             />
             <TestimonialsCard
-              image={test1}
-              name={"Albert Flores"}
-              role={"SME store owner"}
+              image={test3}
               disc={
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                "Exceptional service from Virat As a bank, maintaining a clean and secure environment is of utmost importance. We trust Virat for their outstanding facility management services. Their attention to detail, professionalism, and commitment to security protocols have surpassed our expectations. It's a pleasure working with a company that understands the unique needs of a financial institution"
               }
             />
             <TestimonialsCard
-              image={test1}
-              name={"Albert Flores"}
-              role={"SME store owner"}
+              image={test4}
               disc={
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                " VFM has been an invaluable partner in maintaining our office spaces. Their housekeeping services are top-notch, and their facility management expertise is evident in the seamless operation of our facilities. We appreciate the personalized attention they provide, ensuring our unique needs are always met. Highly recommended for anyone seeking a reliable and professional service!"
+              }
+            />
+            <TestimonialsCard
+              image={test5}
+              disc={
+                "As a property manager, finding a reliable facility management company is crucial. Virat has consistently delivered exceptional service. The professionalism, punctuality, and attention to detail have made them our go-to choice. Our tenants have also noticed the positive change in the cleanliness and functionality of our properties"
               }
             />
           </div>

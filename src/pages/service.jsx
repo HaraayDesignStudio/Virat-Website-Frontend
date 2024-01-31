@@ -2,6 +2,9 @@
 import React, { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { BsArrowDown } from "react-icons/bs";
+import card1 from "../assets/Rectangle 134.png";
+import card2 from "../assets/Rectangle 134 (1).png";
+import card3 from "../assets/Rectangle 134 (2).png";
 
 const Service = () => {
   const navigate = useNavigate();
@@ -11,7 +14,6 @@ const Service = () => {
   }, [navigate]);
   const location = useLocation();
   console.log(location.state);
-  const image = location.state.img;
 
   return (
     <div className="service-page-wrapper">
@@ -20,7 +22,7 @@ const Service = () => {
         <hr className="hr-service" />
         <div className="service-details-container">
           <div className="serivce-details">
-            <img src={image} alt="image1" />
+            <img src={card1} alt="image1" />
             <div className="details-service">
               <h1>Housekeeping solutions </h1>
               <p>
@@ -38,7 +40,7 @@ const Service = () => {
             </div>
           </div>
           <div className="serivce-details">
-            <img src={image} alt="image2" />
+            <img src={card2} alt="image2" />
             <div className="details-service">
               <h1>Mechanical, Electrical and Plumbing</h1>
               <p>
@@ -57,7 +59,7 @@ const Service = () => {
             </div>
           </div>
           <div className="serivce-details">
-            <img src={image} alt="image3" />
+            <img src={card3} alt="image3" />
             <div className="details-service">
               <h1>Horticulture and landscaping maintenance</h1>
               <p>

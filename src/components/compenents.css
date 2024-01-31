@@ -85,7 +85,7 @@
 }
 .drawer-overlay {
   position: fixed;
-  max-width: 400px;
+  max-width: 500px;
   top: 0;
   right: 0;
   width: 100%;
@@ -110,20 +110,23 @@
   display: flex;
   flex-direction: column;
   align-items: self-start;
-  gap: 40px;
+  gap: 60px;
 }
 .drawer-content a {
   font-family: virat;
   text-decoration: none;
   color: #fff;
   text-align: center;
-  font-size: 27px;
+  font-size: 35px;
   font-style: normal;
   line-height: 18.548px;
   letter-spacing: -0.528px;
   opacity: 0.55;
   display: flex;
   gap: 40px;
+}
+.drawer-content a p{
+  margin-top: 20px;
 }
 .selected {
   opacity: 1 !important;
@@ -138,7 +141,7 @@
 }
 
 .line-indication {
-  height: 316%;
+  height: 260%;
   width: 2px;
   background: rgba(255, 255, 255, 0.7);
 }
@@ -349,14 +352,14 @@
   display: flex;
   flex-direction: column;
   background-color: white;
-  padding: 30px;
+  padding: 50px 30px;
   gap: 50px;
   max-width: 400px;
   width: 100%;
 }
 .testimonial-card img {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: auto;
 }
 .testimonial-name {
   font-family: virat;
@@ -376,9 +379,9 @@
 .testimonila-disc {
   color: #000;
   font-family: virat;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
-  line-height: 40px;
+  line-height: 30px;
 }
 
 /* ---- Footer Styling ---- */
@@ -391,7 +394,7 @@
 }
 .footer-wrapper .footer-background {
   width: 100%;
-  height: 1030px;
+  height: 1130px;
 }
 .footer-content {
   width: 100%;
