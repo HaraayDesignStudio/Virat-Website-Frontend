@@ -2,6 +2,11 @@
   font-family: virat;
   src: url(../../public/fonts/zacbelx-medium.ttf);
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 @font-face {
   font-family: bwvirat;
   src: url(../../public/fonts/bw/BwGradualDEMO-Bold.ttf);
@@ -96,7 +101,7 @@
   color: white;
 }
 
-/* ----- About Section Style */
+/* ---- About Section Style ---- */
 
 .about-us-section,
 .testimonila-section {
@@ -154,9 +159,10 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background: rgba(217, 217, 217, 0.10);
-box-shadow: -49.633px 49.633px 49.633px 0px rgba(255, 255, 255, 0.10) inset, 49.633px -49.633px 49.633px 0px rgba(165, 165, 165, 0.10) inset;
-backdrop-filter: blur(49.63333511352539px);
+  background: rgba(217, 217, 217, 0.1);
+  box-shadow: -49.633px 49.633px 49.633px 0px rgba(255, 255, 255, 0.1) inset,
+    49.633px -49.633px 49.633px 0px rgba(165, 165, 165, 0.1) inset;
+  backdrop-filter: blur(49.63333511352539px);
 }
 .about-content-text p {
   text-align: left;
@@ -248,7 +254,6 @@ backdrop-filter: blur(49.63333511352539px);
   font-weight: bold;
   margin-right: 220px;
   margin-top: -98px;
-
 }
 .testimonial-card-one {
   display: flex;
@@ -354,10 +359,9 @@ backdrop-filter: blur(49.63333511352539px);
     gap: 50px;
     white-space: nowrap;
 
-    scrollbar-width: thin; /* For Firefox */
-    scrollbar-color: transparent transparent; /* For Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
 
-    /* For WebKit browsers (Chrome, Safari) */
     &::-webkit-scrollbar {
       width: 8px;
     }
@@ -491,7 +495,7 @@ backdrop-filter: blur(49.63333511352539px);
   font-size: 92px;
   font-style: normal;
   font-weight: 700;
-  line-height: 118px; /* 128.261% */
+  line-height: 118px;
   letter-spacing: -1.012px;
   transition: all 1s ease;
 }
@@ -501,7 +505,7 @@ backdrop-filter: blur(49.63333511352539px);
   font-size: 32px;
   font-style: normal;
   font-weight: bold;
-  line-height: 30px; /* 93.75% */
+  line-height: 30px;
   letter-spacing: -0.352px;
   transition: all 1s ease;
 }
@@ -549,7 +553,6 @@ backdrop-filter: blur(49.63333511352539px);
   background: black;
   color: white;
 }
-/* New classes for transition effect */
 .visible {
   display: flex;
   flex-direction: column;
@@ -582,7 +585,7 @@ backdrop-filter: blur(49.63333511352539px);
   font-size: 92px;
   font-style: normal;
   font-weight: 700;
-  line-height: 84px; /* 91.304% */
+  line-height: 84px;
   position: relative;
   padding-bottom: 0;
 }
@@ -631,7 +634,7 @@ backdrop-filter: blur(49.63333511352539px);
   width: 425px;
   font-size: 24px;
   font-style: normal;
-  line-height: 30px; /* 125% */
+  line-height: 30px;
 }
 .about-story-container {
   width: 100%;
@@ -655,13 +658,13 @@ backdrop-filter: blur(49.63333511352539px);
   font-size: 92px;
   font-style: normal;
   font-weight: 700;
-  line-height: 84px; /* 91.304% */
+  line-height: 84px;
 }
 .story-disc {
   color: #000;
   font-size: 24px;
   font-style: normal;
-  line-height: 30px; /* 125% */
+  line-height: 30px;
   font-family: virat;
 }
 .story-image-vertical-moving {
@@ -683,7 +686,7 @@ backdrop-filter: blur(49.63333511352539px);
   color: #fff;
   font-size: 24px;
   font-style: normal;
-  line-height: 30px; /* 125% */
+  line-height: 30px;
 }
 .moving-div {
   width: 100% !important;
@@ -695,7 +698,7 @@ backdrop-filter: blur(49.63333511352539px);
 .inner-content {
   width: 100% !important;
   overflow: hidden;
-  position: relative; /* Adjust the duration and other parameters as needed */
+  position: relative;
 }
 .inner-slider {
   width: 100% !important;
@@ -705,7 +708,7 @@ backdrop-filter: blur(49.63333511352539px);
   -webkit-animation: scroll2 5s linear infinite;
   animation: scroll2 5s linear infinite;
   display: flex;
-  flex-direction: column; /* Change direction to column for vertical slider */
+  flex-direction: column;
   height: calc(100px * 14);
 }
 @-webkit-keyframes scroll2 {
@@ -782,7 +785,7 @@ backdrop-filter: blur(49.63333511352539px);
   color: #000;
   font-size: 24px;
   font-style: normal;
-  line-height: 30px; /* 125% */
+  line-height: 30px;
 }
 .values-card-one {
   display: flex;
@@ -884,7 +887,7 @@ backdrop-filter: blur(49.63333511352539px);
   }
   .story-disc {
     font-size: 14px;
-    line-height: 20px; /* 142.857% */
+    line-height: 20px;
   }
   .story-image-vertical-moving {
     display: none;
@@ -948,7 +951,7 @@ backdrop-filter: blur(49.63333511352539px);
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
-    line-height: 65px; /* 184.375% */
+    line-height: 65px; 
     letter-spacing: -0.704px;
     margin-left: 100px;
   }
@@ -958,7 +961,7 @@ backdrop-filter: blur(49.63333511352539px);
     font-family: virat;
     font-size: 16px;
     font-style: normal;
-    line-height: 22px; /* 137.5% */
+    line-height: 22px; 
   }
   .about-circular-button {
     width: 90px;
@@ -993,9 +996,9 @@ backdrop-filter: blur(49.63333511352539px);
   .about-values-disc {
     width: 70%;
     font-size: 14px;
-    line-height: 20px; /* 142.857% */
+    line-height: 20px;
   }
-  .about-content-text{
+  .about-content-text {
     width: 90%;
     padding: 20px;
     margin-left: -20px;
@@ -1119,7 +1122,6 @@ textarea::placeholder {
   outline: none !important;
 }
 .hr-input {
-  /* width: 569.032px; */
   height: 1px;
   background: #000;
 }
@@ -1234,6 +1236,6 @@ textarea::placeholder {
   font-family: virat;
   font-size: 24px;
   font-style: normal;
-  line-height: 39px; /* 162.5% */
+  line-height: 39px;
   letter-spacing: -0.264px;
 }

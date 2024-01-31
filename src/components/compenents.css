@@ -2,7 +2,11 @@
   position: relative;
   z-index: 100;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 @font-face {
   font-family: virat;
   src: url(../../public/fonts/zacbelx-extrabold.ttf);
@@ -47,7 +51,7 @@
   cursor: pointer;
   z-index: 200;
   opacity: 1;
-  transition: opacity 0.3s ease; /* Add a smooth transition for opacity */
+  transition: opacity 0.3s ease;
 }
 .logo {
   width: 142.222px;
@@ -73,11 +77,11 @@
   font-size: 20px;
   cursor: pointer;
   z-index: 200;
-  transition: transform 0.3s ease; /* Add a smooth transition for the rotation */
+  transition: transform 0.3s ease; 
 }
 
 .rotate {
-  transform: rotate(180deg); /* Rotate the icon when the drawer is open */
+  transform: rotate(180deg);
 }
 .drawer-overlay {
   position: fixed;
@@ -115,7 +119,7 @@
   text-align: center;
   font-size: 27px;
   font-style: normal;
-  line-height: 18.548px; /* 38.642% */
+  line-height: 18.548px;
   letter-spacing: -0.528px;
   opacity: 0.55;
   display: flex;
@@ -126,7 +130,7 @@
 }
 .drawer-overlay.open {
   opacity: 1;
-  right: 0; /* Set the final position to 0% */
+  right: 0; 
 }
 
 .drawer-content.open {
@@ -274,7 +278,7 @@
   text-align: center;
   font-size: 18px;
   font-style: normal;
-  line-height: 100%; /* 18px */
+  line-height: 100%;
   font-family: virat;
   cursor: pointer;
 }
@@ -354,14 +358,14 @@
   color: #f75825;
   font-size: 32px;
   font-style: normal;
-  line-height: 40px; /* 125% */
+  line-height: 40px;
   letter-spacing: -0.352px;
 }
 .testimonial-name span {
   color: #000;
   font-size: 24px;
   font-style: normal;
-  line-height: 40px; /* 166.667% */
+  line-height: 40px;
   letter-spacing: -0.264px;
 }
 .testimonila-disc {
@@ -369,7 +373,7 @@
   font-family: virat;
   font-size: 20px;
   font-style: normal;
-  line-height: 40px; /* 200% */
+  line-height: 40px;
 }
 
 /* ---- Footer Styling ---- */
@@ -433,7 +437,7 @@
   font-size: 350px;
   font-style: normal;
   font-weight: 700;
-  line-height: 40px; /* 11.429% */
+  line-height: 40px;
   letter-spacing: 24.5px;
   user-select: none;
 }
@@ -444,7 +448,7 @@
   font-size: 108px;
   font-style: normal;
   font-weight: 700;
-  line-height: 119px; /* 110.185% */
+  line-height: 119px;
   letter-spacing: -1.188px;
 }
 .footer-get-in-touch::after {
@@ -461,7 +465,7 @@
   font-family: virat;
   font-size: 24px;
   font-style: normal;
-  line-height: 40px; /* 166.667% */
+  line-height: 40px;
   letter-spacing: -0.264px;
 }
 .footer-download {
@@ -715,7 +719,7 @@
   color: rgba(0, 0, 0, 0.62);
   font-size: 48px;
   font-style: normal;
-  line-height: 55px; /* 114.583% */
+  line-height: 55px; 
   letter-spacing: 1px;
   font-weight: bold;
 }
@@ -725,7 +729,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28.8px; /* 160% */
+  line-height: 28.8px;
 }
 @media (max-width: 900px) {
   .values-card-name {
@@ -741,9 +745,6 @@
   }
 }
 @media (max-width: 1500px) {
-  /* .card-wrapper {
-    max-width: 430px;
-  } */
   .testimonial-card {
     gap: 30px;
   }
