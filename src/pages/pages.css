@@ -430,7 +430,8 @@
     margin: 0;
   }
   .testimonial-mobile-view {
-    gap: 25px;
+    gap: 10px;
+    margin: 0 -15px;
   }
   .homepage-image-text {
     width: 90%;
@@ -1512,4 +1513,12 @@ textarea::placeholder {
     line-height: 24px;
     margin-bottom: 20px;
   }
+}
+@media (max-width: 350px){
+.testimonila-section .about-background-img {
+  height: 880px;
+}
+.testimonila-disc {
+  width: 240px;
+}
 }
