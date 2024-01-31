@@ -104,7 +104,7 @@ const HomePage = () => {
             image={card1}
             heading={"House Keeping"}
             disc={
-              "where  we provide cleaning services to our clients with a combination of machinery and manpower"
+              "we offer our esteemed clients top-notch cleaning services that combine the power of advanced machinery with the expertise of skilled manpower. Our team of highly trained professionals is dedicated to providing detailed and professional housekeeping services that are customized to meet the unique needs of each client. We take great pride in maintaining the highest standards of cleanliness and hygiene, and we strive to ensure that every aspect of your facility is impeccably maintained. Our commitment to excellence and attention to detail make us the preferred choice for clients seeking exceptional cleaning solutions."
             }
             func={() => {}}
             id={1}

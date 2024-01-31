@@ -45,19 +45,19 @@ const ContactUs = () => {
     const data = {
       name,
       email,
-      number:phone,
+      number: phone,
       company,
       message,
-    }
+    };
 
     try {
-      await fetch("https://virat-backend.onrender.com/api/contact",{
+      await fetch("https://virat-backend.onrender.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
-      })
+      });
       setIsSuccessAlert(true);
       setTimeout(() => {
         setIsSuccessAlert(false);
@@ -83,9 +83,8 @@ const ContactUs = () => {
         </div>
         <div>
           <p className="contact-disc">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever{" "}
+            If you have any inquiry get in touch with us. We’ll be happy to help
+            you
           </p>
           <div className="links-mobile">
             <Link className="link-mobile" to="/"></Link>
@@ -93,6 +92,10 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
+      <div className="links-mobile2">
+            <Link className="link-mobile" to="/"></Link>
+            <Link className="link-mobile" to="/"></Link>
+          </div>
       <div>
         <form className="form-contact">
           <div className="input-contact">
@@ -149,19 +152,15 @@ const ContactUs = () => {
         </form>
       </div>
       {isSuccessAlert && (
-          <section
-            className="alertContainer alertSuccess slideIn"
-          >
-            Successfully submitted!
-          </section>
-        )}
-        {isErrorAlert && (
-          <section
-            className="alertContainer alertError slideIn"
-          >
-            {errormsg}
-          </section>
-        )}
+        <section className="alertContainer alertSuccess slideIn">
+          Successfully submitted!
+        </section>
+      )}
+      {isErrorAlert && (
+        <section className="alertContainer alertError slideIn">
+          {errormsg}
+        </section>
+      )}
     </div>
   );
 };
