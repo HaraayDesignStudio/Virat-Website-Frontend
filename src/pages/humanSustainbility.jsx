@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./pages.css";
 import img2 from "../assets/126276-abstract-3d-orange-black-and-white-curved-lines-texture-background 1 (1).png";
 import { BsArrowUp } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 
 const HumanSustainbility = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [navigate]);
+
   return (
     <div className="sustain-wrapper">
       <div className="heading-sustain">
