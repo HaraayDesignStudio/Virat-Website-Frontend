@@ -399,7 +399,7 @@
     font-size: 64px;
   }
   .homepage-headtext-p {
-    font-size: 30px;
+    font-size: 36px;
   }
   .about-us-section {
     margin: 30px 0;
@@ -1278,6 +1278,7 @@ textarea::placeholder {
   width: 100%;
   height: 1px !important;
 }
+.service-page-container
 .service-heading {
   color: white;
   font-family: bwvirat;
@@ -1458,5 +1459,57 @@ textarea::placeholder {
     font-style: normal;
     line-height: 24px; /* 150% */
     letter-spacing: -0.176px;
+  }
+}
+.services-page-mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .service-page-wrapper {
+    display: none;
+  }
+  .services-page-mobile {
+    display: flex;
+    padding: 120px 10px;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .service-container-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: #f3f3f3;
+    transition: all 0.5s ease;
+  }
+  .service-container-card p {
+    padding: 0 20px;
+  }
+  .service-container-card img {
+    width: 100%;
+  }
+  .head-card-serivce {
+    color: #000;
+    font-family: virat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 29.869px;
+    letter-spacing: -0.308px;
+  }
+  .disc-card-serivce {
+    color: #000;
+    font-family: virat;
+    font-size: 16px;
+    font-style: normal;
+    transition: all 0.5s ease;
+    line-height: 24px;
+  }
+  .read-more {
+    color: #ff5a36;
+    font-family: virat;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 24px;
+    margin-bottom: 20px;
   }
 }

@@ -2,7 +2,7 @@
   position: relative;
   z-index: 100;
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -77,7 +77,7 @@
   font-size: 20px;
   cursor: pointer;
   z-index: 200;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 .rotate {
@@ -125,7 +125,7 @@
   display: flex;
   gap: 40px;
 }
-.drawer-content a p{
+.drawer-content a p {
   margin-top: 20px;
 }
 .selected {
@@ -133,7 +133,7 @@
 }
 .drawer-overlay.open {
   opacity: 1;
-  right: 0; 
+  right: 0;
 }
 
 .drawer-content.open {
@@ -238,7 +238,7 @@
   transition: display 0.3s ease;
   cursor: pointer;
 }
-.card-circle p{
+.card-circle p {
   font-family: virat;
   font-size: 24px;
   margin-top: -30px;
@@ -580,6 +580,7 @@
     font-family: virat;
     line-height: 20px;
     white-space: initial;
+    width: 280px;
   }
   .testimonial-name {
     width: 330px;
@@ -666,6 +667,7 @@
   }
   .heading-card {
     font-size: 16px;
+    left: 10px;
   }
   .disc-card {
     font-size: 15px;
@@ -704,8 +706,8 @@
     height: 1030px;
   }
   .testimonial-card img {
-    width: 68px;
-    height: 68px;
+    width: 250px;
+    height: auto;
   }
 }
 
@@ -727,7 +729,7 @@
   color: rgba(0, 0, 0, 0.62);
   font-size: 48px;
   font-style: normal;
-  line-height: 55px; 
+  line-height: 55px;
   letter-spacing: 1px;
   font-weight: bold;
 }
@@ -765,7 +767,7 @@
     display: flex;
     flex-direction: column;
   }
-  .card-circle{
+  .card-circle {
     left: 50%;
   }
   .footer-image-mobile {
@@ -862,5 +864,18 @@
     height: 70px;
     width: 70px;
     border-radius: 50%;
+  }
+}
+@media (max-width: 400px) {
+  .heading-card {
+    left: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .heading-card {
+    left: 20px;
+  }
+  .button-for-landing {
+    display: none;
   }
 }
