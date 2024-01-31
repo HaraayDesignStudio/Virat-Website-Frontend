@@ -4,10 +4,10 @@ import "./compenents.css";
 import { FaArrowDownLong } from "react-icons/fa6";
 import FooterCom from "./footerComponents";
 import footermobile from "../assets/footer-mobile.png";
-import { FaLinkedin } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { Link } from "react-router-dom";
 import footerImage from "../assets/elastrations/Profesionalism.png";
+import { LiaLinkedinIn } from "react-icons/lia";
 
 const Footer = () => {
   return (
@@ -18,7 +18,8 @@ const Footer = () => {
           <div className="footer-left">
             <p className="footer-get-in-touch">Get in Touch</p>
             <p className="footer-disc">
-            We believe in Growth & Success, and together we can create a place for all to Grow.
+              We believe in Growth & Success, and together we can create a place
+              for all to Grow.
             </p>
             <div className="footer-download">
               <FaArrowDownLong className="footer-download-icon" />
@@ -34,7 +35,7 @@ const Footer = () => {
               <p className="socialmedia-head">Socialmedia</p>
               <div className="socialmedia-icons">
                 <p>
-                  LinkedIn <FaLinkedin />
+                  LinkedIn <LiaLinkedinIn />
                 </p>
                 <p>
                   WhatsApp <IoLogoWhatsapp />
@@ -44,7 +45,11 @@ const Footer = () => {
           </div>
           <div className="logo-name-div">
             <p className="virat-logo-name">Virat</p>
-            <Link className="haraay" to="https://haraaydesignstudio.com/" target="_blank">
+            <Link
+              className="haraay"
+              to="https://haraaydesignstudio.com/"
+              target="_blank"
+            >
               Made by HaraayDesignStudio
             </Link>
           </div>
@@ -59,7 +64,8 @@ const Footer = () => {
         </div>
         <div className="footer-mobile-content">
           <p className="footer-mobile-text">
-          We believe in Growth & Success, and together we can create a place for all to Grow.
+            We believe in Growth & Success, and together we can create a place
+            for all to Grow.
           </p>
           <div className="footer-download">
             <FaArrowDownLong className="footer-download-icon" />
@@ -72,10 +78,18 @@ const Footer = () => {
           <div className="hr-div"></div>
           <p className="follow-us-on">Follow us on</p>
           <div className="links-mobile">
-            <Link className="link-mobile" to="/"></Link>
-            <Link className="link-mobile" to="/"></Link>
+            <Link className="link-mobile" to="/">
+              <IoLogoWhatsapp />
+            </Link>
+            <Link className="link-mobile" to="/">
+              <LiaLinkedinIn />
+            </Link>
           </div>
-          <Link className="haraay-mobile" to="https://haraaydesignstudio.com/" target="_blank">
+          <Link
+            className="haraay-mobile"
+            to="https://haraaydesignstudio.com/"
+            target="_blank"
+          >
             Made by HaraayDesignStudio
           </Link>
         </div>

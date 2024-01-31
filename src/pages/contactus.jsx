@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import "./pages.css";
 import { Link, useNavigate } from "react-router-dom";
 import ButtonComponents2 from "../components/buttonComponents2";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { LiaLinkedinIn } from "react-icons/lia";
 
 // API key
 // https://virat-backend.onrender.com/
@@ -87,14 +89,14 @@ const ContactUs = () => {
             you
           </p>
           <div className="links-mobile">
-            <Link className="link-mobile" to="/"></Link>
-            <Link className="link-mobile" to="/"></Link>
+            <Link className="link-mobile" to="/"><IoLogoWhatsapp /></Link>
+            <Link className="link-mobile" to="/"><LiaLinkedinIn /></Link>
           </div>
         </div>
       </div>
       <div className="links-mobile2">
-            <Link className="link-mobile" to="/"></Link>
-            <Link className="link-mobile" to="/"></Link>
+            <Link className="link-mobile" to="/"><IoLogoWhatsapp /></Link>
+            <Link className="link-mobile" to="/"><LiaLinkedinIn /></Link>
           </div>
       <div>
         <form className="form-contact">

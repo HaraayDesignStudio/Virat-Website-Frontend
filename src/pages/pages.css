@@ -1092,6 +1092,11 @@
   height: 70px;
   width: 70px;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: black;
 }
 .form-contact {
   display: flex;
@@ -1388,6 +1393,7 @@ textarea::placeholder {
     font-style: normal;
     line-height: 24px;
   }
+  .contact-first
   .links-mobile {
     display: none !important;
   }
