@@ -1130,6 +1130,9 @@
 }
 
 @media (max-width: 500px) {
+  .services-cards{
+    gap: 60px;
+  }
   .about-section-animation {
     gap: 0;
   }
