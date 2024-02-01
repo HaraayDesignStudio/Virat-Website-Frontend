@@ -145,7 +145,7 @@ const HomePage = () => {
       <div className="testimonila-section">
         <img
           src={testimonials}
-          className="about-background-img"
+          className="about-background-img service-back-img"
           alt="homepage"
         />
         <div className="testimonial-section-content">

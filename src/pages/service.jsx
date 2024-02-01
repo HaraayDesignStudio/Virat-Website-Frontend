@@ -85,10 +85,7 @@ const Service = () => {
                   from creating stunning new gardens to maintaining existing
                   ones. Our unwavering goal is to exceed your expectations and
                   deliver our services with the utmost professionalism and
-                  distinction. When we talk about maintenance, Maintenance isn’t
-                  one thing but a combination of a bunch of things like
-                  sustainability, and virat itself is taking steps towards
-                  sustainability in different ways like
+                  distinction. 
                 </p>
               </div>
             </div>
@@ -169,10 +166,7 @@ const Service = () => {
               landscaping needs, from creating stunning new gardens to
               maintaining existing ones. Our unwavering goal is to exceed your
               expectations and deliver our services with the utmost
-              professionalism and distinction. When we talk about maintenance,
-              Maintenance isn’t one thing but a combination of a bunch of things
-              like sustainability, and virat itself is taking steps towards
-              sustainability in different ways like
+              professionalism and distinction.
             </span>
           </p>
           <p

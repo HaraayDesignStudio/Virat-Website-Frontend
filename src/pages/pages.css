@@ -216,7 +216,7 @@
 .services-cards {
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 100%;
   gap: 20px;
   justify-content: center;
@@ -271,6 +271,120 @@
   font-size: 25px;
   font-family: virat;
   margin-top: -150px;
+}
+
+@media (max-width: 1500px) {
+  .brand-scroller-head p {
+    font-size: 80px;
+  }
+  .testimonial-card-one {
+    gap: 35px;
+    justify-content: flex-end;
+  }
+  .footer-get-in-touch::after {
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    right: 7%;
+    width: 45%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+  .values-card-two {
+    padding-right: 3.8%;
+  }
+}
+
+@media (max-width: 1030px) {
+  .about-content-part {
+    gap: 20px;
+  }
+  .about-section-content {
+    padding: 40px 15px;
+  }
+  .about-content-text {
+    margin: 0;
+  }
+  .about-content-text p {
+    width: 600px;
+  }
+  .about-background-img {
+    height: 800px;
+  }
+  .about-content-heading {
+    font-size: 50px;
+  }
+  .service-back-img {
+    height: 1300px;
+  }
+  .heading-card {
+    bottom: -75px;
+  }
+  .our-services-section {
+    gap: 160px;
+  }
+  .brand-scroller-head p {
+    font-size: 55px;
+  }
+  .testimonial-section-content {
+    padding: 40px 10px;
+  }
+  .testimonila-trust-client p {
+    margin-right: 130px;
+    margin-top: -50px;
+    font-size: 70px;
+  }
+  .testimonial-test p {
+    font-size: 21px;
+    margin-top: -50px;
+  }
+}
+@media (max-width: 800px) {
+  .homepage-headtext-p {
+    font-size: 45px;
+  }
+  .homepage-image-text {
+    width: 60%;
+    font-size: 17px;
+  }
+  .about-content-text {
+    padding: 30px;
+  }
+  .about-content-text p {
+    width: 500px;
+  }
+  .out-service-content .service-content-heading {
+    font-size: 55px;
+  }
+  .heading-card {
+    bottom: -55px;
+    font-size: 15px;
+  }
+  .brand-scroller-head p {
+    font-size: 42px;
+  }
+  .testimonila-trust-client p {
+    margin-right: 10px;
+    font-size: 50px;
+  }
+  .testimonial-test {
+    display: none;
+  }
+  .our-services-section {
+    margin: 100px 20px;
+  }
+  .service-back-img {
+    height: 1050px;
+  }
+  .footer-get-in-touch::after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    right: 7%;
+    width: 45%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.85);
+  }
 }
 @media (max-width: 700px) {
   .image-container-homepage img {
@@ -335,7 +449,7 @@
     font-size: 30px;
   }
   .our-services-section {
-    gap: 50px;
+    gap: 80px;
   }
   .service-brand-scroller {
     flex-direction: column;
@@ -380,17 +494,23 @@
     height: 850px;
     object-fit: cover;
   }
+  .card-wrapper img {
+    max-width: 100%;
+    height: auto;
+  }
+  .card-wrapper {
+    height: auto;
+  }
+  .heading-card {
+    bottom: -35px;
+    left: 0;
+  }
 }
 
 .wrapper-two {
   display: none !important;
 }
 
-@media (max-width: 1500px) {
-  .brand-scroller-head p {
-    font-size: 80px;
-  }
-}
 @media (max-width: 500px) {
   .homapage-headtext {
     padding: 10px;
@@ -453,6 +573,9 @@
   }
   .wrapper-two {
     display: flex !important;
+  }
+  .testimonila-disc {
+    width: 200px;
   }
 }
 
@@ -617,6 +740,7 @@
 .about-vision-disc {
   font-size: 24px;
   font-style: normal;
+  font-family: virat;
   line-height: 30px;
   width: 350px;
   margin-left: 64px;
@@ -636,6 +760,7 @@
   width: 425px;
   font-size: 24px;
   font-style: normal;
+  font-family: virat;
   line-height: 30px;
 }
 .about-story-container {
@@ -783,6 +908,7 @@
 }
 .about-values-disc {
   width: 50%;
+  font-family: virat;
   align-self: flex-end;
   color: #000;
   font-size: 24px;
@@ -808,6 +934,70 @@
 @media (max-width: 1500px) {
   .about-one-img img {
     width: 490px;
+  }
+}
+@media (max-width: 1030px) {
+  .about-animation-image img {
+    width: auto;
+    height: 730px;
+  }
+  .why-us {
+    font-size: 75px;
+  }
+  .why-us-disc {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .about-animation-container {
+    gap: 0;
+  }
+  .about-circular-button {
+    height: 100px;
+    width: 100px;
+  }
+  .about-vision-heading,
+  .about-mission-heading {
+    font-size: 70px;
+    line-height: 60px;
+  }
+  .about-vision-disc {
+    font-size: 20px;
+    line-height: 28px;
+    margin-left: 25px;
+  }
+  .about-mission-disc {
+    font-size: 20px;
+    margin-left: 25px;
+    width: 350px;
+  }
+  .about-one-img img {
+    width: 225px;
+  }
+  .about-story-container {
+    height: 830px;
+  }
+  .about-story-content {
+    gap: 15px;
+    padding: 60px 20px;
+  }
+  .story-heading {
+    font-size: 70px;
+  }
+  .story-disc {
+    font-size: 20px;
+  }
+  .about-values-hading {
+    font-size: 70px;
+  }
+  .about-values-disc {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .about-values-container {
+    padding: 60px 10px;
+  }
+  .values-card-two {
+    padding-right: 0;
   }
 }
 @media (max-width: 1000px) {
@@ -924,6 +1114,17 @@
     font-size: 24px;
     margin: 0 10px;
   }
+  .about-container {
+    padding: 60px 0;
+  }
+  .about-animation-image img {
+    width: auto;
+    height: 578px;
+    margin-top: 80px;
+  }
+  .about-wrapper {
+    gap: 100px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -938,6 +1139,7 @@
   }
   .about-animation-image {
     position: absolute;
+    margin-top: -80px;
     top: -3%;
     left: -1%;
   }
@@ -1011,24 +1213,6 @@
     height: 550px;
   }
 }
-@media (max-width: 1500px) {
-  .testimonial-card-one {
-    gap: 35px;
-  }
-  .footer-get-in-touch::after {
-    content: "";
-    position: absolute;
-    bottom: -10%;
-    right: 7%;
-    width: 45%;
-    height: 2px;
-    background-color: rgba(255, 255, 255, 0.85);
-  }
-  .values-card-two {
-    padding-right: 3.8%;
-  }
-}
-
 /* ---- Contact Us ---- */
 
 .contact-container {
@@ -1284,8 +1468,7 @@ textarea::placeholder {
   width: 100%;
   height: 1px !important;
 }
-.service-page-container
-.service-heading {
+.service-page-container .service-heading {
   color: white;
   font-family: bwvirat;
   font-size: 92px;
@@ -1301,7 +1484,7 @@ textarea::placeholder {
   align-items: center;
   flex-direction: column;
   margin-top: 10px;
-  gap: 20px;
+  gap: 70px;
 }
 .service-details-container::-webkit-scrollbar {
   width: 0.5em;
@@ -1366,6 +1549,11 @@ textarea::placeholder {
 .links-mobile2 {
   display: none !important;
 }
+@media (max-width: 1030px){
+  .heading-text-sustain {
+    font-size: 65px;
+  }
+}
 @media (max-width: 800px) {
   .contact-container {
     flex-direction: column;
@@ -1393,8 +1581,7 @@ textarea::placeholder {
     font-style: normal;
     line-height: 24px;
   }
-  .contact-first
-  .links-mobile {
+  .contact-first .links-mobile {
     display: none !important;
   }
   .links-mobile2 {
@@ -1471,7 +1658,7 @@ textarea::placeholder {
 .services-page-mobile {
   display: none;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .service-page-wrapper {
     display: none;
   }
@@ -1519,12 +1706,37 @@ textarea::placeholder {
     line-height: 24px;
     margin-bottom: 20px;
   }
+  .services-cards {
+    gap: 70px;
+  }
 }
-@media (max-width: 350px){
-.testimonila-section .about-background-img {
-  height: 880px;
+@media (max-width: 1030px){
+  .circular-cirle-white{
+    height: 120px;
+    width: 120px;
+  }
 }
-.testimonila-disc {
-  width: 240px;
+@media (max-width: 350px) {
+  .testimonila-section .about-background-img {
+    height: 880px;
+  }
+  .testimonila-disc {
+    width: 200px;
+  }
 }
+@media (max-width: 400px) {
+  .about-us-section .about-background-img {
+    height: 1120px;
+    object-fit: cover;
+  }
+  .card-wrapper img {
+    max-width: 100%;
+  }
+  .heading-card {
+    left: 0;
+  }
+  .footer-mobile-heading {
+    font-size: 30px;
+    padding-left: 20px;
+  }
 }

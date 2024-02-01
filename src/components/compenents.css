@@ -200,7 +200,7 @@
   font-size: 20px;
   font-weight: bold;
   padding: 5px;
-  bottom: 0;
+  bottom: -40px;
   left: 0;
   background-color: white;
 }
@@ -285,14 +285,19 @@
   font-family: virat;
   cursor: pointer;
 }
-@media (max-width: 768px) {
-  .card-wrapper {
-    max-width: 100%;
-  }
-}
 @media (max-width: 1500px) {
   .card-wrapper img {
     max-width: 420px;
+  }
+}
+@media (max-width: 1030px) {
+  .card-wrapper img {
+    max-width: 290px;
+  }
+}
+@media (max-width: 768px) {
+  .card-wrapper {
+    max-width: 100%;
   }
 }
 
@@ -760,6 +765,81 @@
   }
 }
 
+@media (max-width: 1030px) {
+  .testimonial-card {
+    max-width: 260px;
+    padding: 20px 20px;
+  }
+  .testimonila-disc {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .footer-right {
+    padding-right: 0;
+  }
+  .vlaues-card-container{
+    padding: 60px 10px;
+    max-width: 280px;
+  }
+  .values-card-name{
+    font-size: 30px;
+    line-height: 35px;
+  }
+  
+}
+@media (max-width: 800px) {
+  .card-wrapper img {
+    max-width: 225px;
+    height: 400px;
+  }
+  .testimonial-card {
+    max-width: 220px;
+    gap: 10px;
+    padding: 20px 10px;
+  }
+  .testimonial-card img {
+    width: 150px;
+  }
+  .testimonila-disc {
+    font-size: 12px;
+    line-height: 19px;
+  }
+  .service-back-img {
+    height: 1050px;
+  }
+  .footer-content {
+    padding: 50px 10px;
+  }
+  .footer-get-in-touch {
+    font-size: 55px;
+    line-height: 80px;
+  }
+  .footercom {
+    width: 300px;
+    padding: 10px;
+  }
+  .footer-disc {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .footer-download{
+    padding: 15px 30px;
+  }
+  .footer-social{
+    width: 300px;
+  }
+  .virat-logo-name{
+    font-size: 150px;
+    letter-spacing: 5px;
+  }
+  .haraay{
+    font-size: 20px;
+    bottom: -20px;
+  }
+  .footer-wrapper .footer-background{
+    height: 950px;
+  }
+}
 /* ---- Footer Mobile ---- */
 
 @media (max-width: 500px) {
