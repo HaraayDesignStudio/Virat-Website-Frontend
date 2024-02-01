@@ -967,6 +967,8 @@
     left: none;
   }
   .button-for-landing {
-    display: none;
+    width: 160px;
+    height: 40px;
+    padding: 0px 0px;
   }
 }
