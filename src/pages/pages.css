@@ -1718,17 +1718,9 @@ textarea::placeholder {
     width: 120px;
   }
 }
-@media (max-width: 350px) {
-  .testimonila-section .about-background-img {
-    height: 820px;
-  }
-  .testimonila-disc {
-    width: 200px;
-  }
-}
 @media (max-width: 400px) {
   .about-us-section .about-background-img {
-    height: 1120px;
+    height: 1000px;
     object-fit: cover;
   }
   .card-wrapper img {
@@ -1740,5 +1732,20 @@ textarea::placeholder {
   .footer-mobile-heading {
     font-size: 30px;
     padding-left: 20px;
+  }
+}
+@media (max-width: 370px) {
+  .testimonila-section .about-background-img {
+    height: 820px;
+  }
+  .testimonila-disc {
+    width: 200px;
+  }
+  .about-us-section .about-background-img {
+    height: 1200px;
+    object-fit: cover;
+  }
+  .about-content-heading{
+    font-size: 60px;
   }
 }
