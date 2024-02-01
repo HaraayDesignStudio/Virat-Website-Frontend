@@ -506,14 +506,16 @@
     left: 0;
   }
 }
-
 .wrapper-two {
   display: none !important;
 }
-
 @media (max-width: 500px) {
   .homapage-headtext {
     padding: 10px;
+  }
+  .testimonila-section .about-background-img {
+    height: 720px;
+    object-fit: cover;
   }
   .brand-scroller-head p {
     font-size: 64px;
@@ -1549,7 +1551,7 @@ textarea::placeholder {
 .links-mobile2 {
   display: none !important;
 }
-@media (max-width: 1030px){
+@media (max-width: 1030px) {
   .heading-text-sustain {
     font-size: 65px;
   }
@@ -1710,15 +1712,15 @@ textarea::placeholder {
     gap: 70px;
   }
 }
-@media (max-width: 1030px){
-  .circular-cirle-white{
+@media (max-width: 1030px) {
+  .circular-cirle-white {
     height: 120px;
     width: 120px;
   }
 }
 @media (max-width: 350px) {
   .testimonila-section .about-background-img {
-    height: 880px;
+    height: 820px;
   }
   .testimonila-disc {
     width: 200px;
