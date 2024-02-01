@@ -1708,9 +1708,6 @@ textarea::placeholder {
     line-height: 24px;
     margin-bottom: 20px;
   }
-  .services-cards {
-    gap: 70px;
-  }
 }
 @media (max-width: 1030px) {
   .circular-cirle-white {
