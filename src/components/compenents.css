@@ -878,7 +878,7 @@
 }
 @media (max-width: 500px) {
   .heading-card {
-    left: 20px;
+    left: none;
   }
   .button-for-landing {
     display: none;
