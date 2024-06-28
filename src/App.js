@@ -6,6 +6,8 @@ import Aboutus from "./pages/aboutus";
 import ContactUs from "./pages/contactus";
 import HumanSustainbility from "./pages/humanSustainbility";
 import Serivce from "./pages/service";
+import HouseKeeping from "./pages/services/houseKeeping";
+import HorticultureLandscape from "./pages/services/horticultureLandscape";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/human-sustainability" element={<HumanSustainbility />} />
         <Route path="/services" element={<Serivce />} />
+        <Route path="/services/house-keeping" element={<HouseKeeping />} />
+        <Route path="/services/horticulture-landscaping" element={<HorticultureLandscape />} />
       </Routes>
       <Footer />
     </BrowserRouter>
