@@ -38,7 +38,7 @@ const HorticultureLandscape = () => {
             that supports productivity. Our horticultural services include full
             landscaping and gardening services aimed at improving the appearance
             and usability of your outdoor spaces, as well as giving your
-            business a professional appeal. . 
+            business a professional appeal.
           </p>
         </div>
       </div>

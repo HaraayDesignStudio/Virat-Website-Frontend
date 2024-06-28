@@ -8,6 +8,9 @@ import HumanSustainbility from "./pages/humanSustainbility";
 import Serivce from "./pages/service";
 import HouseKeeping from "./pages/services/houseKeeping";
 import HorticultureLandscape from "./pages/services/horticultureLandscape";
+import MechanicalServices from "./pages/services/mechanical";
+import Plumbing from "./pages/services/plumbing";
+import Eletrical from "./pages/services/eletrical";
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
         <Route path="/services" element={<Serivce />} />
         <Route path="/services/house-keeping" element={<HouseKeeping />} />
         <Route path="/services/horticulture-landscaping" element={<HorticultureLandscape />} />
+        <Route path="/services/mechanical" element={<MechanicalServices />} />
+        <Route path="/services/plumbing" element={<Plumbing />} />
+        <Route path="/services/eletrical" element={<Eletrical />} />
       </Routes>
       <Footer />
     </BrowserRouter>
