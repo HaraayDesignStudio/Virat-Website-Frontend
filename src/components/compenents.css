@@ -111,13 +111,14 @@
   flex-direction: column;
   align-items: self-start;
   gap: 60px;
+  overflow-y: scroll;
 }
 .drawer-content a {
   font-family: virat;
   text-decoration: none;
   color: #fff;
   text-align: center;
-  font-size: 35px;
+  font-size: 25px;
   font-style: normal;
   line-height: 18.548px;
   letter-spacing: -0.528px;
@@ -714,7 +715,7 @@
     width: 250px;
     height: auto;
   }
-  .drawer-content{
+  .drawer-content {
     padding: 140px 30px;
   }
 }
@@ -780,15 +781,14 @@
   .footer-right {
     padding-right: 0;
   }
-  .vlaues-card-container{
+  .vlaues-card-container {
     padding: 60px 10px;
     max-width: 280px;
   }
-  .values-card-name{
+  .values-card-name {
     font-size: 30px;
     line-height: 35px;
   }
-  
 }
 @media (max-width: 800px) {
   .card-wrapper img {
@@ -825,21 +825,21 @@
     font-size: 16px;
     line-height: 26px;
   }
-  .footer-download{
+  .footer-download {
     padding: 15px 30px;
   }
-  .footer-social{
+  .footer-social {
     width: 300px;
   }
-  .virat-logo-name{
+  .virat-logo-name {
     font-size: 150px;
     letter-spacing: 5px;
   }
-  .haraay{
+  .haraay {
     font-size: 20px;
     bottom: -20px;
   }
-  .footer-wrapper .footer-background{
+  .footer-wrapper .footer-background {
     height: 950px;
   }
 }
@@ -958,7 +958,7 @@
   .heading-card {
     left: 20px;
   }
-  .drawer-content a{
+  .drawer-content a {
     font-size: 20px;
   }
 }

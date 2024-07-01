@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [selectedTab, setSelectedTab] = useState(null);
+  const [isService, setIsService] = useState(false);
   const navigate = useNavigate();
 
   const handleDrawerToggle = () => {
@@ -26,6 +27,10 @@ const Navbar = () => {
 
   const handleTabClick = (tab) => {
     setSelectedTab(tab);
+    if(tab === "services") {
+      setIsService(!isService);
+      return;
+    }
     handleCloseDrawer();
   };
 
@@ -76,7 +81,7 @@ const Navbar = () => {
               <p>About</p>
             </Link>
             <Link
-              to="/services"
+              // to="/services"
               onClick={() => handleTabClick("services")}
               className={selectedTab === "services" ? "selected" : ""}
             >
@@ -89,6 +94,80 @@ const Navbar = () => {
               ></div>
               <p>Services</p>
             </Link>
+            {isService && (
+              <>
+                <Link
+                  to="/services/house-keeping"
+                  onClick={() => handleTabClick("house-keeping")}
+                  className={selectedTab === "house-keeping" ? "selected" : ""}
+                >
+                  <div
+                    className={
+                      selectedTab === "house-keeping"
+                        ? "line-indication selected-line"
+                        : "line-indication"
+                    }
+                  ></div>
+                  <p>House Keeping</p>
+                </Link>
+                <Link
+                  to="/services/horticulture-landscaping"
+                  onClick={() => handleTabClick("horticulture-landscaping")}
+                  className={selectedTab === "horticulture-landscaping" ? "selected" : ""}
+                >
+                  <div
+                    className={
+                      selectedTab === "horticulture-landscaping"
+                        ? "line-indication selected-line"
+                        : "line-indication"
+                    }
+                  ></div>
+                  <p>Horticulture Landscaping</p>
+                </Link>
+                <Link
+                  to="/services/mechanical"
+                  onClick={() => handleTabClick("mechanical")}
+                  className={selectedTab === "mechanical" ? "selected" : ""}
+                >
+                  <div
+                    className={
+                      selectedTab === "mechanical"
+                        ? "line-indication selected-line"
+                        : "line-indication"
+                    }
+                  ></div>
+                  <p>Mechanical</p>
+                </Link>
+                <Link
+                  to="/services/plumbing" 
+                  onClick={() => handleTabClick("plumbing")}
+                  className={selectedTab === "plumbing" ? "selected" : ""}
+                >
+                  <div
+                    className={
+                      selectedTab === "plumbing"
+                        ? "line-indication selected-line"
+                        : "line-indication"
+                    }
+                  ></div>
+                  <p>Plumbing</p>
+                </Link>
+                <Link
+                  to="/services/eletrical"
+                  onClick={() => handleTabClick("eletrical")}
+                  className={selectedTab === "eletrical" ? "selected" : ""}
+                >
+                  <div
+                    className={
+                      selectedTab === "eletrical"
+                        ? "line-indication selected-line"
+                        : "line-indication"
+                    }
+                  ></div>
+                  <p>Eletrical</p>
+                </Link>
+              </>
+            )}
             <Link
               to="/human-sustainability"
               onClick={() => handleTabClick("human-sustainability")}
