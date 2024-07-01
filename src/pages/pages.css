@@ -166,7 +166,7 @@
 }
 .about-content-text p {
   text-align: left;
-  width: 700px;
+  width: 570px;
   font-size: 24px;
   font-style: normal;
   line-height: 38px;
@@ -258,7 +258,7 @@
 }
 .testimonial-card-one {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   width: 100%;
   gap: 20px;
 }
@@ -293,6 +293,15 @@
   .values-card-two {
     padding-right: 3.8%;
   }
+  .testimonila-trust-client p {
+    margin-right: 170px;
+    margin-top: -82px;
+    font-size: 70px;
+  }
+    .service-back-img {
+        height: 1800px;
+    }
+
 }
 
 @media (max-width: 1030px) {
@@ -315,7 +324,7 @@
     font-size: 50px;
   }
   .service-back-img {
-    height: 1300px;
+    height: 1400px;
   }
   .heading-card {
     bottom: -75px;
@@ -386,7 +395,7 @@
     background-color: rgba(255, 255, 255, 0.85);
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 770px) {
   .image-container-homepage img {
     object-fit: cover;
     height: 600px;
@@ -472,8 +481,7 @@
     display: flex;
     overflow-x: auto;
     gap: 50px;
-    white-space: nowrap;
-
+    /* white-space: nowrap; */
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
 
@@ -504,6 +512,9 @@
   .heading-card {
     bottom: -35px;
     left: 0;
+  }
+  .services-cards{
+    gap: 65px;
   }
 }
 .wrapper-two {
@@ -558,6 +569,7 @@
   .homepage-image-text {
     width: 90%;
     font-size: 16px;
+    line-height: 25px;
   }
   .homepage-image-text::after {
     content: "";
