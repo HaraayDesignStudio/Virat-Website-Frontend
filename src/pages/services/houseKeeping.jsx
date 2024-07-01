@@ -26,6 +26,7 @@ const HouseKeeping = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <div className="homepage-container services-details">
       <div className="image-container-homepage services-background">
@@ -36,7 +37,7 @@ const HouseKeeping = () => {
             Welcome to the backbone of Virat Facility Management services,
             housekeeping, and all the services it entails. We know how important
             it is for you to maintain a clean environment that will enhance the
-            appearance and functionality of your workplace. 
+            appearance and functionality of your workplace.
           </p>
         </div>
       </div>
@@ -71,28 +72,30 @@ const HouseKeeping = () => {
           <img src={homekeeping} alt="homepage" />
         </div>
       </div>
-      <div className="values-card-one values-card-two service-cards">
-        <ValuesCard
-          image={card2}
-          name={"Daily Cleaning"}
-          disc={
-            "Of course, we understand the importance of having a clean working space in the morning. With our daily cleaning service, your work environment will always be clean and prepared for use in the morning. Our services include cleaning furniture, carpets, windows, and walls and sanitizing the areas that are frequently touched, such as doors, light switches, and handles."
-          }
-        />
-        <ValuesCard
-          image={card2}
-          name={"Daily Cleaning"}
-          disc={
-            "Of course, we understand the importance of having a clean working space in the morning. With our daily cleaning service, your work environment will always be clean and prepared for use in the morning. Our services include cleaning furniture, carpets, windows, and walls and sanitizing the areas that are frequently touched, such as doors, light switches, and handles."
-          }
-        />
-        <ValuesCard
-          image={card2}
-          name={"Specialized Cleaning"}
-          disc={
-            "Each office is different, and we appreciate the need to address these differences. Our specialized cleaning services include carpet cleaning, upholstery cleaning, and window washing. Employing modern technology and organic products, we guarantee that all the areas of your office are clean and tidy."
-          }
-        />
+      <div className="service-cards-wrapper">
+        <div className="values-card-one values-card-two service-cards">
+          <ValuesCard
+            image={card2}
+            name={"Daily Cleaning"}
+            disc={
+              "Of course, we understand the importance of having a clean working space in the morning. With our daily cleaning service, your work environment will always be clean and prepared for use in the morning. Our services include cleaning furniture, carpets, windows, and walls and sanitizing the areas that are frequently touched, such as doors, light switches, and handles."
+            }
+          />
+          <ValuesCard
+            image={card2}
+            name={"Daily Cleaning"}
+            disc={
+              "Of course, we understand the importance of having a clean working space in the morning. With our daily cleaning service, your work environment will always be clean and prepared for use in the morning. Our services include cleaning furniture, carpets, windows, and walls and sanitizing the areas that are frequently touched, such as doors, light switches, and handles."
+            }
+          />
+          <ValuesCard
+            image={card2}
+            name={"Specialized Cleaning"}
+            disc={
+              "Each office is different, and we appreciate the need to address these differences. Our specialized cleaning services include carpet cleaning, upholstery cleaning, and window washing. Employing modern technology and organic products, we guarantee that all the areas of your office are clean and tidy."
+            }
+          />
+        </div>
       </div>
       <div className="services-first-box second-box">
         <div className="text-content">
@@ -113,28 +116,30 @@ const HouseKeeping = () => {
           <img src={homekeeping2} alt="homepage" className="second-image" />
         </div>
       </div>
-      <div className="values-card-one values-card-two service-cards">
-        <ValuesCard
-          image={card2}
-          name={"Enhanced Productivity"}
-          disc={
-            "A clean environment contributes significantly to improving productivity in a workplace. It is always easier to concentrate on the work, produce more, and be more motivated when the place is clean. Our professional housekeeping services are meant to help create an environment conducive for your team."
-          }
-        />
-        <ValuesCard
-          image={card2}
-          name={"Health and Safety"}
-          disc={
-            "It is essential to ensure that the working environment is clean for the well-being of the employees in the organization. Daily cleaning eliminates germs and allergens that can cause illnesses; this results in less absenteeism and a productive workforce. We are dedicated to employing non-toxic products that will safeguard your team and provide the necessary cleaning services."
-          }
-        />
-        <ValuesCard
-          image={card2}
-          name={"Positive Impressions"}
-          disc={
-            "It is important to make a good first impression of oneself when potential clients and partners are visiting your office. A clean working environment also goes a long way in portraying the level of professionalism of a company or institution. Our corporate housekeeping services enable you to present your office in the best manner possible at all times."
-          }
-        />
+      <div className="service-cards-wrapper">
+        <div className="values-card-one values-card-two service-cards">
+          <ValuesCard
+            image={card2}
+            name={"Enhanced Productivity"}
+            disc={
+              "A clean environment contributes significantly to improving productivity in a workplace. It is always easier to concentrate on the work, produce more, and be more motivated when the place is clean. Our professional housekeeping services are meant to help create an environment conducive for your team."
+            }
+          />
+          <ValuesCard
+            image={card2}
+            name={"Health and Safety"}
+            disc={
+              "It is essential to ensure that the working environment is clean for the well-being of the employees in the organization. Daily cleaning eliminates germs and allergens that can cause illnesses; this results in less absenteeism and a productive workforce. We are dedicated to employing non-toxic products that will safeguard your team and provide the necessary cleaning services."
+            }
+          />
+          <ValuesCard
+            image={card2}
+            name={"Positive Impressions"}
+            disc={
+              "It is important to make a good first impression of oneself when potential clients and partners are visiting your office. A clean working environment also goes a long way in portraying the level of professionalism of a company or institution. Our corporate housekeeping services enable you to present your office in the best manner possible at all times."
+            }
+          />
+        </div>
       </div>
       <div className="services-bottom-disc">
         <h1 className="bottom-h1">

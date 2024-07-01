@@ -1967,3 +1967,76 @@ textarea::placeholder {
     width: 270px;
   }
 }
+
+@media (max-width: 500px) {
+  .image-container-homepage img {
+    height: 300px;
+  }
+  .service-on-text h1 {
+    font-size: 40px;
+    margin-left: 0;
+    line-height: 1.2;
+  }
+  .service-on-text {
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+    gap: 10px;
+    padding: 0 10px;
+  }
+  .service-on-text p {
+    font-size: 11px;
+  }
+  .services-first-box {
+    padding: 40px 10px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .image-content img,
+  .image-content .second-image {
+    width: 100%;
+  }
+  .services-bottom-disc h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .service-cards-wrapper {
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 16px 0;
+  }
+
+  .values-card-one,
+  .values-card-two {
+    flex: 0 0 auto;
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .services-details .values-card-two {
+    flex-direction: row;
+  }
+
+  .service-cards-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .service-cards-wrapper {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .service-cards .vlaues-card-container {
+    padding: 15px;
+    height: 350px;
+  }
+  .service-cards .values-card-name {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .service-cards .values-card-disc {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
