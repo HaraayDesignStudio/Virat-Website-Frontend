@@ -43,15 +43,16 @@ const Plumbing = () => {
       </div>
       <div className="services-first-box">
         <div className="text-content">
-          {/* <h1 className="text-h1">
-            Taking Your Landscape and Horticultural Services to Another Level
-          </h1> */}
+          <h1 className="text-h1">
+            Reliable Plumbing Solutions for a Smooth-Running Workspace
+          </h1>
           <p className="text-p">
             For all your plumbing requirements, whether it is service, repair,
             or installation, we guarantee you professional service delivery.
             <br />
-            <br />
-            <br />
+          </p>
+          <p className="text-h2">Excellence in Every Detail</p>
+          <p className="text-p2">
             Each establishment has its specific requirements for plumbing
             systems, and we appreciate the need to meet them. Whether you need a
             simple drain cleaning or a large-scale installation, our industrial
@@ -65,34 +66,37 @@ const Plumbing = () => {
           <img src={homekeeping} alt="homepage" className="service-2-img" />
         </div>
       </div>
-      <div className="values-card-one values-card-two service-cards ">
-        <ValuesCard
-          image={card2}
-          name={"Routine Maintenance"}
-          disc={
-            "The best way to avoid expensive repairs later is to take proactive measures that will help your plumbing systems last longer. Included in our regular maintenance services are inspection, cleaning, and preventive measures aimed at maintaining the optimal functionality of your plumbing systems. Maintenance enables one to detect any issues that may be present, hence allowing one to avoid having to spend a lot of money at a later date."
-          }
-        />
-        <ValuesCard
-          image={card2}
-          name={"Emergency Repairs"}
-          disc={
-            "Any plumbing emergency will disrupt the normal flow of business in your company. We employ highly qualified plumbers who will fix the issue as soon as possible, thus preventing more damage and returning to normalcy as quickly as possible. We value our clients' time and needs with plumbing problems and ensure that we offer them quick and efficient plumbing repair services."
-          }
-        />
-        <ValuesCard
-          image={card2}
-          name={"Installation and Upgrades"}
-          disc={
-            "When it comes to installation services or even the upgrade of a new facility, our professionals will make sure that your plumbing systems are installed to the best of standards. As our valued client, we assist you in choosing the most appropriate products that suit your requirements and ensure professional installation for maximum efficiency right from the onset."
-          }
-        />
+      <div className="service-cards-wrapper">
+        <div className="values-card-one values-card-two service-cards ">
+          <ValuesCard
+            image={card2}
+            name={"Routine Maintenance"}
+            disc={
+              "The best way to avoid expensive repairs later is to take proactive measures that will help your plumbing systems last longer. Included in our regular maintenance services are inspection, cleaning, and preventive measures aimed at maintaining the optimal functionality of your plumbing systems. Maintenance enables one to detect any issues that may be present, hence allowing one to avoid having to spend a lot of money at a later date."
+            }
+          />
+          <ValuesCard
+            image={card2}
+            name={"Emergency Repairs"}
+            disc={
+              "Any plumbing emergency will disrupt the normal flow of business in your company. We employ highly qualified plumbers who will fix the issue as soon as possible, thus preventing more damage and returning to normalcy as quickly as possible. We value our clients' time and needs with plumbing problems and ensure that we offer them quick and efficient plumbing repair services."
+            }
+          />
+          <ValuesCard
+            image={card2}
+            name={"Installation and Upgrades"}
+            disc={
+              "When it comes to installation services or even the upgrade of a new facility, our professionals will make sure that your plumbing systems are installed to the best of standards. As our valued client, we assist you in choosing the most appropriate products that suit your requirements and ensure professional installation for maximum efficiency right from the onset."
+            }
+          />
+        </div>
       </div>
       <div className="services-first-box second-box">
         <div className="text-content">
-          {/* <h1 className="text-h1">
-            The Benefits of Collaborating with Virat Facility Management
-          </h1> */}
+          <h1 className="text-h1">
+            How does Virat Facility Management Assist in Optimizing Your
+            Environment?
+          </h1>
           <p className="text-p">
             Here at Virat Facility Management, we pay keen attention to detail
             and ensure that we deliver only the best. Our staff is comprised of
@@ -107,28 +111,30 @@ const Plumbing = () => {
           <img src={homekeeping2} alt="homepage" className="second-image" />
         </div>
       </div>
-      <div className="values-card-one values-card-two service-cards service-two-cards">
-        <ValuesCard
-          image={card2}
-          name={""}
-          disc={
-            "At Virat Facility Management, we are precise and committed to delivering superior quality services every single time. Our professional plumbers have years of experience and knowledge in dealing with various plumbing issues, and every job is done professionally. Our company employs modern technology and proper procedures to ensure that our services are efficient as well as sustainable."
-          }
-        />
-        <ValuesCard
-          image={card2}
-          name={""}
-          disc={
-            " Optimum plumbing systems lead to low water usage, resulting in low operational costs. The services that we offer in the realm of plumbing aim to enhance the efficiency of your plumbing infrastructure in your workplace, hence making it cheaper and more friendly to the environment."
-          }
-        />
-        <ValuesCard
-          image={card2}
-          name={""}
-          disc={
-            "It is important to know the details of your plumbing systems to avoid pitfalls when making a decision. The consultation services provided by our plumber service provider entail professional advice and guidance towards finding solutions that are suitable for your requirements and objectives."
-          }
-        />
+      <div className="service-cards-wrapper">
+        <div className="values-card-one values-card-two service-cards service-two-cards">
+          <ValuesCard
+            image={card2}
+            name={""}
+            disc={
+              "At Virat Facility Management, we are precise and committed to delivering superior quality services every single time. Our professional plumbers have years of experience and knowledge in dealing with various plumbing issues, and every job is done professionally. Our company employs modern technology and proper procedures to ensure that our services are efficient as well as sustainable."
+            }
+          />
+          <ValuesCard
+            image={card2}
+            name={""}
+            disc={
+              " Optimum plumbing systems lead to low water usage, resulting in low operational costs. The services that we offer in the realm of plumbing aim to enhance the efficiency of your plumbing infrastructure in your workplace, hence making it cheaper and more friendly to the environment."
+            }
+          />
+          <ValuesCard
+            image={card2}
+            name={""}
+            disc={
+              "It is important to know the details of your plumbing systems to avoid pitfalls when making a decision. The consultation services provided by our plumber service provider entail professional advice and guidance towards finding solutions that are suitable for your requirements and objectives."
+            }
+          />
+        </div>
       </div>
       <div className="services-bottom-disc services-bottom-disc-2 ">
         {/* <h1 className="bottom-h1">

@@ -2039,4 +2039,28 @@ textarea::placeholder {
     font-size: 12px;
     line-height: 16px;
   }
+  .serivce-two .change-2 {
+    width: 100%;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .serivce-two p {
+    width: 100%;
+  }
+
+  .service-two-cards .values-card-disc {
+    width: 230px;
+  }
+  .services-first-box h1 {
+    font-size: 21px;
+  }
+  .image-content .service-2-img {
+    width: 100%;
+  }
+  .services-bottom-disc-2 {
+    padding: 50px 10px;
+  }
+  .services-bottom-disc-2 p {
+    font-size: 14px;
+  }
 }
