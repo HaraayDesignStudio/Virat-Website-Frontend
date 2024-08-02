@@ -7,9 +7,9 @@ import card1 from "../assets/Rectangle 134.png";
 import card2 from "../assets/Rectangle 134 (1).png";
 import card3 from "../assets/Rectangle 134 (2).png";
 import test1 from "../assets/brnads/356674 1.png";
-import test3 from "../assets/brnads/hdfc-bank-logo-removebg-preview 1.png"
-import test4 from "../assets/brnads/CBRE_Group_logo_(till_2021) 1.png"
-import test5 from "../assets/brnads/oberoi-realty5010-removebg-preview 1.png"
+import test3 from "../assets/brnads/hdfc-bank-logo-removebg-preview 1.png";
+import test4 from "../assets/brnads/CBRE_Group_logo_(till_2021) 1.png";
+import test5 from "../assets/brnads/oberoi-realty5010-removebg-preview 1.png";
 import "./pages.css";
 import ButtonComponents2 from "../components/buttonComponents2";
 import ServiceCard from "../components/serviceCard";
@@ -53,7 +53,12 @@ const HomePage = () => {
         <span className="homepage-headtext-p">
           Where Expertise Convergence with Experience
         </span>
-        <ButtonCom name={"Explore now"} link={""} />
+        <ButtonCom
+          name={"Explore now"}
+          link={() => {
+            navigate("/about");
+          }}
+        />
       </div>
       <div className="about-us-section">
         <img
@@ -79,7 +84,9 @@ const HomePage = () => {
               </p>
               <ButtonComponents2
                 name={"Explore now"}
-                onClickFun={() => {}}
+                onClickFun={() => {
+                  navigate("/about");
+                }}
                 className="about-us-button"
               />
             </div>
@@ -111,15 +118,17 @@ const HomePage = () => {
             }
             func={() => {}}
             id={1}
+            link={"/services/house-keeping"}
           />
           <ServiceCard
             image={card2}
-            heading={"Mechanical, Electrical and Plumbing"}
+            heading={"Mechanical"}
             disc={
               "services for maintenance of properties at a given point of time when deployed on site."
             }
             func={() => {}}
             id={2}
+            link={"/services/mechanical"}
           />
           <ServiceCard
             image={card3}
@@ -129,6 +138,29 @@ const HomePage = () => {
             }
             func={() => {}}
             id={3}
+            link={"/services/horticulture-landscaping"}
+          />
+        </div>
+        <div className="services-cards">
+          <ServiceCard
+            image={card1}
+            heading={"Electrical"}
+            disc={
+              "we offer our esteemed clients top-notch cleaning services that combine the power of advanced machinery with the expertise of skilled manpower. Our team of highly trained professionals is dedicated to providing detailed and professional housekeeping services that are customized to meet the unique needs of each client. We take great pride in maintaining the highest standards of cleanliness and hygiene, and we strive to ensure that every aspect of your facility is impeccably maintained. Our commitment to excellence and attention to detail make us the preferred choice for clients seeking exceptional cleaning solutions."
+            }
+            func={() => {}}
+            id={1}
+            link={"/services/eletrical"}
+          />
+          <ServiceCard
+            image={card2}
+            heading={"Plumbing"}
+            disc={
+              "services for maintenance of properties at a given point of time when deployed on site."
+            }
+            func={() => {}}
+            id={2}
+            link={"/services/plumbing"}
           />
         </div>
         <div className="service-brand-scroller">

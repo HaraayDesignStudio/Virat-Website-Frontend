@@ -3,10 +3,10 @@ import "./compenents.css";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { useNavigate } from "react-router-dom";
 
-const ServiceCard = ({ image, heading, disc, func, id }) => {
+const ServiceCard = ({ image, heading, disc, func, id , link}) => {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/services", {
+    navigate(link, {
       state: {
         head: heading,
         dis: disc,

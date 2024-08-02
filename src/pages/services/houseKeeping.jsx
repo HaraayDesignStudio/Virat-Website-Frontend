@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import homepageimage from "../../assets/service-back.png";
 import homekeeping from "../../assets/homekeeping.png";
 import ValuesCard from "../../components/valuesCard";
@@ -147,11 +147,11 @@ const HouseKeeping = () => {
         </h1>
         <p>
           Are you ready to feel the difference that comes with a clean working
-          environment? Get in touch with us now to find out more about our
-          cleaning services and how we can help you. Choose Virat Facility
-          Management as your ally in improving the quality of the workplace
-          environment and productivity. Combined as one, we can take your office
-          to new levels of cleanliness and organization.
+          environment? <Link to="/contact-us" className="links-on-text">Get in touch with us</Link> now to find out more
+          about our cleaning services and how we can help you. Choose <Link to="/contact-us" className="links-on-text">Virat
+          Facility Management</Link> as your ally in improving the quality of the
+          workplace environment and productivity. Combined as one, we can take
+          your office to new levels of cleanliness and organization.
         </p>
       </div>
     </div>

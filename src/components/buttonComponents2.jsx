@@ -1,9 +1,12 @@
 import React from "react";
 import "../pages/pages.css";
 
-const ButtonComponents2 = ({ name, link }) => {
+const ButtonComponents2 = ({ name, onClickFun }) => {
   return (
-    <div className="button-for-landing button-for-landing-two" onClick={link}>
+    <div
+      className="button-for-landing button-for-landing-two"
+      onClick={onClickFun}
+    >
       {name}
     </div>
   );

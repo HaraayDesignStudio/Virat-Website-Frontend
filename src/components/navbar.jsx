@@ -83,7 +83,7 @@ const Navbar = () => {
             <Link
               // to="/services"
               onClick={() => handleTabClick("services")}
-              className={selectedTab === "services" ? "selected" : ""}
+              className={`services-link ${selectedTab === "services" ? "selected" : ""}`}
             >
               <div
                 className={
@@ -92,7 +92,7 @@ const Navbar = () => {
                     : "line-indication"
                 }
               ></div>
-              <p>Services</p>
+              <p>Services {isService ? "▲" : "▼"}</p>
             </Link>
             {isService && (
               <>
