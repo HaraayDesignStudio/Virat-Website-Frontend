@@ -4,6 +4,7 @@ import "./compenents.css";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { useNavigate } from "react-router-dom";
+import pdf from "../assets/virat brochure-1.pdf";
 
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -27,9 +28,18 @@ const Navbar = () => {
 
   const handleTabClick = (tab) => {
     setSelectedTab(tab);
-    if(tab === "services") {
+    if (tab === "services") {
       setIsService(!isService);
       return;
+    }
+    if (tab === "download-brochure") {
+      console.log("Download Brochure");
+      const link = document.createElement("a");
+      link.href = pdf;
+      link.download = "Virat_Brochure.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     }
     handleCloseDrawer();
   };
@@ -83,7 +93,9 @@ const Navbar = () => {
             <Link
               // to="/services"
               onClick={() => handleTabClick("services")}
-              className={`services-link ${selectedTab === "services" ? "selected" : ""}`}
+              className={`services-link ${
+                selectedTab === "services" ? "selected" : ""
+              }`}
             >
               <div
                 className={
@@ -113,7 +125,9 @@ const Navbar = () => {
                 <Link
                   to="/services/horticulture-landscaping"
                   onClick={() => handleTabClick("horticulture-landscaping")}
-                  className={selectedTab === "horticulture-landscaping" ? "selected" : ""}
+                  className={
+                    selectedTab === "horticulture-landscaping" ? "selected" : ""
+                  }
                 >
                   <div
                     className={
@@ -139,7 +153,7 @@ const Navbar = () => {
                   <p>Mechanical</p>
                 </Link>
                 <Link
-                  to="/services/plumbing" 
+                  to="/services/plumbing"
                   onClick={() => handleTabClick("plumbing")}
                   className={selectedTab === "plumbing" ? "selected" : ""}
                 >
@@ -185,7 +199,6 @@ const Navbar = () => {
               <p>Human Sustainability</p>
             </Link>
             <Link
-              to="/download-brochure"
               onClick={() => handleTabClick("download-brochure")}
               className={selectedTab === "download-brochure" ? "selected" : ""}
             >

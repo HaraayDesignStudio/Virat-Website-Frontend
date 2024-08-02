@@ -90,13 +90,13 @@ const ContactUs = () => {
           </p>
           <div className="links-mobile">
             <Link className="link-mobile" to="/"><IoLogoWhatsapp /></Link>
-            <Link className="link-mobile" to="/"><LiaLinkedinIn /></Link>
+            <Link className="link-mobile" to="https://www.linkedin.com/company/virat-facility-management-services/" target="_blank"><LiaLinkedinIn /></Link>
           </div>
         </div>
       </div>
       <div className="links-mobile2">
             <Link className="link-mobile" to="/"><IoLogoWhatsapp /></Link>
-            <Link className="link-mobile" to="/"><LiaLinkedinIn /></Link>
+            <Link className="link-mobile" to="https://www.linkedin.com/company/virat-facility-management-services/" target="_blank"><LiaLinkedinIn /></Link>
           </div>
       <div>
         <form className="form-contact">

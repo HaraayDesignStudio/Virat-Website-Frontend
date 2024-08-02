@@ -8,8 +8,18 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { Link } from "react-router-dom";
 import footerImage from "../assets/elastrations/Profesionalism.png";
 import { LiaLinkedinIn } from "react-icons/lia";
+import pdf from "../assets/virat brochure-1.pdf";
 
 const Footer = () => {
+  const downloadBrochure = () => {
+    console.log("Download Brochure");
+    const link = document.createElement("a");
+    link.href = pdf;
+    link.download = "Virat_Brochure.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <>
       <div className="footer-wrapper">
@@ -21,7 +31,7 @@ const Footer = () => {
               We believe in Growth & Success, and together we can create a place
               for all to Grow.
             </p>
-            <div className="footer-download">
+            <div className="footer-download" onClick={downloadBrochure}>
               <FaArrowDownLong className="footer-download-icon" />
               <span>Download brochure</span>
             </div>
@@ -34,12 +44,15 @@ const Footer = () => {
             <div className="footer-social">
               <p className="socialmedia-head">Socialmedia</p>
               <div className="socialmedia-icons">
-                <p>
+                <Link
+                  to="https://www.linkedin.com/company/virat-facility-management-services/"
+                  target="_blank"
+                >
                   LinkedIn <LiaLinkedinIn />
-                </p>
-                <p>
+                </Link>
+                <Link>
                   WhatsApp <IoLogoWhatsapp />
-                </p>
+                </Link>
               </div>
             </div>
           </div>
@@ -67,7 +80,7 @@ const Footer = () => {
             We believe in Growth & Success, and together we can create a place
             for all to Grow.
           </p>
-          <div className="footer-download">
+          <div className="footer-download" onClick={downloadBrochure}>
             <FaArrowDownLong className="footer-download-icon" />
             <span>Download brochure</span>
           </div>
@@ -81,7 +94,11 @@ const Footer = () => {
             <Link className="link-mobile" to="/">
               <IoLogoWhatsapp />
             </Link>
-            <Link className="link-mobile" to="/">
+            <Link
+              className="link-mobile"
+              to="https://www.linkedin.com/company/virat-facility-management-services/"
+              target="_blank"
+            >
               <LiaLinkedinIn />
             </Link>
           </div>
