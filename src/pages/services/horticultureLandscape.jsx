@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import homepageimage from "../../assets/service-back.png";
 import homekeeping from "../../assets/service2.png";
 import ValuesCard from "../../components/valuesCard";
@@ -93,7 +93,7 @@ const HorticultureLandscape = () => {
             Facility Management
           </h1>
           <p className="text-p">
-            At Virat Facility Management, availing quality is guaranteed. It is
+            At <Link to="/" className="links-on-text">Virat Facility Management</Link>, availing quality is guaranteed. It is
             a core value that defines our work. We pride ourselves on having
             experienced horticulturists and landscapers with passion and skills
             who will ensure your outdoors get the best care they need. It is our
@@ -137,7 +137,7 @@ const HorticultureLandscape = () => {
         </h1> */}
         <p>
           Are you ready to change your exterior spaces with the help of our
-          landscape and horticultural services? You can reach out to us today to
+          landscape and horticultural services? You can <Link to="/contact-us" className="links-on-text">reach out to us today</Link> to
           learn more about our extensive services and how we deliver customized
           solutions. 
         </p>

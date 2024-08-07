@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import homepageimage from "../../assets/service-back.png";
 import homekeeping from "../../assets/service3.jpeg";
 import ValuesCard from "../../components/valuesCard";
@@ -94,7 +94,7 @@ const MechanicalServices = () => {
         <div className="text-content">
           <h1 className="text-h1">Join Hands with Virat Facility Management</h1>
           <p className="text-p">
-            At Virat Facility Management, professionalism is implied in ensuring
+            At <Link to="/" className="links-on-text">Virat Facility Management</Link>, professionalism is implied in ensuring
             that every little detail is taken care of to the best of our
             ability. Our technicians are skilled, and we guarantee that they are
             equipped to deal with any mechanical issue and perform every task to
@@ -139,8 +139,7 @@ const MechanicalServices = () => {
         <p>
           Are you ready to make your office work easier through effective
           mechanical services? For detailed information about our wide portfolio
-          of mechanical services, please do not hesitate to reach out to us
-          today to capture how we can meet your requirements. 
+          of mechanical services, please do not hesitate to <Link to="/contact-us" className="links-on-text">Get in touch with us today</Link> to capture how we can meet your requirements. 
         </p>
       </div>
     </div>

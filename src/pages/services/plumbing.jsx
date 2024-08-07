@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import homepageimage from "../../assets/service-back.png";
 import homekeeping from "../../assets/service4.png";
 import ValuesCard from "../../components/valuesCard";
@@ -98,7 +98,7 @@ const Plumbing = () => {
             Environment?
           </h1>
           <p className="text-p">
-            Here at Virat Facility Management, we pay keen attention to detail
+            Here at <Link to="/" className="links-on-text">Virat Facility Management</Link>, we pay keen attention to detail
             and ensure that we deliver only the best. Our staff is comprised of
             qualified personnel who are skilled in meeting all cleaning
             challenges and guaranteeing quality work. We work with the most
@@ -142,7 +142,7 @@ const Plumbing = () => {
         </h1> */}
         <p>
           Looking forward to getting the best services that can help you manage
-          the reliability and efficiency of your plumbing systems? Call us today
+          the reliability and efficiency of your plumbing systems? <Link to="/contact-us" className="links-on-text">Call us</Link> today
           to find out more about our range of plumbing services and how we can
           help you with your specific needs. 
         </p>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import homepageimage from "../../assets/service-back-2.png";
 import homekeeping from "../../assets/service5.png";
 import ValuesCard from "../../components/valuesCard";
@@ -100,7 +100,7 @@ const Eletrical = () => {
         <div className="text-content">
           <h1 className="text-h1">Here is what makes our services special:</h1>
           <p className="text-p">
-            At Virat Facility Management, we strongly believe in the principles
+            At <Link to="/" className="links-on-text">Virat Facility Management</Link>, we strongly believe in the principles
             of artistry and professionalism. The highly trained personnel at our
             company are fully committed to delivering efficient and sustainable
             electrical solutions with the help of state-of-the-art technology
@@ -146,7 +146,7 @@ const Eletrical = () => {
           Electric problems should not hinder business operations in any way. To
           find out more about our wide range of electrical services and how we
           can support your business in ensuring that you are fully compliant and
-          free from electrical dangers, please get in touch with us today. 
+          free from electrical dangers, please <Link to="/contact-us" className="links-on-text">get in touch with us today.</Link>
         </p>
       </div>
     </div>
