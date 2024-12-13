@@ -3,7 +3,9 @@ import "./compenents.css";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 const FooterCom = ({ name, link, img }) => {
-  const handleCLick = () => {};
+  const handleCLick = () => {
+    window.open(`mailto:${link}`, "_self");
+  };
   return (
     <div className="footercom">
       <div className="footercom-content">

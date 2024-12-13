@@ -51,6 +51,7 @@
   cursor: pointer;
   z-index: 200;
   opacity: 1;
+  color: #ffffff;
   transition: opacity 0.3s ease;
 }
 .logo {
@@ -72,14 +73,39 @@
   height: 0.1px;
   background-color: #afafaf;
 }
+.navbarContactdetail {
+  padding: 5px;
 
+  h2 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: lighter;
+    margin: auto;
+    cursor: pointer;
+  }
+}
+@media (max-width: 750px) {
+  .navbar-menu .navbarContactdetail {
+    display: none;
+  }
+}
+.navbar-icon {
+  font-size: 25px;
+  color: #fff;
+}
 .navbar-icon-open {
   font-size: 20px;
   cursor: pointer;
   z-index: 200;
+  color: #ffffff;
   transition: transform 0.3s ease;
 }
-
+.navbar-icon {
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
 .rotate {
   transform: rotate(180deg);
 }
@@ -264,8 +290,8 @@
   padding: 0px 40px;
   justify-content: center;
   align-items: center;
-  background-color: #ff5a3666;
-  color: #000000;
+  background-color: #0e1e41;
+  color: #ffffff;
   font-weight: bold;
   font-family: virat;
   clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 92% 100%, 0% 100%, 0% 50%);
@@ -273,12 +299,12 @@
   transition: all 1s ease;
 }
 .button-for-landing:hover {
-  background: #f75825;
+  background: #12337a;
   font-size: 15px;
 }
 .button-for-landing-two {
-  background: rgba(255, 255, 255, 0.4);
-  color: #000;
+  background: #0e1e41;
+  color: #ffffff;
   text-align: center;
   font-size: 18px;
   font-style: normal;
@@ -294,14 +320,13 @@
 
 @media (max-width: 1300px) {
   .card-wrapper img {
-      max-width: 350px;
+    max-width: 350px;
   }
 }
 
-
 @media (max-width: 1250px) {
   .card-wrapper img {
-      max-width: 275px;
+    max-width: 275px;
   }
 }
 
@@ -323,7 +348,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70%;
+  width: 40%;
+  margin-left: 30px;
 }
 
 .slider {
@@ -343,10 +369,16 @@
   height: 100px;
   width: 250px;
 }
-
-.slider .slide img {
-  width: 97%;
+.slider .slide {
+  /* background-color: #000; */
+}
+.slide img {
+  margin: 7%;
+  width: 50%;
   height: 100px;
+  max-height: 60px;
+  object-fit: contain;
+  /* background-color: red; */
 }
 
 @-webkit-keyframes scroll {
@@ -782,6 +814,16 @@
 @media (max-width: 1500px) {
   .testimonial-card {
     gap: 30px;
+    height: 450px;
+  }
+}
+.testimonial-card {
+  gap: 50px;
+  height: 450px !important;
+  overflow-y: scroll;
+  width: 410px;
+  p {
+    text-align: justify;
   }
 }
 
@@ -789,6 +831,7 @@
   .testimonial-card {
     max-width: 260px;
     padding: 20px 20px;
+    height: 450px !important;
   }
   .testimonila-disc {
     font-size: 14px;

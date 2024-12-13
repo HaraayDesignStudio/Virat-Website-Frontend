@@ -1,0 +1,246 @@
+.services {
+  padding: 20px;
+
+  .topSection {
+    text-align: center;
+    margin-bottom: 40px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+
+    .heroimg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      max-height: 600px;
+
+      @media (max-width: 768px) {
+        max-height: 600px;
+      }
+    }
+
+    div {
+      margin: auto;
+      h1 {
+        font-weight: bold;
+        font-family: bwvirat;
+        margin: 20px;
+        font-size: 64px;
+        color: white;
+
+        @media (max-width: 768px) {
+          font-size: 36px;
+        }
+      }
+
+      p {
+        font-family: virat;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #ffffff;
+        width: 50%;
+        margin: 0 auto;
+
+        @media (max-width: 768px) {
+          font-size: 16px;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+.servicesSection {
+  position: relative;
+  padding: 50px 20px;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/Hero\ Section.webp");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+
+  .textContainer {
+    padding-left: 5%;
+    margin-bottom: 30px;
+    text-align: left;
+    div {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+    h2 {
+      font-family: bwvirat;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    h1 {
+      font-family: bwvirat;
+      font-size: 64px;
+      font-weight: bold;
+      margin: 10px 0;
+
+      @media (max-width: 768px) {
+        font-size: 36px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+  }
+  .cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    .card {
+      background: #fff;
+      color: #333;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 424px;
+      height: 456px;
+      text-align: left;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .cardText {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #1c2325;
+        background-color: white;
+
+        h3 {
+          font-size: 18px;
+          margin: 0;
+          font-weight: bold;
+        }
+
+        img {
+          width: 20%; /* Adjust size of the icon */
+          height: 40px;
+          flex-shrink: 0; /* Prevent icon from shrinking */
+        }
+
+        .icon {
+          font-size: 20px;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 15px; /* Reduce gap between cards */
+      align-items: center; /* Center cards */
+
+      .card {
+        width: 90%; /* Full width with padding on mobile */
+        height: auto; /* Adjust height automatically for content */
+      }
+    }
+  }
+}
+
+.contactSection {
+  position: relative;
+  width: 100%;
+  height: 400px;
+
+  @media (max-width: 768px) {
+    height: 600px;
+  }
+
+  .mapContainer {
+    width: 100%;
+    height: 100%;
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  }
+
+  .contactCard {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 10px;
+    }
+
+    .contactItem {
+      display: flex;
+      align-items: center;
+      margin: 10px 20px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .icon {
+        font-size: 24px;
+        margin-right: 10px;
+
+        @media (max-width: 768px) {
+          margin-right: 0;
+          margin-bottom: 5px;
+        }
+      }
+
+      h3 {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 16px;
+        color: #555;
+      }
+    }
+  }
+}

@@ -11,6 +11,11 @@
   font-family: bwvirat;
   src: url(../../public/fonts/bw/BwGradualDEMO-Bold.ttf);
 }
+
+@font-face {
+  font-family: bwviratlight;
+  src: url(../../public/fonts/bw/BwGradualDEMO-Light.ttf);
+}
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap");
 .image-container-homepage img {
   width: 100%;
@@ -25,7 +30,7 @@
   width: 29%;
   font-family: virat;
   position: absolute;
-  bottom: 10%;
+  bottom: 25%;
   left: 5%;
   color: white;
   line-height: 30px;
@@ -34,10 +39,10 @@
 .homepage-image-text::after {
   content: "";
   position: absolute;
-  top: -30%;
-  left: 15%;
-  transform: translateX(-50%);
-  width: 40%;
+  top: -10%;
+  right: 0%;
+  /* transform: translateX(-50%); */
+  width: 100%;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -53,6 +58,30 @@
   font-size: 75px;
   font-family: bwvirat;
 }
+.herosecbtn {
+  margin-top: 20px;
+  width: 204px;
+  height: 54px;
+  background-color: #0e1e41;
+  font-size: 20px;
+  font-family: bwvirat;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: virat;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 92% 100%, 0% 100%, 0% 50%);
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.herosecbtn1:hover {
+  background: #f75825;
+  font-size: 15px;
+}
+
 .homepage-headtext-button {
   display: flex;
   align-items: center;
@@ -101,6 +130,94 @@
   color: white;
 }
 
+.herodesignwhite {
+  background-color: white;
+  width: 100%;
+  height: 15vh;
+  position: absolute;
+  bottom: 0;
+  clip-path: polygon(80% 0, 100% 80%, 100% 100%, 0 100%, 0 80%);
+}
+
+.heroscrollbtn {
+  position: absolute;
+  bottom: calc(7vh + 10px); /* Align just above the bottom shape */
+  left: 80%; /* Position horizontally at the same point as the polygon */
+  transform: translateX(-50%); /* Center horizontally */
+  width: auto; /* Let the image size be controlled by the img tag */
+  z-index: 5; /* Ensure it appears above the polygon */
+}
+
+.heroscrollbtn img {
+  width: 7vw; /* Adjust image size dynamically for responsiveness */
+  /* max-width: 50px; Prevent the image from getting too large */
+}
+
+/* stats */
+.stats-section {
+  display: flex;
+  flex-wrap: wrap; /* Enables wrapping for smaller screens */
+  justify-content: space-evenly;
+  gap: 16px; /* Adds spacing between items */
+  padding: 20px;
+
+  .stat-item {
+    text-align: center; /* Centers text inside each item */
+    flex: 1 1 120px; /* Responsive sizing, adjusts with screen size */
+    min-width: 100px; /* Ensures minimum size */
+    max-width: 150px; /* Optional maximum size */
+
+    h3 {
+      font-size: 32px;
+      font-weight: bold;
+      color: #000; /* Adjust color as needed */
+      margin-bottom: 8px;
+      font-family: bwvirat;
+    }
+
+    p {
+      font-family: virat;
+      font-size: 20px;
+      color: #252727; /* Adjust color as needed */
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .image-container-homepage {
+    height: 60vh;
+  }
+  .herosecbtn {
+    width: 160px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .image-container-homepage img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .stats-section {
+    gap: 12px;
+  }
+
+  .stat-item {
+    flex: 1 1 100%; /* Each item takes full width on small screens */
+    max-width: none;
+    h3 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+  .herodesignwhite,
+  .heroscrollbtn {
+    display: none;
+  }
+}
+
 /* ---- About Section Style ---- */
 
 .about-us-section,
@@ -111,6 +228,8 @@
 .about-us-section .about-background-img,
 .testimonila-section .about-background-img {
   width: 100%;
+  height: 110vh;
+  object-fit: cover;
 }
 .about-section-content,
 .testimonial-section-content {
@@ -175,27 +294,60 @@
 /* ----service page style---- */
 
 .our-services-section {
-  margin: 100px 50px;
+  margin-bottom: 50px;
+  padding: 60px 50px 100px 50px;
   display: flex;
   flex-direction: column;
   gap: 100px;
+  background-color: #e6f1ff;
+}
+@media (max-width: 768px) {
+  .our-services-section {
+    margin-bottom: 50px;
+    padding: 60px 5px 100px 30px;
+  }
+  .our-services-headings-part {
+    margin-left: 10px;
+  }
+  .service-heading img {
+    margin-left: 80px;
+  }
+  .service-heading h2 {
+    text-wrap: nowrap;
+    font-size: 30px;
+  }
+  .service-content-heading {
+    font-size: 48px;
+    margin-left: -20px;
+    width: 100% !important;
+  }
+  .out-service-content {
+    width: 100% !important;
+  }
 }
 .our-services-headings-part {
   display: flex;
   align-items: self-start;
 }
-.our-services-headings-part div {
-  width: 50%;
+.our-services-headings-part .service-heading {
+  width: 30%;
+}
+
+.our-services-headings-part .out-service-content {
+  width: 70%;
 }
 .brand-scroller-head p {
   font-family: bwvirat;
   font-size: 90px;
 }
 .service-heading {
+  padding-top: 20px;
   font-size: 35px;
   display: flex;
   align-items: center;
   gap: 20px;
+  justify-content: center;
+  font-family: bwviratlight;
 }
 .out-service-content {
   display: flex;
@@ -204,35 +356,194 @@
 }
 .out-service-content .service-content-heading {
   width: 100%;
-  font-size: 90px;
+  font-size: 64px;
   font-family: bwvirat;
   font-weight: 600;
+  margin-top: 0%;
 }
 .out-service-content p {
   font-family: virat;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 24px;
+}
+.Serviceecards {
 }
 .services-cards {
   display: flex;
   flex-wrap: wrap;
-  /* overflow: hidden; */
+  overflow: hidden;
   width: 100%;
   gap: 20px;
   justify-content: center;
 }
+.Serviceecards {
+  width: 100%;
+  /* height: 700px; */
+}
+/* partners  */
 .service-brand-scroller {
   display: flex;
+  background-color: #e6f1ff;
+  overflow-x: hidden;
 }
 .brand-scroller-head {
-  font-size: 90px;
   font-weight: bold;
+  font-family: bwvirat;
+  margin: 20px;
+  min-width: 20%;
+  p {
+    font-size: 64px;
+  }
 }
 .brand-line {
   width: 1px;
+  z-index: +5;
   background-color: black;
 }
+/* services cards */
+.servcard {
+  width: 310px;
+  height: 456px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 20px; /* Adjust the corner rounding */
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  position: relative;
+}
 
+.card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.card-content {
+  width: 100%;
+  height: 50px; /* Adjust height of the content container */
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertically centers content */
+  /* padding: 0 10px; Add some padding */
+  box-sizing: border-box;
+  z-index: 2; /* Ensure it appears above the background image */
+}
+
+.card-content h2 {
+  font-family: virat;
+  font-size: 20px;
+  padding-left: 15px;
+  background-color: white;
+  color: #333;
+  margin: 0; /* Remove default margin */
+  height: 100%; /* Allow height to adjust dynamically */
+  display: flex;
+  align-items: center; /* Vertically center text within its container */
+  width: 80%; /* Takes 80% of the width */
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds "..." if text overflows */
+}
+
+.card-content img {
+  width: 20%; /* Adjust size of the icon */
+  height: 40px;
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
+/* how virat works */
+
+.how-virat-works {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+.hvw-heading {
+  h2 {
+    font-family: bwvirat;
+    font-size: 64px;
+    text-align: center;
+  }
+}
+
+.process-item {
+  text-align: center;
+  max-width: 300px;
+}
+
+.processcont {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 1rem;
+  text-align: left;
+}
+
+.step-number {
+  background-color: #0e1e41;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: bwvirat;
+}
+
+.process-item h3 {
+  margin: 10px 0;
+  font-size: 28px;
+  margin-bottom: 1rem;
+  font-family: bwviratlight;
+  text-wrap: nowrap;
+  text-align: left;
+}
+
+.process-item p {
+  font-size: 20px;
+  font-family: virat;
+  text-align: left;
+  width: 80%;
+  margin-left: 20%;
+}
+
+@media (min-width: 768px) {
+  .casestudy-heading {
+    font-size: 48px !important;
+    font-family: bwvirat;
+  }
+  .how-virat-works h2 {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .process-item {
+    max-width: 300px;
+  }
+
+  .step-number {
+    /* top: -2rem; */
+  }
+  .brand-scroller-head p {
+    font-size: 48px !important;
+  }
+}
 /* ---- Testimonial style ---- */
 .testimonial-mobile-view {
   display: none;
@@ -245,16 +556,18 @@
 .testimonila-trust-client {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
 }
 .testimonila-trust-client p {
+  text-align: left;
   font-family: bwvirat;
-  width: 50%;
+  /* width: 50%; */
   font-size: 90px;
   color: white;
   font-weight: bold;
-  margin-right: 220px;
-  margin-top: -98px;
+  /* margin-right: 220px; */
+  /* margin-top: 100px; */
+  position: relative;
 }
 .testimonial-card-one {
   display: flex;
@@ -264,13 +577,13 @@
 }
 .testimonial-test {
   color: white;
-  max-width: 400px;
-  width: 100%;
+  width: 500px;
+  height: 500px;
 }
 .testimonial-test p {
   font-size: 25px;
   font-family: virat;
-  margin-top: -150px;
+  /* margin-top: -150px; */
 }
 
 @media (max-width: 1500px) {
@@ -298,10 +611,9 @@
     margin-top: -82px;
     font-size: 70px;
   }
-    .service-back-img {
-        height: 1800px;
-    }
-
+  .service-back-img {
+    height: 1800px;
+  }
 }
 
 @media (max-width: 1030px) {
@@ -409,7 +721,7 @@
     font-size: 40px;
   }
   .about-us-section .about-background-img {
-    height: 950px;
+    /* height: 950px; */
     object-fit: cover;
   }
   .about-content-part {
@@ -427,7 +739,7 @@
   .about-content-heading {
     position: relative;
     width: 70%;
-    font-size: 64px;
+    font-size: 48px;
   }
   .about-content-heading::after {
     content: "";
@@ -462,7 +774,7 @@
   }
   .service-brand-scroller {
     flex-direction: column;
-    gap: 30px;
+    gap: 0px;
   }
   .testimonial-section-content {
     gap: 70px;
@@ -477,6 +789,14 @@
   .testimonial-card-one {
     display: none;
   }
+
+  .testimonial-card {
+    height: 330px !important;
+    width: 396px !important;
+    min-width: 290px !important;
+    min-height: 396px !important;
+    overflow-y: hidden;
+  }
   .testimonial-mobile-view {
     display: flex;
     overflow-x: auto;
@@ -484,7 +804,10 @@
     /* white-space: nowrap; */
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
-
+    .testimonila-disc {
+      width: 100%;
+      font-size: 16px;
+    }
     &::-webkit-scrollbar {
       width: 8px;
     }
@@ -497,7 +820,7 @@
       background-color: transparent;
     }
   }
-
+  /* Case  */
   .testimonila-section .about-background-img {
     height: 850px;
     object-fit: cover;
@@ -513,12 +836,18 @@
     bottom: -35px;
     left: 0;
   }
-  .services-cards{
+  .services-cards {
     gap: 65px;
   }
 }
 .wrapper-two {
-  display: none !important;
+  /* display: none !important; */
+}
+.partnerslogoline {
+  margin: 0;
+  display: flex;
+  border-left: 1px solid black;
+  flex-direction: column;
 }
 @media (max-width: 500px) {
   .homapage-headtext {
@@ -529,7 +858,7 @@
     object-fit: cover;
   }
   .brand-scroller-head p {
-    font-size: 64px;
+    font-size: 48px;
   }
   .homepage-headtext-p {
     font-size: 36px;
@@ -592,7 +921,59 @@
     width: 200px;
   }
 }
+/* image compare */
+/* Responsive Image Comparison Styles */
+.image-comparison-container {
+  width: 100%;
 
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.image-comparison {
+  width: 100%;
+  max-height: 80vh;
+  aspect-ratio: 16 / 9;
+}
+
+/* Ensure images are fully responsive */
+.image-comparison > div {
+  width: 95% !important;
+  margin: 0 auto;
+  border-radius: 20px;
+  height: 100% !important;
+}
+
+.image-comparison img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Media Queries for Different Mobile Devices */
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .image-comparison-container {
+    padding: 10px;
+  }
+
+  .image-comparison {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 577px) and (max-width: 992px) {
+  .image-comparison-container {
+    padding: 15px;
+  }
+
+  .image-comparison {
+    aspect-ratio: 4 / 3;
+  }
+}
 /* ---- About Us Style ---- */
 
 .about-wrapper {
@@ -1222,7 +1603,8 @@
   .about-content-text {
     width: 90%;
     padding: 20px;
-    margin-left: -20px;
+    margin: 0 auto;
+    border-radius: 30px;
   }
 }
 @media (max-width: 400px) {
@@ -1982,7 +2364,7 @@ textarea::placeholder {
 
 @media (max-width: 500px) {
   .image-container-homepage img {
-    height: 300px;
+    height: 100%;
   }
   .service-on-text h1 {
     font-size: 40px;
@@ -2075,11 +2457,166 @@ textarea::placeholder {
   .services-bottom-disc-2 p {
     font-size: 14px;
   }
+  .casestudy-heading h2 {
+    width: 100%;
+    font-size: 48px;
+    font-family: bwvirat;
+    font-weight: 600;
+    margin: 50px 0 0px 0;
+    text-align: left;
+  }
+  .casestudy_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 330px !important;
+    height: 405px !important;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    /* background: #fff; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .casestudy_image_container {
+    width: 100%;
+    height: 405px !important; /* Set a fixed height for consistency */
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0; /* Rounded corners for the top */
+  }
 }
 
-.links-on-text{
+.links-on-text {
   text-decoration: underline;
   font-size: 15px;
   font-weight: 900;
   color: black;
+}
+
+/* Case Study */ /* Container styles */
+.casestudy_container {
+  width: 95%;
+  padding: 20px;
+  text-align: center;
+  margin-left: 50px;
+}
+
+/* Swiper styles */
+.casestudy_swiper {
+  width: 100%;
+  padding: 20px 0;
+  /* padding-left: 50px; */
+}
+.casestudy-heading {
+  width: 100%;
+  font-size: 64px;
+  font-family: bwvirat;
+  font-weight: 600;
+  margin: 50px 0 30px 0;
+  text-align: left;
+}
+/* Card styles */
+.casestudy_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 240px !important;
+  height: 506px;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  /* background: #fff; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.casestudy_card:hover {
+  /* width: 310px; */
+  /* transform: scale(1.1); */
+}
+
+/* Image container */
+.casestudy_image_container {
+  width: 100%;
+  height: 506px; /* Set a fixed height for consistency */
+  overflow: hidden;
+  border-radius: 10px 10px 0 0; /* Rounded corners for the top */
+}
+
+.casestudy_image_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+  transition: transform 0.3s ease;
+}
+
+.casestudy_card:hover .casestudy_image_container img {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Text styles */
+.casestudy_title {
+  position: absolute;
+  bottom: 20px;
+  left: 5%;
+  /* transform: translateX(-50%); */
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: virat;
+  text-align: left;
+}
+
+/* See More button */
+.casestudy_see_more {
+  margin-top: 20px;
+  background: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+  width: 204px;
+  height: 54px;
+  background-color: #0e1e41;
+  font-size: 20px;
+  font-family: bwvirat;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: virat;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 92% 100%, 0% 100%, 0% 50%);
+  cursor: pointer;
+  transition: all 1s ease;
+  position: relative;
+  margin-left: 40%;
+  /* transform: translateX(-50%); */
+}
+
+.casestudy_see_more:hover {
+  background: #0056b3;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .casestudy_card {
+    width: 180px;
+  }
+
+  .casestudy_image_container {
+    height: 150px;
+  }
+
+  .casestudy_see_more {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
 }

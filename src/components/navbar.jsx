@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { IoReturnUpBack } from "react-icons/io5";
+import { IoReturnUpBack, IoCall, IoMail } from "react-icons/io5";
 import "./compenents.css";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
@@ -10,6 +10,7 @@ const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [selectedTab, setSelectedTab] = useState(null);
   const [isService, setIsService] = useState(false);
+  const [isServes, setIsServes] = useState(false);
   const navigate = useNavigate();
 
   const handleDrawerToggle = () => {
@@ -30,6 +31,10 @@ const Navbar = () => {
     setSelectedTab(tab);
     if (tab === "services") {
       setIsService(!isService);
+      return;
+    }
+    if (tab === "serves") {
+      setIsServes(!isServes);
       return;
     }
     if (tab === "download-brochure") {
@@ -58,6 +63,12 @@ const Navbar = () => {
             className="logo"
             onClick={navigationLink}
           />
+        </div>{" "}
+        <div className="navbarContactdetail">
+          {" "}
+          <IoCall className="navbar-icon"></IoCall>
+          <h2> +91 9833535447</h2> <IoMail className="navbar-icon"></IoMail>
+          <h2>vfm.services2017@gmail.com</h2>
         </div>
         <div onClick={handleDrawerToggle}>
           <IoReturnUpBack
@@ -225,6 +236,97 @@ const Navbar = () => {
               ></div>
               <p>Contact us</p>
             </Link>
+            {/* ----------------------------------------------------------------------------------------- */}
+            {/* other serves   */}
+            <Link
+              // to="/services"
+              onClick={() => handleTabClick("serves")}
+              className={`services-link ${
+                selectedTab === "serves" ? "selected" : ""
+              }`}
+            >
+              <div
+                className={
+                  selectedTab === "serves"
+                    ? "line-indication selected-line"
+                    : "line-indication"
+                }
+              ></div>
+              <p>Other Serves {isServes ? "▲" : "▼"}</p>
+            </Link>
+            {isServes && (
+              <>
+                <Link>
+                  <div
+                    className={
+                      selectedTab === "house-keeping"
+                        ? "line-indication selected-line"
+                        : "line-indication"
+                    }
+                  ></div>
+                  <p>House Keeping</p>
+                </Link>
+                <Link
+                  // to="/services/horticulture-landscaping"
+                  onClick={() => handleTabClick("horticulture-landscaping")}
+                  className={
+                    selectedTab === "horticulture-landscaping" ? "selected" : ""
+                  }
+                >
+                  <div
+                    className={
+                      selectedTab === "horticulture-landscaping"
+                        ? "line-indication selected-line"
+                        : "line-indication"
+                    }
+                  ></div>
+                  <p>Horticulture Landscaping</p>
+                </Link>
+                <Link
+                  // to="/services/mechanical"
+                  onClick={() => handleTabClick("mechanical")}
+                  className={selectedTab === "mechanical" ? "selected" : ""}
+                >
+                  <div
+                    className={
+                      selectedTab === "mechanical"
+                        ? "line-indication selected-line"
+                        : "line-indication"
+                    }
+                  ></div>
+                  <p>Mechanical</p>
+                </Link>
+                <Link
+                  // to="/services/plumbing"
+                  onClick={() => handleTabClick("plumbing")}
+                  className={selectedTab === "plumbing" ? "selected" : ""}
+                >
+                  <div
+                    className={
+                      selectedTab === "plumbing"
+                        ? "line-indication selected-line"
+                        : "line-indication"
+                    }
+                  ></div>
+                  <p>Plumbing</p>
+                </Link>
+                <Link
+                  // to="/services/eletrical"
+                  onClick={() => handleTabClick("eletrical")}
+                  className={selectedTab === "eletrical" ? "selected" : ""}
+                >
+                  <div
+                    className={
+                      selectedTab === "eletrical"
+                        ? "line-indication selected-line"
+                        : "line-indication"
+                    }
+                  ></div>
+                  <p>Eletrical</p>
+                </Link>
+              </>
+            )}
+            {/*  */}
           </div>
         </div>
       )}

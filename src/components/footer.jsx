@@ -38,7 +38,12 @@ const Footer = () => {
           </div>
           <div className="footer-right">
             <div className="footer-box">
-              <FooterCom name={"Email us"} link={""} img={footerImage} />
+              <FooterCom
+                onClick={() => window.open("mailto:vfm.services2017@gmail.com")}
+                name={"Email us"}
+                link={"vfm.services2017@gmail.com"}
+                img={footerImage}
+              />
               <FooterCom name={"Visit us"} link={""} img={footerImage} />
             </div>
             <div className="footer-social">

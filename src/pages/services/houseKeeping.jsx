@@ -103,12 +103,16 @@ const HouseKeeping = () => {
             The Benefits of Collaborating with Virat Facility Management
           </h1>
           <p className="text-p">
-            Here at <Link to="/" className="links-on-text">Virat Facility Management</Link>, we pay keen attention to detail
-            and ensure that we deliver only the best. Our staff is comprised of
-            qualified personnel who are skilled in meeting all cleaning
-            challenges and guaranteeing quality work. We work with the most
-            advanced technology and eco-friendly products to meet the efficiency
-            and sustainability of cleaning services.
+            Here at{" "}
+            <Link to="/" className="links-on-text">
+              Virat Facility Management
+            </Link>
+            , we pay keen attention to detail and ensure that we deliver only
+            the best. Our staff is comprised of qualified personnel who are
+            skilled in meeting all cleaning challenges and guaranteeing quality
+            work. We work with the most advanced technology and eco-friendly
+            products to meet the efficiency and sustainability of cleaning
+            services.
           </p>
           <br />
         </div>
@@ -147,11 +151,18 @@ const HouseKeeping = () => {
         </h1>
         <p>
           Are you ready to feel the difference that comes with a clean working
-          environment? <Link to="/contact-us" className="links-on-text">Get in touch with us</Link> now to find out more
-          about our cleaning services and how we can help you. Choose <Link to="/contact-us" className="links-on-text">Virat
-          Facility Management</Link> as your ally in improving the quality of the
-          workplace environment and productivity. Combined as one, we can take
-          your office to new levels of cleanliness and organization.
+          environment?{" "}
+          <Link to="/contact-us" className="links-on-text">
+            Get in touch with us
+          </Link>{" "}
+          now to find out more about our cleaning services and how we can help
+          you. Choose{" "}
+          <Link to="/contact-us" className="links-on-text">
+            Virat Facility Management
+          </Link>{" "}
+          as your ally in improving the quality of the workplace environment and
+          productivity. Combined as one, we can take your office to new levels
+          of cleanliness and organization.
         </p>
       </div>
     </div>
