@@ -2619,6 +2619,12 @@ textarea::placeholder {
   .casestudy_card {
     width: 180px;
   }
+  .casestudy_container {
+    width: 95%;
+    padding: 0px;
+    text-align: center;
+    margin-left: 10px;
+  }
 
   .casestudy_image_container {
     height: 150px;
