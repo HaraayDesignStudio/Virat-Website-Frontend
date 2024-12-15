@@ -100,12 +100,16 @@ const Eletrical = () => {
         <div className="text-content">
           <h1 className="text-h1">Here is what makes our services special:</h1>
           <p className="text-p">
-            At <Link to="/" className="links-on-text">Virat Facility Management</Link>, we strongly believe in the principles
-            of artistry and professionalism. The highly trained personnel at our
-            company are fully committed to delivering efficient and sustainable
-            electrical solutions with the help of state-of-the-art technology
-            and methods. The electrical system is one of the most delicate to
-            manage, and we are here to ensure you have all the help you need.
+            At{" "}
+            <Link to="/" className="links-on-text">
+              Virat Facility Management
+            </Link>
+            , we strongly believe in the principles of artistry and
+            professionalism. The highly trained personnel at our company are
+            fully committed to delivering efficient and sustainable electrical
+            solutions with the help of state-of-the-art technology and methods.
+            The electrical system is one of the most delicate to manage, and we
+            are here to ensure you have all the help you need.
           </p>
           <br />
         </div>
@@ -146,7 +150,10 @@ const Eletrical = () => {
           Electric problems should not hinder business operations in any way. To
           find out more about our wide range of electrical services and how we
           can support your business in ensuring that you are fully compliant and
-          free from electrical dangers, please <Link to="/contact-us" className="links-on-text">get in touch with us today.</Link>
+          free from electrical dangers, please{" "}
+          <Link to="/contact-us" className="links-on-text">
+            get in touch with us today.
+          </Link>
         </p>
       </div>
     </div>

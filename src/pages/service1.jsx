@@ -13,8 +13,52 @@ import serviceicon2 from "../assets/serviceicon2.svg";
 import serviceicon3 from "../assets/serviceicon3.svg";
 import serviceicon4 from "../assets/serviceicon4.svg";
 import serviceicon5 from "../assets/serviceicon5.svg";
+// swiper
+import { Swiper, SwiperSlide } from "swiper/react"; // Core Swiper
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules"; // Navigation and Pagination modules
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+//
 import cub from "../assets/Cub.png";
 const Service = () => {
+  // swiper setting
+  const [swiperSettings, setSwiperSettings] = useState({
+    slidesPerView: 4, // Default value
+    spaceBetween: 50, // Default value
+  });
+
+  // Function to handle the screen width change
+  const updateSwiperSettings = () => {
+    const width = window.innerWidth;
+
+    if (width <= 450) {
+      setSwiperSettings({
+        slidesPerView: 1, // 1 card per view for mobile
+        spaceBetween: 50, // 50px space between slides
+      });
+    } else if (width <= 768) {
+      setSwiperSettings({
+        slidesPerView: 2, // 2 cards per view for tablets
+        spaceBetween: 20, // 20px space between slides
+      });
+    } else {
+      setSwiperSettings({
+        slidesPerView: 4, // 4 cards per view for desktops
+        spaceBetween: 50, // 50px space between slides for desktop
+      });
+    }
+  };
+
+  // Update the swiper settings when the component mounts or when the window is resized
+  useEffect(() => {
+    updateSwiperSettings();
+    window.addEventListener("resize", updateSwiperSettings);
+
+    // Clean up event listener on unmount
+    return () => window.removeEventListener("resize", updateSwiperSettings);
+  }, []);
   const services = [
     { image: serviceimg1, icon: serviceicon1, title: "House Keeping" },
     { image: serviceimg2, icon: serviceicon2, title: "Gardening" },
@@ -73,15 +117,39 @@ const Service = () => {
             ))}
           </div>
         </div>
+        <div className="casestudy_container">
+          {" "}
+          <div className="casestudy-heading">
+            <h2>Our Case Studies </h2>
+          </div>
+          <Swiper
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            spaceBetween={swiperSettings.spaceBetween}
+            slidesPerView={swiperSettings.slidesPerView}
+            pagination={{ clickable: true }}
+            navigation
+            className="casestudy_swiper"
+          >
+            {services.map((service) => (
+              <SwiperSlide key={service.id} className="casestudy_card">
+                <div className="casestudy_image_container">
+                  <img src={service.image} alt={service.title} />
+                </div>
+                <p className="casestudy_title">{service.title}</p>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <button className="casestudy_see_more">See More</button>
+        </div>
         {/* contact  */}
         <div className={styles.contactSection}>
           {/* Map Background */}
           <div className={styles.mapContainer}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.9041628509177!2d73.78098431489233!3d18.523616987404136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf021d524b4f%3A0x8c3b08c9c11256fa!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1675850457476!5m2!1sen!2sin"
-              allowFullScreen=""
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7539.459930366044!2d72.86337742817217!3d19.119498752877575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1734072198756!5m2!1sen!2sin"
+              allowfullscreen=""
               loading="lazy"
-              title="Google Maps"
+              referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
 
@@ -91,21 +159,24 @@ const Service = () => {
               <span className={styles.icon}>📍</span>
               <div>
                 <h3>Our Location</h3>
-                <p>W 13th line, Vanaz Street, Pune, Maharashtra, 500001</p>
+                <p>
+                  B wing Shop no. 39 Upperdesk, Giriraj Industrial Estate, MIDC
+                  Andheri(East) Mumbai-400093
+                </p>
               </div>
             </div>
             <div className={styles.contactItem}>
               <span className={styles.icon}>✉️</span>
               <div>
                 <h3>Our Email</h3>
-                <p>hellovirat@gmail.com</p>
+                <p>vfm.services2017@gmail.com</p>
               </div>
             </div>
             <div className={styles.contactItem}>
               <span className={styles.icon}>📞</span>
               <div>
                 <h3>Our Phone</h3>
-                <p>+91 9874551251</p>
+                <p>+91 9833535447</p>
               </div>
             </div>
           </div>

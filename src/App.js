@@ -5,14 +5,14 @@ import Footer from "./components/footer";
 import Aboutus from "./pages/aboutus";
 import ContactUs from "./pages/contactus";
 import HumanSustainbility from "./pages/humanSustainbility";
-import Serivce from "./pages/service";
-// import Serivce from "./pages/service1";
+// import Serivce from "./pages/service";
+import Serivce from "./pages/service1";
 import HouseKeeping from "./pages/services/houseKeeping";
 import HorticultureLandscape from "./pages/services/horticultureLandscape";
 import MechanicalServices from "./pages/services/mechanical";
 import Plumbing from "./pages/services/plumbing";
 import Eletrical from "./pages/services/eletrical";
-
+import Casestudyhorticulture from "./pages/casestudy/CasestudyhorticultureLandscape";
 function App() {
   return (
     <BrowserRouter>
@@ -31,6 +31,11 @@ function App() {
         <Route path="/services/mechanical" element={<MechanicalServices />} />
         <Route path="/services/plumbing" element={<Plumbing />} />
         <Route path="/services/eletrical" element={<Eletrical />} />
+        {/* case study */}
+        <Route
+          path="/casestudy/horticulture-landscaping"
+          element={<Casestudyhorticulture />}
+        />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -93,12 +93,16 @@ const HorticultureLandscape = () => {
             Facility Management
           </h1>
           <p className="text-p">
-            At <Link to="/" className="links-on-text">Virat Facility Management</Link>, availing quality is guaranteed. It is
-            a core value that defines our work. We pride ourselves on having
-            experienced horticulturists and landscapers with passion and skills
-            who will ensure your outdoors get the best care they need. It is our
-            policy to ensure that we pay a lot of attention to minor details and
-            produce high-quality work.
+            At{" "}
+            <Link to="/" className="links-on-text">
+              Virat Facility Management
+            </Link>
+            , availing quality is guaranteed. It is a core value that defines
+            our work. We pride ourselves on having experienced horticulturists
+            and landscapers with passion and skills who will ensure your
+            outdoors get the best care they need. It is our policy to ensure
+            that we pay a lot of attention to minor details and produce
+            high-quality work.
           </p>
           <br />
         </div>
@@ -137,9 +141,12 @@ const HorticultureLandscape = () => {
         </h1> */}
         <p>
           Are you ready to change your exterior spaces with the help of our
-          landscape and horticultural services? You can <Link to="/contact-us" className="links-on-text">reach out to us today</Link> to
-          learn more about our extensive services and how we deliver customized
-          solutions. 
+          landscape and horticultural services? You can{" "}
+          <Link to="/contact-us" className="links-on-text">
+            reach out to us today
+          </Link>{" "}
+          to learn more about our extensive services and how we deliver
+          customized solutions. 
         </p>
       </div>
     </div>

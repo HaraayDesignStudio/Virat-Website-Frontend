@@ -31,7 +31,6 @@ import serviceicon5 from "../assets/serviceicon5.svg";
 import comapre1 from "../assets/before.webp";
 import comapre2 from "../assets/after.webp";
 
-//
 // swiper
 import { Swiper, SwiperSlide } from "swiper/react"; // Core Swiper
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules"; // Navigation and Pagination modules
