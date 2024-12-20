@@ -22,6 +22,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 //
 import cub from "../assets/Cub.png";
+import Stats from "../components/Stats";
 const Service = () => {
   // swiper setting
   const [swiperSettings, setSwiperSettings] = useState({
@@ -84,7 +85,7 @@ const Service = () => {
             </p>
           </div>
         </div>
-
+<Stats/>
         {/* Services Grid */}
         <div className={styles.servicesSection}>
           {/* Background */}

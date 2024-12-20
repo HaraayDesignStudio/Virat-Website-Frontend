@@ -3,12 +3,14 @@ import { Link, useNavigate } from "react-router-dom";
 import homepageimage from "../../assets/service-back.png";
 import homekeeping from "../../assets/service2.png";
 import ValuesCard from "../../components/valuesCard";
-import card2 from "../../assets/hort2.png";
+import card2 from "../../assets/elastrations/03.png";
+import card2z from "../../assets/hort2.png";
 import card1 from "../../assets/hort1.png";
 import card3 from "../../assets/hort3.png";
 import homekeeping2 from "../../assets/girl-base.png";
 import boy from "../../assets/boy.png"
 import girl from "../../assets/girl.png"
+import Stats from "../../components/Stats.jsx"
 
 const HorticultureLandscape = () => {
   const navigate = useNavigate();
@@ -45,7 +47,8 @@ const HorticultureLandscape = () => {
             business a professional appeal.
           </p>
         </div>
-      </div>
+<Stats/>
+</div> 
       <div className="services-first-box">
         <div className="text-content">
           <h1 className="text-h1">
@@ -66,24 +69,24 @@ const HorticultureLandscape = () => {
         </div>
       </div>
       <div className="service-cards-wrapper">
-        <div className="values-card-one values-card-two service-cards service-two-cards">
-          <ValuesCard
+      <div className="values-card-one values-card-two service-cards">
+      <ValuesCard
             image={card1}
-            name={""}
+            name={"Garden Maintenance"}
             disc={
-              "Landscaping can add much more value to the property if the work is well done and properly maintained. Clean and well-maintained lawns, flowers, and trees are appealing to potential customers, investors, and employees. Our garden landscaping services are aimed at making your area look beautiful and more valuable."
+              "Of course, we understand the importance of having a clean working space in the morning. With our daily cleaning service, your work environment will always be clean and prepared for use in the morning. Our services include cleaning furniture, carpets, windows, and walls and sanitizing the areas that are frequently touched, such as doors, light switches, and handles."
             }
           />
           <ValuesCard
-            image={card2}
-            name={""}
+            image={card2z}
+            name={"Tree Pruning & Trimming"}
             disc={
               "Quality design of the outdoor environment increases the morale of the employees and their productivity. People can relax and refresh their minds in green spaces, which are very effective in preventing stress. Our services in landscape and horticulture ensure that the environment looks and feels good to the body, mind, and soul."
             }
           />
           <ValuesCard
             image={card3}
-            name={""}
+            name={"Irrigation & Soil Management"}
             disc={
               "Sustainability forms part of our core values in all projects that we undertake. We employ skilled horticulturists to plant and care for plants, flowers, and trees in our landscapes while promoting sustainable practices and using environmentally friendly products. Specializing in water-saving irrigation, we strive to design our landscapes to be environmentally friendly and able to withstand difficult conditions."
             }
@@ -115,24 +118,24 @@ const HorticultureLandscape = () => {
         </div>
       </div>
       <div className="service-cards-wrapper">
-        <div className="values-card-one values-card-two service-cards service-two-cards">
-          <ValuesCard
+      <div className="values-card-one values-card-two service-cards">
+      <ValuesCard
             image={card2}
-            name={""}
+            name={"Enhanced Aesthetics"}
             disc={
               "A clean environment contributes significantly to improving productivity in a workplace. It is always easier to concentrate on the work, produce more, and be more motivated when the place is clean. Our professional housekeeping services are meant to help create an environment conducive for your team."
             }
           />
           <ValuesCard
             image={card2}
-            name={""}
+            name={"Environmental Benefits"}
             disc={
               "It is essential to ensure that the working environment is clean for the well-being of the employees in the organization. Daily cleaning eliminates germs and allergens that can cause illnesses; this results in less absenteeism and a productive workforce. We are dedicated to employing non-toxic products that will safeguard your team and provide the necessary cleaning services."
             }
           />
           <ValuesCard
             image={card2}
-            name={""}
+            name={"Property Value Increase"}
             disc={
               "It is important to make a good first impression of oneself when potential clients and partners are visiting your office. A clean working environment also goes a long way in portraying the level of professionalism of a company or institution. Our corporate housekeeping services enable you to present your office in the best manner possible at all times."
             }

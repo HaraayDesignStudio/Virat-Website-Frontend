@@ -2207,8 +2207,16 @@ textarea::placeholder {
   font-size: 20px; text-align: justify;
 }
 .text-p {
-  font-size: 18px;
+  font-family: virat;
+  font-size: 20px;
   width: 95%;
+  text-decoration: none;
+  a{
+    text-decoration: none;
+  font-family: virat;
+  font-size: 20px;
+  font-weight: normal; 
+  }
 }
 .services-first-box .text-h2 {
   font-family: bwvirat;
@@ -2222,6 +2230,24 @@ textarea::placeholder {
        /* Ensure the image container takes up full width */
   min-height: 100% !important;       /* Ensure the image container takes up full height */
 
+}
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-icon a img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-icon a img:hover {
+  transform: scale(1.1);
 }
 
 
@@ -2238,7 +2264,7 @@ textarea::placeholder {
   );
   max-height: 540px;
   max-width: 425px;
-  padding: 80px 15px;  border-radius: 30px;
+  padding: 10px 15px;  border-radius: 30px;
 }
 .services-details .values-card-two {
   padding-right: 40px !important;

@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import homepageimage from "../../assets/service-back-2.png";
+import homepageimage from "../../assets/service-back.png";
 import homekeeping from "../../assets/service5.png";
 import ValuesCard from "../../components/valuesCard";
 import card2 from "../../assets/elastrations/03.png";
-import homekeeping2 from "../../assets/service51.png";
+import homekeeping2 from "../../assets/girl-base.png";
+import ele1 from "../../assets/ele1.png";
+import ele2 from "../../assets/ele2.png";
+import ele3 from "../../assets/ele3.png";
 import boy from "../../assets/boy.png"
-import girl from "../../assets/girl.png"
+import girl from "../../assets/girl.png" 
+import Stats from "../../components/Stats.jsx"
 const Eletrical = () => {
   const navigate = useNavigate();
 
@@ -41,7 +45,8 @@ const Eletrical = () => {
             compliance of your workspace.
           </p>
         </div>
-      </div>
+<Stats/>
+</div>
       <div className="services-first-box">
         <div className="text-content">
           <h1 className="text-h1">
@@ -73,24 +78,24 @@ const Eletrical = () => {
         </div>
       </div>
       <div className="service-cards-wrapper">
-        <div className="values-card-one values-card-two service-cards service-two-cards">
-          <ValuesCard
-            image={card2}
-            name={""}
+      <div className="values-card-one values-card-two service-cards">
+      <ValuesCard
+            image={ele1}
+            name={"Electrical Installation & Wiring"}
             disc={
               "Electrical maintenance should be carried out regularly to avoid any hitches in the functioning of the electrical systems. These maintenance services comprise examinations, checks, and actions aimed at preventing problems from arising in the first place or minimizing their severity. This not only optimizes your systems but also improves their durability, hence reducing the overall cost in the long run."
             }
           />
           <ValuesCard
-            image={card2}
-            name={""}
+            image={ele2}
+            name={"Lighting Solutions"}
             disc={
               "Electrical issues are generally unpredictable and can cause massive blackouts at times. Our team of professional electricians is always alert and waiting to attend to your emergency needs and ensure that your systems are back on quickly. We appreciate the importance of electrical issues and strive to keep downtime and disruption to a minimum and to return everything to normal as soon as possible."
             }
           />
           <ValuesCard
-            image={card2}
-            name={""}
+            image={ele3}
+            name={"Preventive & Emergency Repairs"}
             disc={
               "Whether you are establishing a new office or improving already existing infrastructures, our installation and upgrade services help you achieve the best standards of electrical installation. We assist you in choosing the most suitable solutions for your requirements and offer professional installation to ensure the systems operate at peak efficiency from the very beginning."
             }
@@ -119,28 +124,29 @@ const Eletrical = () => {
         </div>
       </div>
       <div className="service-cards-wrapper">
-        <div className="values-card-one values-card-two service-cards service-two-cards service-only-two">
+      <div className="values-card-one values-card-two service-cards">
+
           <ValuesCard
             image={card2}
-            name={""}
+            name={"Safety Assurance"}
             disc={
               "Optimized electrical utilities play a significant role in minimizing energy usage and overall costs. Our electrical services ensure the efficiency and functionality of the electrical system in your workplace, thus enhancing cost-effectiveness."
             }
           />
           <ValuesCard
             image={card2}
-            name={""}
+            name={"Energy Efficiency"}
             disc={
               " Complying with electrical safety is crucial to any business. Our professional electricians know all the legal requirements and guarantee that your systems are compliant with these standards. Our company has vast experience that enables us to give professional advice and electrical consultation on the issues of compliance and the infrastructure of electrical needs."
             }
           />
-          {/* <ValuesCard
+          <ValuesCard
           image={card2}
-          name={""}
+          name={"Compliance & Reliability"}
           disc={
-            "It is important to know the details of your plumbing systems to avoid pitfalls when making a decision. The consultation services provided by our plumber service provider entail professional advice and guidance towards finding solutions that are suitable for your requirements and objectives."
+            "Regular electrical inspections and maintenance ensure adherence to safety and industry regulations, preventing potential fines and liabilities. Reliable electrical systems reduce the risk of power outages, providing consistent energy to support daily operations and critical infrastructure, while also ensuring the safety of occupants and equipment."
           }
-        /> */}
+        />
         </div>
       </div>
       <div className="services-bottom-disc">

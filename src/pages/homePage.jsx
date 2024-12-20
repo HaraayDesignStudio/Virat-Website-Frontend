@@ -3,6 +3,7 @@ import homepageimage from "../assets/Hero Section.webp";
 import aboutsection from "../assets/Rectangle 137.png";
 import testimonials from "../assets/126276-abstract-3d-orange-black-and-white-curved-lines-texture-background 1 (1).png";
 import cub from "../assets/Cub.png";
+import whatsapp from "../assets/whatsapp.png";
 // import styles from "./Services.module.css"
 import test1 from "../assets/brnads/356674 1.png";
 import test3 from "../assets/brnads/hdfc-bank-logo-removebg-preview 1.png";
@@ -145,6 +146,12 @@ const HomePage = () => {
 
   return (
     <div className="homepage-container">
+<div class="whatsapp-icon">
+    <a href="https://wa.me/1234567890" target="_blank">
+        <img src={whatsapp} alt="WhatsApp" />
+    </a>
+</div>
+
       <div className="image-container-homepage">
         <img src={homepageimage} alt="homepage" />
         <p className="homepage-image-text">

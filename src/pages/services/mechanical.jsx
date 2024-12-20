@@ -4,9 +4,14 @@ import homepageimage from "../../assets/service-back.png";
 import homekeeping from "../../assets/service3.jpeg";
 import ValuesCard from "../../components/valuesCard";
 import card2 from "../../assets/elastrations/03.png";
-import homekeeping2 from "../../assets/service31.png";
-import boy from "../../assets/boy.png"
-import girl from "../../assets/girl.png"
+import mech1 from "../../assets/mech1.png";
+import mech2 from "../../assets/mech2.png";
+import  mech3 from "../../assets/mech3.png";
+// import homekeeping2 from "../../assets/service31.png";
+import boy from "../../assets/boy.png";
+import girl from "../../assets/girl.png";
+import Stats from "../../components/Stats.jsx"
+import homekeeping2 from "../../assets/girl-base.png"; 
 const MechanicalServices = () => {
   const navigate = useNavigate();
 
@@ -40,7 +45,8 @@ const MechanicalServices = () => {
             functioning so as not to disrupt the flow of business.   
           </p>
         </div>
-      </div>
+<Stats/>
+</div> 
       <div className="services-first-box">
         <div className="text-content">
           <h1 className="text-h1">
@@ -67,24 +73,24 @@ const MechanicalServices = () => {
         </div>
       </div>
       <div className="service-cards-wrapper">
-        <div className="values-card-one values-card-two service-cards service-two-cards">
+        <div className="values-card-one values-card-two service-cards">
           <ValuesCard
-            image={card2}
-            name={""}
+            image={mech1}
+            name={"HVAC Installation & Maintenance"}
             disc={
               "Maintenance is an important aspect as it helps avoid breakdowns and can extend the life of the mechanical equipment. In our maintenance service, we perform regular checkups, thorough repairs if needed, and proper alignments to ensure your equipment runs as expected. It is far more effective to address a problem before it escalates into a larger issue that requires extensive repairs and time off from work."
             }
           />
           <ValuesCard
-            image={card2}
-            name={""}
+            image={mech2}
+            name={"Equipment Repair & Upkeep"}
             disc={
               "Since mechanical problems are inevitable, it becomes crucial to address them before they progress further. Our professional technicians are well capable of responding to emergencies and getting your systems back online again. Our team is aware of the necessity of avoiding any interruptions in your business processes, so we make sure to offer you only fast and efficient services."
             }
           />
           <ValuesCard
-            image={card2}
-            name={""}
+            image={mech3}
+            name={"Preventative Maintenance"}
             disc={
               "Whether you are starting with a new office space or retrofitting your existing office, our installation and upgrade services guarantee that all your mechanical systems are well-installed. Our team helps you choose the equipment and solutions that best suit your needs. Thus, we guarantee the optimum installation of the equipment to ensure that it operates at its capacity from the time it is installed."
             }
@@ -95,12 +101,16 @@ const MechanicalServices = () => {
         <div className="text-content">
           <h1 className="text-h1">Join Hands with Virat Facility Management</h1>
           <p className="text-p">
-            At <Link to="/" className="links-on-text">Virat Facility Management</Link>, professionalism is implied in ensuring
-            that every little detail is taken care of to the best of our
-            ability. Our technicians are skilled, and we guarantee that they are
-            equipped to deal with any mechanical issue and perform every task to
-            perfection. This is done efficiently and sustainably by applying
-            state-of-the-art technologies and industry best practices.
+            At{" "}
+            <Link to="/" className="links-on-text">
+              Virat Facility Management
+            </Link>
+            , professionalism is implied in ensuring that every little detail is
+            taken care of to the best of our ability. Our technicians are
+            skilled, and we guarantee that they are equipped to deal with any
+            mechanical issue and perform every task to perfection. This is done
+            efficiently and sustainably by applying state-of-the-art
+            technologies and industry best practices.
           </p>
           <br />
         </div>
@@ -109,24 +119,25 @@ const MechanicalServices = () => {
         </div>
       </div>
       <div className="service-cards-wrapper">
-        <div className="values-card-one values-card-two service-cards service-two-cards">
+      <div className="values-card-one values-card-two service-cards">
+
           <ValuesCard
             image={card2}
-            name={""}
+            name={"Operational Efficiency"}
             disc={
               " Mechanical systems that are well maintained consume less energy and therefore are cheaper to run. The mechanical solutions we offer are aimed at optimizing the performance of your equipment, increasing its uptime, and making your business more economical."
             }
           />
           <ValuesCard
             image={card2}
-            name={""}
+            name={"Extended Equipment Lifespan"}
             disc={
               "It is essential to perform consistent maintenance and fix problems immediately to avoid system failures. The mechanical services we offer are professional to guarantee that your equipment stays usable and reliable to enhance the functioning of your business."
             }
           />
           <ValuesCard
             image={card2}
-            name={""}
+            name={"Reduced Downtime"}
             disc={
               "Mechanical Systems Management is not solely confined to aspects of efficiency and reliability but also encompasses safety. Our services eliminate all risks and dangers that your employees may face in the workplace as we ensure equipment safety. With safety being a priority in everything we offer to you, you can be assured."
             }
@@ -136,29 +147,26 @@ const MechanicalServices = () => {
       <div className="services-bottom-disc">
         <img src={boy} alt="" />
         <div className="servicesdisctxt">
-          
-        <h1 className="bottom-h1">
-          Reach Out Today: Let's Keep Your Workspace Sparkling Clean
-        </h1>
-        <p>
-          Are you ready to feel the difference that comes with a clean working
-          environment?{" "}
-          <Link to="/contact-us" className="links-on-text">
-            Get in touch with us
-          </Link>{" "}
-          now to find out more about our cleaning services and how we can help
-          you. Choose{" "}
-          <Link to="/contact-us" className="links-on-text">
-            Virat Facility Management
-          </Link>{" "}
-          as your ally in improving the quality of the workplace environment and
-          productivity. Combined as one, we can take your office to new levels
-          of cleanliness and organization.
-        </p> 
-
+          <h1 className="bottom-h1">
+            Reach Out Today: Let's Keep Your Workspace Sparkling Clean
+          </h1>
+          <p>
+            Are you ready to feel the difference that comes with a clean working
+            environment?{" "}
+            <Link to="/contact-us" className="links-on-text">
+              Get in touch with us
+            </Link>{" "}
+            now to find out more about our cleaning services and how we can help
+            you. Choose{" "}
+            <Link to="/contact-us" className="links-on-text">
+              Virat Facility Management
+            </Link>{" "}
+            as your ally in improving the quality of the workplace environment
+            and productivity. Combined as one, we can take your office to new
+            levels of cleanliness and organization.
+          </p>
         </div>
-      <img src={girl} alt="" />
-
+        <img src={girl} alt="" />
       </div>
     </div>
   );

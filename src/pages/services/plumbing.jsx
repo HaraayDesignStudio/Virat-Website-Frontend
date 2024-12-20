@@ -4,7 +4,15 @@ import homepageimage from "../../assets/service-back.png";
 import homekeeping from "../../assets/service4.png";
 import ValuesCard from "../../components/valuesCard";
 import card2 from "../../assets/elastrations/03.png";
-import homekeeping2 from "../../assets/service42.png";
+// import homekeeping2 from "../../assets/girl-base.png";
+import plum1 from "../../assets/plum1.png";
+import plum2 from "../../assets/plum2.png";
+import plum3 from "../../assets/plum3.png";
+import homekeeping2 from "../../assets/girl-base.png";
+
+import Stats from "../../components/Stats.jsx"
+
+
 import boy from "../../assets/boy.png"
 import girl from "../../assets/girl.png"
 const Plumbing = () => {
@@ -41,7 +49,8 @@ const Plumbing = () => {
             interrupting the operation and achieving exceptional results.  
           </p>
         </div>
-      </div>
+<Stats/>
+</div> 
       <div className="services-first-box">
         <div className="text-content">
           <h1 className="text-h1">
@@ -68,23 +77,23 @@ const Plumbing = () => {
         </div>
       </div>
       <div className="service-cards-wrapper">
-        <div className="values-card-one values-card-two service-cards ">
-          <ValuesCard
-            image={card2}
+      <div className="values-card-one values-card-two service-cards">
+            <ValuesCard
+            image={plum1}
             name={"Routine Maintenance"}
             disc={
               "The best way to avoid expensive repairs later is to take proactive measures that will help your plumbing systems last longer. Included in our regular maintenance services are inspection, cleaning, and preventive measures aimed at maintaining the optimal functionality of your plumbing systems. Maintenance enables one to detect any issues that may be present, hence allowing one to avoid having to spend a lot of money at a later date."
             }
           />
           <ValuesCard
-            image={card2}
+            image={plum2}
             name={"Emergency Repairs"}
             disc={
               "Any plumbing emergency will disrupt the normal flow of business in your company. We employ highly qualified plumbers who will fix the issue as soon as possible, thus preventing more damage and returning to normalcy as quickly as possible. We value our clients' time and needs with plumbing problems and ensure that we offer them quick and efficient plumbing repair services."
             }
           />
           <ValuesCard
-            image={card2}
+            image={plum3}
             name={"Installation and Upgrades"}
             disc={
               "When it comes to installation services or even the upgrade of a new facility, our professionals will make sure that your plumbing systems are installed to the best of standards. As our valued client, we assist you in choosing the most appropriate products that suit your requirements and ensure professional installation for maximum efficiency right from the onset."
@@ -113,24 +122,25 @@ const Plumbing = () => {
         </div>
       </div>
       <div className="service-cards-wrapper">
-        <div className="values-card-one values-card-two service-cards service-two-cards">
-          <ValuesCard
+      <div className="values-card-one values-card-two service-cards">
+      <ValuesCard
             image={card2}
-            name={""}
+            name={"Water Conservation"}
             disc={
               "At Virat Facility Management, we are precise and committed to delivering superior quality services every single time. Our professional plumbers have years of experience and knowledge in dealing with various plumbing issues, and every job is done professionally. Our company employs modern technology and proper procedures to ensure that our services are efficient as well as sustainable."
             }
           />
           <ValuesCard
             image={card2}
-            name={""}
+            name={"Enhanced Hygiene"}
+          
             disc={
               " Optimum plumbing systems lead to low water usage, resulting in low operational costs. The services that we offer in the realm of plumbing aim to enhance the efficiency of your plumbing infrastructure in your workplace, hence making it cheaper and more friendly to the environment."
             }
           />
           <ValuesCard
             image={card2}
-            name={""}
+            name={"Cost Savings"}
             disc={
               "It is important to know the details of your plumbing systems to avoid pitfalls when making a decision. The consultation services provided by our plumber service provider entail professional advice and guidance towards finding solutions that are suitable for your requirements and objectives."
             }

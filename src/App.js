@@ -19,7 +19,7 @@ import Casestudyplumbing from "./pages/casestudy/Casestudyplumbing";
 import Casestudyelectrical from "./pages/casestudy/Casestudyelectrical"; 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter>   
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />

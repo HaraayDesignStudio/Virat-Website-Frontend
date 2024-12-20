@@ -115,83 +115,118 @@ const Navbar = () => {
                     : "line-indication"
                 }
               ></div>
-              <p>Services {isService ? <svg className="svgg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path fill="white" d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/></svg> : <svg className="svgg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ffffff" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>}</p>
+              <p>
+                Services{" "}
+                {isService ? (
+                  <svg
+                    className="svgg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    {" "}
+                    <path
+                      fill="white"
+                      d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    className="svgg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="#ffffff"
+                      d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                    />
+                  </svg>
+                )}
+              </p>
             </Link>
             {isService && (
               <div className="servicestab">
                 <div className="servicesubtab">
-                <Link
-                  to="/services/house-keeping"
-                  onClick={() => handleTabClick("house-keeping")}
-                  className={selectedTab === "house-keeping" ? "selectedtabb" : ""}
-                >
-                  <div
+                  <Link
+                    to="/services/house-keeping"
+                    onClick={() => handleTabClick("house-keeping")}
                     className={
-                      selectedTab === "house-keeping"
-                        ? "line-indication selected-line"
-                        : "line-indication"
+                      selectedTab === "house-keeping" ? "selectedtabb" : ""
                     }
-                  ></div>
-                  <p>House Keeping</p>
-                </Link>
-                <Link
-                  to="/services/horticulture-landscaping"
-                  onClick={() => handleTabClick("horticulture-landscaping")}
-                  className={
-                    selectedTab === "horticulture-landscaping" ? "selectedtabb" : ""
-                  }
-                >
-                  <div
+                  >
+                    <div
+                      className={
+                        selectedTab === "house-keeping"
+                          ? "line-indication selected-line"
+                          : "line-indication"
+                      }
+                    ></div>
+                    <p>House Keeping</p>
+                  </Link>
+                  <Link
+                    to="/services/horticulture-landscaping"
+                    onClick={() => handleTabClick("horticulture-landscaping")}
                     className={
                       selectedTab === "horticulture-landscaping"
-                        ? "line-indication selected-line"
-                        : "line-indication"
+                        ? "selectedtabb"
+                        : ""
                     }
-                  ></div>
-                  <p>Horticulture Landscaping</p>
-                </Link>
-                <Link
-                  to="/services/mechanical"
-                  onClick={() => handleTabClick("mechanical")}
-                  className={selectedTab === "mechanical" ? "selectedtabb" : ""}
-                >
-                  <div
+                  >
+                    <div
+                      className={
+                        selectedTab === "horticulture-landscaping"
+                          ? "line-indication selected-line"
+                          : "line-indication"
+                      }
+                    ></div>
+                    <p>Horticulture Landscaping</p>
+                  </Link>
+                  <Link
+                    to="/services/mechanical"
+                    onClick={() => handleTabClick("mechanical")}
                     className={
-                      selectedTab === "mechanical"
-                        ? "line-indication selected-line"
-                        : "line-indication"
+                      selectedTab === "mechanical" ? "selectedtabb" : ""
                     }
-                  ></div>
-                  <p>Mechanical</p>
-                </Link>
-                <Link
-                  to="/services/plumbing"
-                  onClick={() => handleTabClick("plumbing")}
-                  className={selectedTab === "plumbing" ? "selectedtabb" : ""}
-                >
-                  <div
+                  >
+                    <div
+                      className={
+                        selectedTab === "mechanical"
+                          ? "line-indication selected-line"
+                          : "line-indication"
+                      }
+                    ></div>
+                    <p>Mechanical</p>
+                  </Link>
+                  <Link
+                    to="/services/plumbing"
+                    onClick={() => handleTabClick("plumbing")}
+                    className={selectedTab === "plumbing" ? "selectedtabb" : ""}
+                  >
+                    <div
+                      className={
+                        selectedTab === "plumbing"
+                          ? "line-indication selected-line"
+                          : "line-indication"
+                      }
+                    ></div>
+                    <p>Plumbing</p>
+                  </Link>
+                  <Link
+                    to="/services/eletrical"
+                    onClick={() => handleTabClick("eletrical")}
                     className={
-                      selectedTab === "plumbing"
-                        ? "line-indication selected-line"
-                        : "line-indication"
+                      selectedTab === "eletrical" ? "selectedtabb" : ""
                     }
-                  ></div>
-                  <p>Plumbing</p>
-                </Link>
-                <Link
-                  to="/services/eletrical"
-                  onClick={() => handleTabClick("eletrical")}
-                  className={selectedTab === "eletrical" ? "selectedtabb" : ""}
-                >
-                  <div
-                    className={
-                      selectedTab === "eletrical"
-                        ? "line-indication selected-line"
-                        : "line-indication"
-                    }
-                  ></div>
-                  <p>Electrical</p>
-                </Link> </div>
+                  >
+                    <div
+                      className={
+                        selectedTab === "eletrical"
+                          ? "line-indication selected-line"
+                          : "line-indication"
+                      }
+                    ></div>
+                    <p>Electrical</p>
+                  </Link>{" "}
+                </div>
               </div>
             )}
             <Link
@@ -238,7 +273,6 @@ const Navbar = () => {
               <p>Contact us</p>
             </Link>
             {/* ----------------------------------------------------------------------------------------- */}
-            {/* other serves   */}
             <Link
               // to="/services"
               onClick={() => handleTabClick("serves")}
@@ -249,85 +283,123 @@ const Navbar = () => {
               <div
                 className={
                   selectedTab === "serves"
-                    ? "line-indication selected-line"
+                    ? "line-indication selected-line selectedtab"
                     : "line-indication"
                 }
               ></div>
-              <p>Other Serves {isServes ? "▲" : "▼"}</p>
+              <p>
+                Other Serves{" "}
+                {isServes ? (
+                  <svg
+                    className="svgg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="white"
+                      d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    className="svgg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="#ffffff"
+                      d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                    />
+                  </svg>
+                )}
+              </p>
             </Link>
             {isServes && (
-              <>
-                <Link>
-                  <div
+              <div className="servicestab">
+                <div className="servicesubtab">
+                  <Link
+                    to="/services/house-keeping"
+                    onClick={() => handleTabClick("house-keeping")}
                     className={
-                      selectedTab === "house-keeping"
-                        ? "line-indication selected-line"
-                        : "line-indication"
+                      selectedTab === "house-keeping" ? "selectedtabb" : ""
                     }
-                  ></div>
-                  <p>House Keeping</p>
-                </Link>
-                <Link
-                  // to="/services/horticulture-landscaping"
-                  onClick={() => handleTabClick("horticulture-landscaping")}
-                  className={
-                    selectedTab === "horticulture-landscaping" ? "selected" : ""
-                  }
-                >
-                  <div
+                  >
+                    <div
+                      className={
+                        selectedTab === "house-keeping"
+                          ? "line-indication selected-line"
+                          : "line-indication"
+                      }
+                    ></div>
+                    <p>House Keeping</p>
+                  </Link>
+                  <Link
+                    to="/services/horticulture-landscaping"
+                    onClick={() => handleTabClick("horticulture-landscaping")}
                     className={
                       selectedTab === "horticulture-landscaping"
-                        ? "line-indication selected-line"
-                        : "line-indication"
+                        ? "selectedtabb"
+                        : ""
                     }
-                  ></div>
-                  <p>Horticulture Landscaping</p>
-                </Link>
-                <Link
-                  // to="/services/mechanical"
-                  onClick={() => handleTabClick("mechanical")}
-                  className={selectedTab === "mechanical" ? "selected" : ""}
-                >
-                  <div
+                  >
+                    <div
+                      className={
+                        selectedTab === "horticulture-landscaping"
+                          ? "line-indication selected-line"
+                          : "line-indication"
+                      }
+                    ></div>
+                    <p>Horticulture Landscaping</p>
+                  </Link>
+                  <Link
+                    to="/services/mechanical"
+                    onClick={() => handleTabClick("mechanical")}
                     className={
-                      selectedTab === "mechanical"
-                        ? "line-indication selected-line"
-                        : "line-indication"
+                      selectedTab === "mechanical" ? "selectedtabb" : ""
                     }
-                  ></div>
-                  <p>Mechanical</p>
-                </Link>
-                <Link
-                  // to="/services/plumbing"
-                  onClick={() => handleTabClick("plumbing")}
-                  className={selectedTab === "plumbing" ? "selected" : ""}
-                >
-                  <div
+                  >
+                    <div
+                      className={
+                        selectedTab === "mechanical"
+                          ? "line-indication selected-line"
+                          : "line-indication"
+                      }
+                    ></div>
+                    <p>Mechanical</p>
+                  </Link>
+                  <Link
+                    to="/services/plumbing"
+                    onClick={() => handleTabClick("plumbing")}
+                    className={selectedTab === "plumbing" ? "selectedtabb" : ""}
+                  >
+                    <div
+                      className={
+                        selectedTab === "plumbing"
+                          ? "line-indication selected-line"
+                          : "line-indication"
+                      }
+                    ></div>
+                    <p>Plumbing</p>
+                  </Link>
+                  <Link
+                    to="/services/eletrical"
+                    onClick={() => handleTabClick("eletrical")}
                     className={
-                      selectedTab === "plumbing"
-                        ? "line-indication selected-line"
-                        : "line-indication"
+                      selectedTab === "eletrical" ? "selectedtabb" : ""
                     }
-                  ></div>
-                  <p>Plumbing</p>
-                </Link>
-                <Link
-                  // to="/services/eletrical"
-                  onClick={() => handleTabClick("eletrical")}
-                  className={selectedTab === "eletrical" ? "selected" : ""}
-                >
-                  <div
-                    className={
-                      selectedTab === "eletrical"
-                        ? "line-indication selected-line"
-                        : "line-indication"
-                    }
-                  ></div>
-                  <p>Eletrical</p>
-                </Link>
-              </>
+                  >
+                    <div
+                      className={
+                        selectedTab === "eletrical"
+                          ? "line-indication selected-line"
+                          : "line-indication"
+                      }
+                    ></div>
+                    <p>Electrical</p>
+                  </Link>
+                </div>
+              </div>
             )}
-            {/*  */}
           </div>
         </div>
       )}

@@ -10,6 +10,7 @@ import cardz2 from "../../assets/clean2.png"
 import card3 from "../../assets/clean3.png"
 import boy from "../../assets/boy.png"
 import girl from "../../assets/girl.png"
+import Stats from "../../components/Stats.jsx"
 
 const HouseKeeping = () => {
   const navigate = useNavigate();
@@ -45,7 +46,8 @@ const HouseKeeping = () => {
             appearance and functionality of your workplace.
           </p>
         </div>
-      </div>
+<Stats/>
+</div> 
       <div className="services-first-box">
         <div className="text-content">
           <h1 className="text-h1">
