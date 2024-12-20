@@ -17,11 +17,13 @@ import Casestudyhousekeeping from "./pages/casestudy/Casestudyhousekeeping";
 import Casestudymechanical from "./pages/casestudy/Casestudymechanical";
 import Casestudyplumbing from "./pages/casestudy/Casestudyplumbing"; 
 import Casestudyelectrical from "./pages/casestudy/Casestudyelectrical"; 
+import ScrollToTop from "./components/ScrollToTop";
 function App() {
   return (
-    <BrowserRouter>   
+    <BrowserRouter>      <ScrollToTop/>
       <Navbar />
-      <Routes>
+
+      <Routes>     
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<Aboutus />} />
         <Route path="/contact-us" element={<ContactUs />} />
@@ -34,7 +36,7 @@ function App() {
         />
         <Route path="/services/mechanical" element={<MechanicalServices />} />
         <Route path="/services/plumbing" element={<Plumbing />} />
-        <Route path="/services/eletrical" element={<Eletrical />} />
+        <Route path="/services/electrical" element={<Eletrical />} />
         {/* case study */}
         <Route
           path="/casestudy/horticulture-landscaping"

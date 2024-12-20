@@ -77,11 +77,11 @@ const HomePage = () => {
     { value: "80+", label: "Client Satisfaction Index" },
   ];
   const services = [
-    { img: serviceimg1, icon: serviceicon1, title: "House Keeping" },
-    { img: serviceimg2, icon: serviceicon2, title: "Gardening" },
-    { img: serviceimg3, icon: serviceicon3, title: "Mechanical" },
-    { img: serviceimg4, icon: serviceicon4, title: "Plumbing" },
-    { img: serviceimg5, icon: serviceicon5, title: "Electrical" },
+    { img: serviceimg1, icon: serviceicon1, title: "House Keeping" ,link: "/services/house-keeping" ,linkc: "/casestudy/housekeeping"},
+    { img: serviceimg2, icon: serviceicon2, title: "Gardening" ,link: "services/horticulture-landscaping"  ,linkc: "/casestudy/horticulture-landscaping"},
+    { img: serviceimg3, icon: serviceicon3, title: "Mechanical" ,link: "services/mechanical" ,linkc: "/casestudy/mechanical"},
+    { img: serviceimg4, icon: serviceicon4, title: "Plumbing",link: "services/plumbing" ,linkc: "/casestudy/plumbing"},
+    { img: serviceimg5, icon: serviceicon5, title: "Electrical" ,link: "services/electrical" ,linkc: "/casestudy/electrical"},
   ];
   useEffect(() => {
     const scrollButton = document.getElementById("scroll-button");
@@ -136,7 +136,6 @@ const HomePage = () => {
   useEffect(() => {
     updateSwiperSettings();
     window.addEventListener("resize", updateSwiperSettings);
-
     // Clean up event listener on unmount
     return () => window.removeEventListener("resize", updateSwiperSettings);
   }, []);
@@ -243,6 +242,7 @@ const HomePage = () => {
             >
               {services.map((service, index) => (
                 <SwiperSlide key={index}>
+                  <Link  to={service.link}>
                   <div className="servcard">
                     <div
                       className="card-image"
@@ -252,7 +252,7 @@ const HomePage = () => {
                       <h2>{service.title}</h2>
                       <img src={service.icon} alt={`${service.title} icon`} />
                     </div>
-                  </div>
+                  </div> </Link>
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -348,14 +348,16 @@ const HomePage = () => {
         >
           {services.map((service) => (
             <SwiperSlide key={service.id} className="casestudy_card">
+
+              <Link to={service.linkc}>
               <div className="casestudy_image_container">
                 <img src={service.img} alt={service.title} />
               </div>
-              <p className="casestudy_title">{service.title}</p>
+              <p className="casestudy_title">{service.title}</p> </Link>
             </SwiperSlide>
           ))}
         </Swiper>
-        <button className="casestudy_see_more">See More</button>
+        <Link to={"/services"} className="casestudy_see_more">See More</Link>
       </div>
       <div className="testimonila-section">
         <img
@@ -506,5 +508,4 @@ const HomePage = () => {
     </div>
   );
 };
-
 export default HomePage;

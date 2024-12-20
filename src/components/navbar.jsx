@@ -288,7 +288,7 @@ const Navbar = () => {
                 }
               ></div>
               <p>
-                Other Serves{" "}
+                Industry We Serves{" "}
                 {isServes ? (
                   <svg
                     className="svgg"
@@ -331,10 +331,10 @@ const Navbar = () => {
                           : "line-indication"
                       }
                     ></div>
-                    <p>House Keeping</p>
+                    <p>HealthCare</p>
                   </Link>
                   <Link
-                    to="/services/horticulture-landscaping"
+                    to="/casestudy/electrical"
                     onClick={() => handleTabClick("horticulture-landscaping")}
                     className={
                       selectedTab === "horticulture-landscaping"
@@ -349,10 +349,10 @@ const Navbar = () => {
                           : "line-indication"
                       }
                     ></div>
-                    <p>Horticulture Landscaping</p>
+                    <p>Commercial Complex</p>
                   </Link>
                   <Link
-                    to="/services/mechanical"
+                    to="/casestudy/plumbing"
                     onClick={() => handleTabClick("mechanical")}
                     className={
                       selectedTab === "mechanical" ? "selectedtabb" : ""
@@ -365,10 +365,10 @@ const Navbar = () => {
                           : "line-indication"
                       }
                     ></div>
-                    <p>Mechanical</p>
+                    <p> Corporate Properties</p>
                   </Link>
                   <Link
-                    to="/services/plumbing"
+                    to="/casestudy/mechanical"
                     onClick={() => handleTabClick("plumbing")}
                     className={selectedTab === "plumbing" ? "selectedtabb" : ""}
                   >
@@ -379,10 +379,10 @@ const Navbar = () => {
                           : "line-indication"
                       }
                     ></div>
-                    <p>Plumbing</p>
+                    <p>Residential Facility Management</p>
                   </Link>
                   <Link
-                    to="/services/eletrical"
+                    to="/casestudy/horticulture-landscaping"
                     onClick={() => handleTabClick("eletrical")}
                     className={
                       selectedTab === "eletrical" ? "selectedtabb" : ""
@@ -395,7 +395,7 @@ const Navbar = () => {
                           : "line-indication"
                       }
                     ></div>
-                    <p>Electrical</p>
+                    <p>Township Facility Management</p>
                   </Link>
                 </div>
               </div>
