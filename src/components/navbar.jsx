@@ -334,7 +334,7 @@ const Navbar = () => {
               <div className="servicestab">
                 <div className="servicesubtab">
                   <Link
-                    to="/services/house-keeping"
+                    to="/casestudy/house-keeping"
                     onClick={() => handleTabClick("house-keeping")}
                     className={
                       selectedTab === "house-keeping" ? "selectedtabb" : ""
