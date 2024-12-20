@@ -47,7 +47,7 @@ const HorticultureLandscape = () => {
             business a professional appeal.
           </p>
         </div>
-<Stats/>
+{/* <Stats/> */}
 </div> 
       <div className="services-first-box">
         <div className="text-content">

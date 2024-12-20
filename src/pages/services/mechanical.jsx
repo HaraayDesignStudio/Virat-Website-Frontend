@@ -45,7 +45,7 @@ const MechanicalServices = () => {
             functioning so as not to disrupt the flow of business.   
           </p>
         </div>
-<Stats/>
+{/* <Stats/> */}
 </div> 
       <div className="services-first-box">
         <div className="text-content">

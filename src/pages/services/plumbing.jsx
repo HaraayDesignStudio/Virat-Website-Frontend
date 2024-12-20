@@ -49,7 +49,7 @@ const Plumbing = () => {
             interrupting the operation and achieving exceptional results.  
           </p>
         </div>
-<Stats/>
+{/* <Stats/> */}
 </div> 
       <div className="services-first-box">
         <div className="text-content">

@@ -45,7 +45,7 @@ const Eletrical = () => {
             compliance of your workspace.
           </p>
         </div>
-<Stats/>
+{/* <Stats/> */}
 </div>
       <div className="services-first-box">
         <div className="text-content">
