@@ -8,9 +8,9 @@ import homekeeping2 from "../../assets/girl-base.png";
 import ele1 from "../../assets/ele1.png";
 import ele2 from "../../assets/ele2.png";
 import ele3 from "../../assets/ele3.png";
-import boy from "../../assets/boy.png"
-import girl from "../../assets/girl.png" 
-import Stats from "../../components/Stats.jsx"
+import boy from "../../assets/boy.png";
+import girl from "../../assets/girl.png";
+import Stats from "../../components/Stats.jsx";
 const Eletrical = () => {
   const navigate = useNavigate();
 
@@ -45,8 +45,8 @@ const Eletrical = () => {
             compliance of your workspace.
           </p>
         </div>
-{/* <Stats/> */}
-</div>
+      </div>{" "}
+      <Stats/>
       <div className="services-first-box">
         <div className="text-content">
           <h1 className="text-h1">
@@ -78,8 +78,8 @@ const Eletrical = () => {
         </div>
       </div>
       <div className="service-cards-wrapper">
-      <div className="values-card-one values-card-two service-cards">
-      <ValuesCard
+        <div className="values-card-one values-card-two service-cards">
+          <ValuesCard
             image={ele1}
             name={"Electrical Installation & Wiring"}
             disc={
@@ -124,8 +124,7 @@ const Eletrical = () => {
         </div>
       </div>
       <div className="service-cards-wrapper">
-      <div className="values-card-one values-card-two service-cards">
-
+        <div className="values-card-one values-card-two service-cards">
           <ValuesCard
             image={card2}
             name={"Safety Assurance"}
@@ -141,40 +140,37 @@ const Eletrical = () => {
             }
           />
           <ValuesCard
-          image={card2}
-          name={"Compliance & Reliability"}
-          disc={
-            "Regular electrical inspections and maintenance ensure adherence to safety and industry regulations, preventing potential fines and liabilities. Reliable electrical systems reduce the risk of power outages, providing consistent energy to support daily operations and critical infrastructure, while also ensuring the safety of occupants and equipment."
-          }
-        />
+            image={card2}
+            name={"Compliance & Reliability"}
+            disc={
+              "Regular electrical inspections and maintenance ensure adherence to safety and industry regulations, preventing potential fines and liabilities. Reliable electrical systems reduce the risk of power outages, providing consistent energy to support daily operations and critical infrastructure, while also ensuring the safety of occupants and equipment."
+            }
+          />
         </div>
       </div>
       <div className="services-bottom-disc">
         <img src={boy} alt="" />
         <div className="servicesdisctxt">
-          
-        <h1 className="bottom-h1">
-          Reach Out Today: Let's Keep Your Workspace Sparkling Clean
-        </h1>
-        <p>
-          Are you ready to feel the difference that comes with a clean working
-          environment?{" "}
-          <Link to="/contact-us" className="links-on-text">
-            Get in touch with us
-          </Link>{" "}
-          now to find out more about our cleaning services and how we can help
-          you. Choose{" "}
-          <Link to="/contact-us" className="links-on-text">
-            Virat Facility Management
-          </Link>{" "}
-          as your ally in improving the quality of the workplace environment and
-          productivity. Combined as one, we can take your office to new levels
-          of cleanliness and organization.
-        </p> 
-
+          <h1 className="bottom-h1">
+            Reach Out Today: Let's Keep Your Workspace Sparkling Clean
+          </h1>
+          <p>
+            Are you ready to feel the difference that comes with a clean working
+            environment?{" "}
+            <Link to="/contact-us" className="links-on-text">
+              Get in touch with us
+            </Link>{" "}
+            now to find out more about our cleaning services and how we can help
+            you. Choose{" "}
+            <Link to="/contact-us" className="links-on-text">
+              Virat Facility Management
+            </Link>{" "}
+            as your ally in improving the quality of the workplace environment
+            and productivity. Combined as one, we can take your office to new
+            levels of cleanliness and organization.
+          </p>
         </div>
-      <img src={girl} alt="" />
-
+        <img src={girl} alt="" />
       </div>
     </div>
   );

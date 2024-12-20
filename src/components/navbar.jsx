@@ -100,7 +100,23 @@ const Navbar = () => {
                 }
               ></div>
               <p>About</p>
+            </Link> 
+{/*  */}
+<Link
+              to="/services"
+              onClick={() => handleTabClick("about")}
+              className={selectedTab === "about" ? "selected" : ""}
+            >
+              <div
+                className={
+                  selectedTab === "about"
+                    ? "line-indication selected-line"
+                    : "line-indication"
+                }
+              ></div>
+              <p>Our Services</p>
             </Link>
+            {/*  */}
             <Link
               // to="/services"
               onClick={() => handleTabClick("services")}
@@ -211,7 +227,7 @@ const Navbar = () => {
                     <p>Plumbing</p>
                   </Link>
                   <Link
-                    to="/services/eletrical"
+                    to="/services/electrical"
                     onClick={() => handleTabClick("eletrical")}
                     className={
                       selectedTab === "eletrical" ? "selectedtabb" : ""
