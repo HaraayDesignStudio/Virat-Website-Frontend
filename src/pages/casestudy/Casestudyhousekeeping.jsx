@@ -2,8 +2,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./casestudy.module.css";
 import heroImage from "../../assets/service-back.png"; // Replace with a valid dummy image path
-import teamImage from "../../assets/horihero.png"; // Replace with a valid dummy image path hostconclusion.png
-import conclusion from "../../assets/hostconclusion.png"; // Replace with a valid dummy image path 
+import teamImage from "../../assets/teamimg.jpg"; // Replace with a valid dummy image path 
 import ValuesCard from "../../components/valuesCard";
 import card2 from "../../assets/round.png";
 // import scrollimg from "..../assets/scrollimg.svg";
@@ -74,7 +73,7 @@ const CaseStudy = () => {
       <section className={styles.heroSection}>
         <div className={styles.heroContent}>
           <h1 className={styles.titlea}>
-          Cultivating Excellence in Horticulture & Landscaping
+            Redefining Housekeeping Services with Excellence
           </h1>
         </div>
       </section>{" "}
@@ -82,7 +81,14 @@ const CaseStudy = () => {
         <div className={styles.introTextContainer}>
           <h2 className={styles.introTitle}>Introduction</h2>
           <p className={styles.introText}>
-          Virat Facility Management (VFM) has earned a reputation for transforming ordinary spaces into extraordinary environments through their specialized services. Their horticulture and landscape services have been instrumental in creating lush, inviting, and sustainable green spaces. This case study explores how VFM revitalized the landscape of a prestigious residential township, blending aesthetics, functionality, and sustainability.       </p>
+            Virat Facility Management (VFM) is a trusted name in facility
+            management services, known for its commitment to quality,
+            professionalism, and customer satisfaction. Specializing in a range
+            of offerings, their housekeeping services have consistently stood
+            out for their personalized approach and exceptional results. This
+            case study explores how VFM has transformed housekeeping for one of
+            their key clients, setting a benchmark in the industry.
+          </p>
         </div>
         <div className={styles.introImageContainer}>
           <img
@@ -96,7 +102,11 @@ const CaseStudy = () => {
         <div className={styles.overviewTextContainer}>
           <h2 className={styles.overviewTitle}>Client Overview</h2>
           <p className={styles.overviewText}>
-          The client, a luxury residential township spread across 25 acres, faced declining appeal due to poorly maintained green spaces. The township’s lawns, gardens, and recreational areas were key to its charm, but neglect and improper upkeep had left these spaces overgrown, unappealing, and underutilized.
+            The client, a prominent corporate office in a bustling metro city,
+            was facing challenges wi maintaining a clean and organized
+            workspace. Their existing housekeeping team struggled to keep pace
+            with the demands of a high-traffic office environment, leading to
+            dissatisfaction among employees and visitors alike.{" "}
           </p>
         </div>
       </section>
@@ -106,20 +116,20 @@ const CaseStudy = () => {
             {" "}
             <img src={card2} alt="" />
           </div>
-          <h3 className={styles.cardTitle}>Unkempt Green Spaces</h3>
+          <h3 className={styles.cardTitle}>Inconsistent Cleaning Standards</h3>
           <p className={styles.cardText}>
-          Lawns and gardens were overgrown with weeds, and plants lacked proper care, diminishing the township’s aesthetic value.
-
+            The client reported irregular cleaning schedules and visible lapses
+            in hygiene.
           </p>
         </div>
         <div className={styles.card}>
           <div className={styles.cardIcon}>
             <img src={card2} alt="" />
           </div>
-          <h3 className={styles.cardTitle}>Drainage Issues</h3>
+          <h3 className={styles.cardTitle}>Lack of Trained Staff</h3>
           <p className={styles.cardText}>
-          Poor irrigation and drainage systems led to waterlogging in some areas, affecting plant health and usability of the spaces.
-
+            The previous service provider failed to deploy skilled personnel who
+            understood modern cleaning protocols.
           </p>
         </div>
         <div className={styles.card}>
@@ -127,22 +137,10 @@ const CaseStudy = () => {
             {" "}
             <img src={card2} alt="" />
           </div>
-          <h3 className={styles.cardTitle}>Inconsistent Maintenance
-          </h3>
+          <h3 className={styles.cardTitle}>Low Employee Morale</h3>
           <p className={styles.cardText}>
-          A lack of a structured maintenance schedule resulted in irregular upkeep, with seasonal plants dying off and shrubs growing haphazardly.
-
-          </p>
-        </div>   <div className={styles.card}>
-          <div className={styles.cardIcon}>
-            {" "}
-            <img src={card2} alt="" />
-          </div>
-          <h3 className={styles.cardTitle}>Sustainability Gaps
-          </h3>
-          <p className={styles.cardText}>
-          The green spaces were not aligned with sustainable practices, relying on water-intensive plants and inefficient irrigation.
-
+            A poorly maintained workplace was affecting staff motivation and
+            productivity.
           </p>
         </div>
       </section>
@@ -151,36 +149,40 @@ const CaseStudy = () => {
           <div className={styles.approachleft}>
             <h1>The Virat Approach</h1>
             <p>
-            Virat Facility Management implemented a tailored strategy to address these challenges and rejuvenate the township’s landscapes.
+              Virat Facility Management stepped in with a comprehensive plan
+              tailored to the client's unique needs. Their strategy combined
+              technology, skilled manpower, and a customer-centric focus.
             </p>
           </div>
           <div className={styles.approachright}>
             <div>
-              <h1>01. Thorough Assessment</h1>
+              <h1>01. Detailed Assessment</h1>
               <p>
-              VFM’s horticulture experts conducted a detailed survey of the township’s green areas to understand soil conditions, plant health, and irrigation needs.
+                VFM conducted a thorough audit of the premises to identify
+                high-traffic areas, probl zones, and hygiene gaps.
               </p>
             </div>
             <div>
-              <h1>02. Landscape Redesign</h1>
+              <h1>02. Customized Solutions</h1>
               <p>
-              A new landscape design was introduced, incorporating native and drought-resistant plants to enhance aesthetics while conserving resources.     </p>
-            </div>
-            <div>
-              <h1>03. Irrigation System Revamp</h1>
-              <p>
-              Modern drip irrigation and sprinkler systems were installed to ensure efficient water distribution and eliminate water logging issues.
+                Based on the findings, a cleaning schedule was designed to
+                ensure regular and dee cleaning of all critical areas.{" "}
               </p>
             </div>
             <div>
-              <h1>04. Regular Maintenance Program</h1>
+              <h1>03. Training and Deployment</h1>
               <p>
-              A structured maintenance plan was implemented, covering lawn mowing, pruning, fertilization, and pest control to keep the greenery thriving year-round.
+                Housekeeping staff underwent rigorous training in advanced
+                cleaning techniques, includin the use of eco-friendly cleaning
+                agents and equipment{" "}
               </p>
-            </div>    <div>
-              <h1>05. Community Engagement</h1>
+            </div>
+            <div>
+              <h1>04. Tech-Driven Monitoring</h1>
               <p>
-              VFM conducted workshops for residents, encouraging them to participate in maintaining and enjoying the green spaces, fostering a sense of ownership and pride. </p>
+                VFM employed real-time monitoring tools to track cleaning
+                schedules and address issues proactively{" "}
+              </p>
             </div>
           </div>
         </div>
@@ -202,31 +204,10 @@ const CaseStudy = () => {
                 {" "}
                 <img src={card2} alt="" />
               </div>
-              <h3 className={styles.cardTitle}>Revitalized Green Spaces</h3>
+              <h3 className={styles.cardTitle}>Enhanced Hygiene Standards</h3>
               <p className={styles.cardText}>
-              The once-neglected lawns and gardens were transformed into lush, vibrant areas that became the pride of the township.   </p>{" "}
-            </div>
-          </SwiperSlide>{" "}
-          <SwiperSlide className="casestudy_cardr">
-            <div className={styles.card}>
-              <div className={styles.cardIcon}>
-                {" "}
-                <img src={card2} alt="" />
-              </div>
-              <h3 className={styles.cardTitle}>Enhanced Usability</h3>
-              <p className={styles.cardText}>
-              Recreational spaces were made more accessible and enjoyable, becoming popular spots for community gatherings and activities.   </p>{" "}
-            </div>
-          </SwiperSlide>{" "}
-          <SwiperSlide className="casestudy_cardr">
-            <div className={styles.card}>
-              <div className={styles.cardIcon}>
-                {" "}
-                <img src={card2} alt="" />
-              </div>
-              <h3 className={styles.cardTitle}>Water Conservation</h3>
-              <p className={styles.cardText}>
-              The shift to native plants and efficient irrigation systems resulted in a 30% reduction in water usage
+                The office space transformed into a spotless and welcoming
+                environment, receivi accolades from employees and clients.
               </p>{" "}
             </div>
           </SwiperSlide>{" "}
@@ -236,21 +217,37 @@ const CaseStudy = () => {
                 {" "}
                 <img src={card2} alt="" />
               </div>
-              <h3 className={styles.cardTitle}>Improved Aesthetics and Property Value              </h3>
+              <h3 className={styles.cardTitle}>Increased Productivity</h3>
               <p className={styles.cardText}>
-              The beautifully maintained landscapes increased the township’s visual appeal, boosting resident satisfaction and property values.
-
+                Employees reported higher satisfaction levels, citing the clean
+                and organized environment as a motivating factor.
               </p>{" "}
             </div>
-          </SwiperSlide>   <SwiperSlide className="casestudy_cardr">
+          </SwiperSlide>{" "}
+          <SwiperSlide className="casestudy_cardr">
             <div className={styles.card}>
               <div className={styles.cardIcon}>
                 {" "}
                 <img src={card2} alt="" />
               </div>
-              <h3 className={styles.cardTitle}>Community Spirit</h3>
+              <h3 className={styles.cardTitle}>Cost Efficiency</h3>
               <p className={styles.cardText}>
-              The workshops and engagement activities brought residents closer, creating a stronger sense of community.
+                VFM’s efficient practices reduced wastage of cleaning materials
+                and optimized manpow deployment, leading to cost savings for the
+                client.
+              </p>{" "}
+            </div>
+          </SwiperSlide>{" "}
+          <SwiperSlide className="casestudy_cardr">
+            <div className={styles.card}>
+              <div className={styles.cardIcon}>
+                {" "}
+                <img src={card2} alt="" />
+              </div>
+              <h3 className={styles.cardTitle}>Sustainability</h3>
+              <p className={styles.cardText}>
+                By using eco-friendly products, the initiative contributed to
+                the client’s commitment to sustainability and green practices
               </p>{" "}
             </div>
           </SwiperSlide>
@@ -260,25 +257,13 @@ const CaseStudy = () => {
         <h1> Testimonial from the Client</h1>
         <p>
           {" "}
-          "Virat Facility Management has breathed new life into our township. Their team’s expertise and dedication are evident in every corner of our landscaped spaces. Not only have they made our environment more beautiful and sustainable, but they’ve also brought our community together. It’s been a transformative experience for all of us."
-
+          "Virat Facility Management has truly been a game-changer for us. Their
+          housekeeping services go beyond mere cleaning – they’ve created a
+          space where our employees feel valued and motivated. Their team’s
+          professionalism and attention to detail are unmatched. We look forward
+          to continuing this partnership for years to come."
         </p>
-        <p> — Resident Welfare Association Chairperson
-        </p>
-      </section> <section className={styles.introSection}>
-        <div className={styles.introTextContainer}>
-          <h2 className={styles.introTitle}>Conclusion</h2>
-          <p className={styles.introText}>
-          Virat Facility Management’s horticulture and landscape services demonstrate their ability to combine technical expertise with creativity and sustainability. By focusing on tailored solutions and engaging the community, they turned a challenging project into a model for green living.
-          This case study showcases how VFM’s commitment to excellence helps clients create and maintain spaces that are not just beautiful but also functional and sustainable, enriching lives and the environment.   </p>
-        </div>
-        <div className={styles.introImageContainer}>
-          <img
-            src={conclusion}
-            alt="Introduction Section"
-            className={styles.introImage}
-          />
-        </div>
+        <p> ---Operations Manager, Corporate Client</p>
       </section>
       <div className="services-cards">
         <div className="Serviceecards">
@@ -306,7 +291,6 @@ const CaseStudy = () => {
           </Swiper>
         </div>
       </div>
-     
     </>
   );
 };

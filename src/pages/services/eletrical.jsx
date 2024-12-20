@@ -5,7 +5,8 @@ import homekeeping from "../../assets/service5.png";
 import ValuesCard from "../../components/valuesCard";
 import card2 from "../../assets/elastrations/03.png";
 import homekeeping2 from "../../assets/service51.png";
-
+import boy from "../../assets/boy.png"
+import girl from "../../assets/girl.png"
 const Eletrical = () => {
   const navigate = useNavigate();
 
@@ -142,19 +143,32 @@ const Eletrical = () => {
         /> */}
         </div>
       </div>
-      <div className="services-bottom-disc services-bottom-disc-2 ">
-        {/* <h1 className="bottom-h1">
-          Connect with Us: Your Route to Efficient Workflow Begins Here
-        </h1> */}
+      <div className="services-bottom-disc">
+        <img src={boy} alt="" />
+        <div className="servicesdisctxt">
+          
+        <h1 className="bottom-h1">
+          Reach Out Today: Let's Keep Your Workspace Sparkling Clean
+        </h1>
         <p>
-          Electric problems should not hinder business operations in any way. To
-          find out more about our wide range of electrical services and how we
-          can support your business in ensuring that you are fully compliant and
-          free from electrical dangers, please{" "}
+          Are you ready to feel the difference that comes with a clean working
+          environment?{" "}
           <Link to="/contact-us" className="links-on-text">
-            get in touch with us today.
-          </Link>
-        </p>
+            Get in touch with us
+          </Link>{" "}
+          now to find out more about our cleaning services and how we can help
+          you. Choose{" "}
+          <Link to="/contact-us" className="links-on-text">
+            Virat Facility Management
+          </Link>{" "}
+          as your ally in improving the quality of the workplace environment and
+          productivity. Combined as one, we can take your office to new levels
+          of cleanliness and organization.
+        </p> 
+
+        </div>
+      <img src={girl} alt="" />
+
       </div>
     </div>
   );

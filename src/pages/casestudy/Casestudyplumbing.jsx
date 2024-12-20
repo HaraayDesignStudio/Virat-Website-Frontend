@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from "react";
 import styles from "./casestudy.module.css";
 import heroImage from "../../assets/service-back.png"; // Replace with a valid dummy image path
-import teamImage from "../../assets/horihero.png"; // Replace with a valid dummy image path hostconclusion.png
-import conclusion from "../../assets/hostconclusion.png"; // Replace with a valid dummy image path 
-import ValuesCard from "../../components/valuesCard";
+import teamImage from "../../assets/plumbinghero.jpg"; // Replace with a valid dummy image path electricalcon.png
+import conclusion from "../../assets/electricalcon.png"; // Replace with a valid dummy image path
+import ValuesCard from "../../components/valuesCard"; 
 import card2 from "../../assets/round.png";
 // import scrollimg from "..../assets/scrollimg.svg";
 import serviceimg1 from "../../assets/service1.webp";
@@ -74,7 +74,7 @@ const CaseStudy = () => {
       <section className={styles.heroSection}>
         <div className={styles.heroContent}>
           <h1 className={styles.titlea}>
-          Cultivating Excellence in Horticulture & Landscaping
+          Redefining Plumbing Services with Precision and Care
           </h1>
         </div>
       </section>{" "}
@@ -82,7 +82,7 @@ const CaseStudy = () => {
         <div className={styles.introTextContainer}>
           <h2 className={styles.introTitle}>Introduction</h2>
           <p className={styles.introText}>
-          Virat Facility Management (VFM) has earned a reputation for transforming ordinary spaces into extraordinary environments through their specialized services. Their horticulture and landscape services have been instrumental in creating lush, inviting, and sustainable green spaces. This case study explores how VFM revitalized the landscape of a prestigious residential township, blending aesthetics, functionality, and sustainability.       </p>
+          Virat Facility Management (VFM) is known for its commitment to delivering exceptional facility management services. Among their many offerings, plumbing services stand out for their precision, reliability, and attention to detail. This case study explores how VFM resolved critical plumbing issues for a high-rise commercial building, ensuring uninterrupted water supply and optimal system performance.  </p>
         </div>
         <div className={styles.introImageContainer}>
           <img
@@ -96,7 +96,7 @@ const CaseStudy = () => {
         <div className={styles.overviewTextContainer}>
           <h2 className={styles.overviewTitle}>Client Overview</h2>
           <p className={styles.overviewText}>
-          The client, a luxury residential township spread across 25 acres, faced declining appeal due to poorly maintained green spaces. The township’s lawns, gardens, and recreational areas were key to its charm, but neglect and improper upkeep had left these spaces overgrown, unappealing, and underutilized.
+          The client, a 15-story commercial building with over 50 offices and a footfall of 1,500 people daily, was facing significant plumbing challenges. Frequent complaints from tenants about water leakage, inconsistent water pressure, and drainage issues were impacting the building’s reputation and tenant satisfaction.
           </p>
         </div>
       </section>
@@ -106,81 +106,78 @@ const CaseStudy = () => {
             {" "}
             <img src={card2} alt="" />
           </div>
-          <h3 className={styles.cardTitle}>Unkempt Green Spaces</h3>
+          <h3 className={styles.cardTitle}>Recurring Leaks</h3>
           <p className={styles.cardText}>
-          Lawns and gardens were overgrown with weeds, and plants lacked proper care, diminishing the township’s aesthetic value.
-
-          </p>
+          Persistent pipe leaks in common areas and restrooms led to water wastage and frequent repair costs. </p>
         </div>
         <div className={styles.card}>
           <div className={styles.cardIcon}>
             <img src={card2} alt="" />
           </div>
-          <h3 className={styles.cardTitle}>Drainage Issues</h3>
+          <h3 className={styles.cardTitle}>Inconsistent Water Pressure</h3>
           <p className={styles.cardText}>
-          Poor irrigation and drainage systems led to waterlogging in some areas, affecting plant health and usability of the spaces.
-
-          </p>
+          Higher floors often experienced low water pressure, disrupting daily activities and causing tenant dissatisfaction.   </p>
         </div>
         <div className={styles.card}>
           <div className={styles.cardIcon}>
             {" "}
             <img src={card2} alt="" />
           </div>
-          <h3 className={styles.cardTitle}>Inconsistent Maintenance
-          </h3>
+          <h3 className={styles.cardTitle}>Clogged Drains</h3>
           <p className={styles.cardText}>
-          A lack of a structured maintenance schedule resulted in irregular upkeep, with seasonal plants dying off and shrubs growing haphazardly.
-
-          </p>
-        </div>   <div className={styles.card}>
+          Drainage issues in restrooms and kitchens led to unpleasant odors and hygiene concerns, affecting the overall experience for tenants and visitors.  </p>
+        </div>  <div className={styles.card}>
           <div className={styles.cardIcon}>
             {" "}
             <img src={card2} alt="" />
           </div>
-          <h3 className={styles.cardTitle}>Sustainability Gaps
-          </h3>
+          <h3 className={styles.cardTitle}>Aging Infrastructure</h3>
           <p className={styles.cardText}>
-          The green spaces were not aligned with sustainable practices, relying on water-intensive plants and inefficient irrigation.
-
-          </p>
-        </div>
+          Many pipelines and fixtures were outdated, leading to recurring maintenance needs and inefficiencies.</p>
+          </div>
       </section>
       <section className={styles.approachsec}>
         <div className={styles.approachmain}>
           <div className={styles.approachleft}>
             <h1>The Virat Approach</h1>
             <p>
-            Virat Facility Management implemented a tailored strategy to address these challenges and rejuvenate the township’s landscapes.
+            Virat Facility Management implemented a structured plan to address the client’s plumbing issues effectively.
+
             </p>
           </div>
           <div className={styles.approachright}>
             <div>
-              <h1>01. Thorough Assessment</h1>
+              <h1>01. Detailed Assessment:
+              </h1>
               <p>
-              VFM’s horticulture experts conducted a detailed survey of the township’s green areas to understand soil conditions, plant health, and irrigation needs.
+              VFM’s plumbing experts conducted a comprehensive audit of the building’s plumbing system, identifying root causes for leaks, low pressure, and drainage issues.
+ </p>
+            </div>
+            <div>
+              <h1>02. Customized Repair and Replacement:
+              </h1>
+              <p>
+              The team prioritized critical repairs and replaced outdated pipelines and fixtures with high-quality, durable materials.
               </p>
             </div>
             <div>
-              <h1>02. Landscape Redesign</h1>
+              <h1>03.Pressure Optimization</h1>
               <p>
-              A new landscape design was introduced, incorporating native and drought-resistant plants to enhance aesthetics while conserving resources.     </p>
-            </div>
-            <div>
-              <h1>03. Irrigation System Revamp</h1>
-              <p>
-              Modern drip irrigation and sprinkler systems were installed to ensure efficient water distribution and eliminate water logging issues.
+              VFM installed pressure-regulating valves and upgraded the water distribution system to ensure consistent water pressure across all floors.
               </p>
             </div>
             <div>
-              <h1>04. Regular Maintenance Program</h1>
+              <h1>04. Drainage Overhaul
+              </h1>
               <p>
-              A structured maintenance plan was implemented, covering lawn mowing, pruning, fertilization, and pest control to keep the greenery thriving year-round.
+              Advanced tools were used to clear clogged drains, while preventive measures were put in place to avoid future blockages.
               </p>
-            </div>    <div>
-              <h1>05. Community Engagement</h1>
+            </div>  <div>
+              <h1>05. Preventive Maintenance Program
+              </h1>
               <p>
-              VFM conducted workshops for residents, encouraging them to participate in maintaining and enjoying the green spaces, fostering a sense of ownership and pride. </p>
+              A scheduled maintenance plan was introduced to ensure regular inspections and timely interventions, preventing future disruptions.
+              </p>
             </div>
           </div>
         </div>
@@ -202,31 +199,9 @@ const CaseStudy = () => {
                 {" "}
                 <img src={card2} alt="" />
               </div>
-              <h3 className={styles.cardTitle}>Revitalized Green Spaces</h3>
+              <h3 className={styles.cardTitle}>Eliminated Leaks</h3>
               <p className={styles.cardText}>
-              The once-neglected lawns and gardens were transformed into lush, vibrant areas that became the pride of the township.   </p>{" "}
-            </div>
-          </SwiperSlide>{" "}
-          <SwiperSlide className="casestudy_cardr">
-            <div className={styles.card}>
-              <div className={styles.cardIcon}>
-                {" "}
-                <img src={card2} alt="" />
-              </div>
-              <h3 className={styles.cardTitle}>Enhanced Usability</h3>
-              <p className={styles.cardText}>
-              Recreational spaces were made more accessible and enjoyable, becoming popular spots for community gatherings and activities.   </p>{" "}
-            </div>
-          </SwiperSlide>{" "}
-          <SwiperSlide className="casestudy_cardr">
-            <div className={styles.card}>
-              <div className={styles.cardIcon}>
-                {" "}
-                <img src={card2} alt="" />
-              </div>
-              <h3 className={styles.cardTitle}>Water Conservation</h3>
-              <p className={styles.cardText}>
-              The shift to native plants and efficient irrigation systems resulted in a 30% reduction in water usage
+              All leaks were successfully addressed, resulting in zero water wastage and a noticeable reduction in repair expenses.
               </p>{" "}
             </div>
           </SwiperSlide>{" "}
@@ -236,21 +211,45 @@ const CaseStudy = () => {
                 {" "}
                 <img src={card2} alt="" />
               </div>
-              <h3 className={styles.cardTitle}>Improved Aesthetics and Property Value              </h3>
+              <h3 className={styles.cardTitle}>Consistent Water Pressure</h3>
               <p className={styles.cardText}>
-              The beautifully maintained landscapes increased the township’s visual appeal, boosting resident satisfaction and property values.
-
+              Tenants across all floors experienced consistent water pressure, enhancing their daily comfort and productivity.
               </p>{" "}
             </div>
-          </SwiperSlide>   <SwiperSlide className="casestudy_cardr">
+          </SwiperSlide>{" "}
+          <SwiperSlide className="casestudy_cardr">
             <div className={styles.card}>
               <div className={styles.cardIcon}>
                 {" "}
                 <img src={card2} alt="" />
               </div>
-              <h3 className={styles.cardTitle}>Community Spirit</h3>
+              <h3 className={styles.cardTitle}>Improved Hygiene
+              </h3>
               <p className={styles.cardText}>
-              The workshops and engagement activities brought residents closer, creating a stronger sense of community.
+              With unclogged drains and a clean, odor-free environment, the building regained its appeal for tenants and visitors alike.
+              </p>{" "}
+            </div>
+          </SwiperSlide>{" "}
+          <SwiperSlide className="casestudy_cardr">
+            <div className={styles.card}>
+              <div className={styles.cardIcon}>
+                {" "}
+                <img src={card2} alt="" />
+              </div>
+              <h3 className={styles.cardTitle}>Cost Efficiency</h3>
+              <p className={styles.cardText}>
+              Upgrading to modern plumbing systems reduced water consumption, lowering utility bills and improving the building’s operational efficiency.
+              </p>{" "}
+            </div>
+          </SwiperSlide>  <SwiperSlide className="casestudy_cardr">
+            <div className={styles.card}>
+              <div className={styles.cardIcon}>
+                {" "}
+                <img src={card2} alt="" />
+              </div>
+              <h3 className={styles.cardTitle}>Increased Tenant Satisfaction</h3>
+              <p className={styles.cardText}>
+              The proactive approach to plumbing maintenance enhanced tenant trust and satisfaction, resulting in better occupancy rates and positive feedback.
               </p>{" "}
             </div>
           </SwiperSlide>
@@ -260,17 +259,16 @@ const CaseStudy = () => {
         <h1> Testimonial from the Client</h1>
         <p>
           {" "}
-          "Virat Facility Management has breathed new life into our township. Their team’s expertise and dedication are evident in every corner of our landscaped spaces. Not only have they made our environment more beautiful and sustainable, but they’ve also brought our community together. It’s been a transformative experience for all of us."
-
-        </p>
-        <p> — Resident Welfare Association Chairperson
-        </p>
-      </section> <section className={styles.introSection}>
+          "Virat Facility Management has been a lifesaver for our building. Their plumbing team tackled every challenge with expertise and professionalism. From fixing leaks to ensuring smooth water flow on every floor, they’ve transformed our space into a well-functioning, comfortable environment. We couldn’t be happier with the results."
+          </p>
+        <p>— Building Manager, Commercial Property</p>
+      </section><section className={styles.introSection}>
         <div className={styles.introTextContainer}>
           <h2 className={styles.introTitle}>Conclusion</h2>
           <p className={styles.introText}>
-          Virat Facility Management’s horticulture and landscape services demonstrate their ability to combine technical expertise with creativity and sustainability. By focusing on tailored solutions and engaging the community, they turned a challenging project into a model for green living.
-          This case study showcases how VFM’s commitment to excellence helps clients create and maintain spaces that are not just beautiful but also functional and sustainable, enriching lives and the environment.   </p>
+          Virat Facility Management’s plumbing services exemplify their commitment to excellence and customer satisfaction. By combining technical expertise with a proactive approach, they not only resolved the client’s immediate issues but also implemented long-term solutions for sustained efficiency.
+This case study highlights VFM’s ability to create tailored solutions that make a real difference in their clients’ day-to-day operations, cementing their reputation as a trusted partner in facility management.
+</p>
         </div>
         <div className={styles.introImageContainer}>
           <img
@@ -280,33 +278,32 @@ const CaseStudy = () => {
           />
         </div>
       </section>
-      <div className="services-cards">
-        <div className="Serviceecards">
-        <h1> Our Services</h1>
-          <Swiper
-            spaceBetween={swiperSettings.spaceBetween}
-            slidesPerView={swiperSettings.slidesPerView}
-            // pagination={{ clickable: true }}
-            // navigation
-          >
-            {services.map((service, index) => (
-              <SwiperSlide key={index}>
-                <div className="servcard">
-                  <div
-                    className="card-image"
-                    style={{ backgroundImage: `url(${service.img})` }}
-                  ></div>
-                  <div className="card-content">
-                    <h2>{service.title}</h2>
-                    <img src={service.icon} alt={`${service.title} icon`} />
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-      </div>
-     
+     <div className="services-cards">
+            <div className="Serviceecards">
+            <h1> Our Services</h1>
+              <Swiper
+                spaceBetween={swiperSettings.spaceBetween}
+                slidesPerView={swiperSettings.slidesPerView}
+                // pagination={{ clickable: true }}
+                // navigation
+              >
+                {services.map((service, index) => (
+                  <SwiperSlide key={index}>
+                    <div className="servcard">
+                      <div
+                        className="card-image"
+                        style={{ backgroundImage: `url(${service.img})` }}
+                      ></div>
+                      <div className="card-content">
+                        <h2>{service.title}</h2>
+                        <img src={service.icon} alt={`${service.title} icon`} />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          </div>
     </>
   );
 };

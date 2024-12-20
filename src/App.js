@@ -11,8 +11,12 @@ import HouseKeeping from "./pages/services/houseKeeping";
 import HorticultureLandscape from "./pages/services/horticultureLandscape";
 import MechanicalServices from "./pages/services/mechanical";
 import Plumbing from "./pages/services/plumbing";
-import Eletrical from "./pages/services/eletrical";
-import Casestudyhorticulture from "./pages/casestudy/CasestudyhorticultureLandscape";
+import Eletrical from "./pages/services/eletrical"; 
+import Casestudyhorticulture from "./pages/casestudy/CasestudyhorticultureLandscape"; 
+import Casestudyhousekeeping from "./pages/casestudy/Casestudyhousekeeping";
+import Casestudymechanical from "./pages/casestudy/Casestudymechanical";
+import Casestudyplumbing from "./pages/casestudy/Casestudyplumbing"; 
+import Casestudyelectrical from "./pages/casestudy/Casestudyelectrical"; 
 function App() {
   return (
     <BrowserRouter>
@@ -35,7 +39,19 @@ function App() {
         <Route
           path="/casestudy/horticulture-landscaping"
           element={<Casestudyhorticulture />}
-        />
+        /> <Route
+        path="/casestudy/housekeeping"
+        element={<Casestudyhousekeeping />}
+      /><Route
+      path="/casestudy/mechanical"
+      element={<Casestudymechanical />}
+    /><Route
+    path="/casestudy/electrical"
+    element={<Casestudyelectrical />}
+  /><Route
+  path="/casestudy/plumbing"
+  element={<Casestudyplumbing />}
+/>
       </Routes>
       <Footer />
     </BrowserRouter>

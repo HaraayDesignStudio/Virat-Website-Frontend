@@ -131,12 +131,12 @@
 .drawer-content {
   position: relative;
   transition: transform 0.5s ease, opacity 0.5s ease;
-  padding: 140px 50px;
+  padding: 110px 50px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: self-start;
-  gap: 60px;
+  gap: 20px;
   overflow-y: scroll;
 }
 .drawer-content a {
@@ -154,9 +154,21 @@
 }
 .drawer-content a p {
   margin-top: 20px;
-}
-.selected {
+}.selected {
+
   opacity: 1 !important;
+
+}
+.selectedtabb {
+  background-color:#F6C7BA;
+width: auto !important;
+/* margin: 0 10PX; */
+border-radius: 20PX;
+  opacity: 1 !important;
+  P{
+    color:#B93B11 ;
+
+  }
 }
 .drawer-overlay.open {
   opacity: 1;
@@ -168,7 +180,7 @@
 }
 
 .line-indication {
-  height: 260%;
+  height: 200%;
   width: 2px;
   background: rgba(255, 255, 255, 0.7);
 }
@@ -176,6 +188,67 @@
   background-color: #fff !important;
 }
 
+.services_tabdiv{
+  
+  background: #1d1c1c31;
+/* height: auto; */
+}
+
+.servicesubtab{
+  margin-left: 20px;
+  background: #ffffff31;
+  border-radius: 20px;
+  /* padding-right: 20px; */
+  padding-left: 0px;
+   padding-bottom: 10px;
+/* padding-top: 10px; */
+  a{
+    width: auto;    gap: 0px;
+    padding: 10px 20px ;
+    margin-top: 10px;
+    /* margin: auto; */
+    p{ text-align: left;
+      margin: 5px 0px;
+      padding-left: 20px;
+      
+      width: 100%;
+      
+    }
+    :active{
+      color: #B93B11;
+      background-color: #F6C7BA;
+    }
+  }
+a:hover{
+  /* margin: auto; */
+  /* height: 100%; */
+  /* margin-top: 10px; */
+  background-color: #F6C7BA;
+  border-radius: 20px;
+}
+
+}
+.servicestab{
+
+ 
+  margin: 0;
+  padding: 0;
+  text-wrap: none;
+  border-left: 2px solid white;
+  margin-bottom: -20px ;
+  margin-top: -20px;
+  padding: 10px;
+  border-bottom-right-radius: 10px;
+
+
+}
+
+.svgg{
+  width: 20px;
+color: white;
+margin-bottom: -2px;
+
+}
 /* ---- card style ---- */
 .card-container-service {
   display: flex;

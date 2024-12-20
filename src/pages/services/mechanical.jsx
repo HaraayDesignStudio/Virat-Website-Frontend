@@ -5,7 +5,8 @@ import homekeeping from "../../assets/service3.jpeg";
 import ValuesCard from "../../components/valuesCard";
 import card2 from "../../assets/elastrations/03.png";
 import homekeeping2 from "../../assets/service31.png";
-
+import boy from "../../assets/boy.png"
+import girl from "../../assets/girl.png"
 const MechanicalServices = () => {
   const navigate = useNavigate();
 
@@ -132,15 +133,32 @@ const MechanicalServices = () => {
           />
         </div>
       </div>
-      <div className="services-bottom-disc services-bottom-disc-2 ">
+      <div className="services-bottom-disc">
+        <img src={boy} alt="" />
+        <div className="servicesdisctxt">
+          
         <h1 className="bottom-h1">
-          Connect with Us: Your Route to Efficient Workflow Begins Here
+          Reach Out Today: Let's Keep Your Workspace Sparkling Clean
         </h1>
         <p>
-          Are you ready to make your office work easier through effective
-          mechanical services? For detailed information about our wide portfolio
-          of mechanical services, please do not hesitate to <Link to="/contact-us" className="links-on-text">Get in touch with us today</Link> to capture how we can meet your requirements. 
-        </p>
+          Are you ready to feel the difference that comes with a clean working
+          environment?{" "}
+          <Link to="/contact-us" className="links-on-text">
+            Get in touch with us
+          </Link>{" "}
+          now to find out more about our cleaning services and how we can help
+          you. Choose{" "}
+          <Link to="/contact-us" className="links-on-text">
+            Virat Facility Management
+          </Link>{" "}
+          as your ally in improving the quality of the workplace environment and
+          productivity. Combined as one, we can take your office to new levels
+          of cleanliness and organization.
+        </p> 
+
+        </div>
+      <img src={girl} alt="" />
+
       </div>
     </div>
   );

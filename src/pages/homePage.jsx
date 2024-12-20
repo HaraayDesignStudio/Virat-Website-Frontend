@@ -3,7 +3,7 @@ import homepageimage from "../assets/Hero Section.webp";
 import aboutsection from "../assets/Rectangle 137.png";
 import testimonials from "../assets/126276-abstract-3d-orange-black-and-white-curved-lines-texture-background 1 (1).png";
 import cub from "../assets/Cub.png";
-
+// import styles from "./Services.module.css"
 import test1 from "../assets/brnads/356674 1.png";
 import test3 from "../assets/brnads/hdfc-bank-logo-removebg-preview 1.png";
 import test4 from "../assets/brnads/CBRE_Group_logo_(till_2021) 1.png";
@@ -252,7 +252,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>{" "}
-      <div>
+      {/* <div>
         {" "}
         <div className="hvw-heading">
           <h2>How Virat Works </h2>
@@ -303,7 +303,7 @@ const HomePage = () => {
             </p>
           </div>
         </div>{" "}
-      </div>{" "}
+      </div>{" "} */}
       <div className="image-comparison-container">
         <div className="image-comparison">
           <ReactCompareSlider
@@ -453,6 +453,46 @@ const HomePage = () => {
                 "As a property manager, finding a reliable facility management company is crucial. Virat has consistently delivered exceptional service. The professionalism, punctuality, and attention to detail have made them our go-to choice. Our tenants have also noticed the positive change in the cleanliness and functionality of our properties"
               }
             />
+          </div>
+        </div>
+      </div>{" "}
+      {/* contact  */}
+      <div className="contactSection">
+        {/* Map Background */}
+        <div className="mapContainer">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7539.459930366044!2d72.86337742817217!3d19.119498752877575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1734072198756!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        {/* Contact Card */}
+        <div className="contactCard">
+          <div className="contactItem">
+            <span className="icon">📍</span>
+            <div>
+              <h3>Our Location</h3>
+              <p>
+                B wing Shop no. 39 Upperdesk, Giriraj Industrial Estate, MIDC
+                Andheri(East) Mumbai-400093
+              </p>
+            </div>
+          </div>
+          <div className="contactItem">
+            <span className="icon">✉️</span>
+            <div>
+              <h3>Our Email</h3>
+              <p>vfm.services2017@gmail.com</p>
+            </div>
+          </div>
+          <div className="contactItem">
+            <span className="icon">📞</span>
+            <div>
+              <h3>Our Phone</h3>
+              <p>+91 9833535447</p>
+            </div>
           </div>
         </div>
       </div>

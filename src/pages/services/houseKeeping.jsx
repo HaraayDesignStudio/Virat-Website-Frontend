@@ -1,10 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import homepageimage from "../../assets/service-back.png";
-import homekeeping from "../../assets/homekeeping.png";
+import homekeeping from "../../assets/housekeeping-services-500x500.webp";
 import ValuesCard from "../../components/valuesCard";
 import card2 from "../../assets/elastrations/03.png";
-import homekeeping2 from "../../assets/housekeeping2.png";
+import homekeeping2 from "../../assets/girl-base.png";
+import card1 from "../../assets/clean1.png"
+import cardz2 from "../../assets/clean2.png"
+import card3 from "../../assets/clean3.png"
+import boy from "../../assets/boy.png"
+import girl from "../../assets/girl.png"
 
 const HouseKeeping = () => {
   const navigate = useNavigate();
@@ -69,27 +74,27 @@ const HouseKeeping = () => {
           </p>
         </div>
         <div className="image-content">
-          <img src={homekeeping} alt="homepage" />
+          <img className="firsttxtimg" src={homekeeping} alt="homepage" />
         </div>
       </div>
       <div className="service-cards-wrapper">
         <div className="values-card-one values-card-two service-cards">
           <ValuesCard
-            image={card2}
+            image={card1}
             name={"Daily Cleaning"}
             disc={
               "Of course, we understand the importance of having a clean working space in the morning. With our daily cleaning service, your work environment will always be clean and prepared for use in the morning. Our services include cleaning furniture, carpets, windows, and walls and sanitizing the areas that are frequently touched, such as doors, light switches, and handles."
             }
           />
           <ValuesCard
-            image={card2}
-            name={"Daily Cleaning"}
+            image={cardz2}
+            name={"Deep Cleaning"}
             disc={
               "Of course, we understand the importance of having a clean working space in the morning. With our daily cleaning service, your work environment will always be clean and prepared for use in the morning. Our services include cleaning furniture, carpets, windows, and walls and sanitizing the areas that are frequently touched, such as doors, light switches, and handles."
             }
           />
           <ValuesCard
-            image={card2}
+            image={card3}
             name={"Specialized Cleaning"}
             disc={
               "Each office is different, and we appreciate the need to address these differences. Our specialized cleaning services include carpet cleaning, upholstery cleaning, and window washing. Employing modern technology and organic products, we guarantee that all the areas of your office are clean and tidy."
@@ -146,6 +151,9 @@ const HouseKeeping = () => {
         </div>
       </div>
       <div className="services-bottom-disc">
+        <img src={boy} alt="" />
+        <div className="servicesdisctxt">
+          
         <h1 className="bottom-h1">
           Reach Out Today: Let's Keep Your Workspace Sparkling Clean
         </h1>
@@ -163,7 +171,11 @@ const HouseKeeping = () => {
           as your ally in improving the quality of the workplace environment and
           productivity. Combined as one, we can take your office to new levels
           of cleanliness and organization.
-        </p>
+        </p> 
+
+        </div>
+      <img src={girl} alt="" />
+
       </div>
     </div>
   );

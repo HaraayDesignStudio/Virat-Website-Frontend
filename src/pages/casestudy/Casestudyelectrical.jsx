@@ -2,8 +2,8 @@
 import React, { useEffect, useState } from "react";
 import styles from "./casestudy.module.css";
 import heroImage from "../../assets/service-back.png"; // Replace with a valid dummy image path
-import teamImage from "../../assets/horihero.png"; // Replace with a valid dummy image path hostconclusion.png
-import conclusion from "../../assets/hostconclusion.png"; // Replace with a valid dummy image path 
+import teamImage from "../../assets/electricalhero.png"; // Replace with a valid dummy image path
+import conclusion from "../../assets/electricalconclusion.png"; // Replace with a valid dummy image path
 import ValuesCard from "../../components/valuesCard";
 import card2 from "../../assets/round.png";
 // import scrollimg from "..../assets/scrollimg.svg";
@@ -18,7 +18,9 @@ import serviceicon3 from "../../assets/serviceicon3.svg";
 import serviceicon4 from "../../assets/serviceicon4.svg";
 import serviceicon5 from "../../assets/serviceicon5.svg";
 // swiper
-import { Swiper, SwiperSlide } from "swiper/react"; // Core Swiper
+
+
+import { Swiper, SwiperSlide } from "swiper/react"; // Core Swiper electricalconclusion.png
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules"; // Navigation and Pagination modules
 
 import "swiper/css";
@@ -74,7 +76,7 @@ const CaseStudy = () => {
       <section className={styles.heroSection}>
         <div className={styles.heroContent}>
           <h1 className={styles.titlea}>
-          Cultivating Excellence in Horticulture & Landscaping
+          Powering Excellence through Electrical Services
           </h1>
         </div>
       </section>{" "}
@@ -82,7 +84,8 @@ const CaseStudy = () => {
         <div className={styles.introTextContainer}>
           <h2 className={styles.introTitle}>Introduction</h2>
           <p className={styles.introText}>
-          Virat Facility Management (VFM) has earned a reputation for transforming ordinary spaces into extraordinary environments through their specialized services. Their horticulture and landscape services have been instrumental in creating lush, inviting, and sustainable green spaces. This case study explores how VFM revitalized the landscape of a prestigious residential township, blending aesthetics, functionality, and sustainability.       </p>
+          Virat Facility Management (VFM) has earned its place as a leader in delivering reliable, efficient, and client-focused facility solutions. Their electrical services stand as a testament to their technical expertise and commitment to safety and sustainability. This case study illustrates how VFM resolved critical electrical issues for a large commercial complex, ensuring uninterrupted operations and a safer working environment.
+          </p>
         </div>
         <div className={styles.introImageContainer}>
           <img
@@ -96,7 +99,7 @@ const CaseStudy = () => {
         <div className={styles.overviewTextContainer}>
           <h2 className={styles.overviewTitle}>Client Overview</h2>
           <p className={styles.overviewText}>
-          The client, a luxury residential township spread across 25 acres, faced declining appeal due to poorly maintained green spaces. The township’s lawns, gardens, and recreational areas were key to its charm, but neglect and improper upkeep had left these spaces overgrown, unappealing, and underutilized.
+          The client, a multi-tenant commercial complex with over 25 businesses and daily foot traffic of more than 2,000 people, faced persistent electrical challenges. Frequent power outages, high energy bills, and safety concerns were affecting tenant satisfaction and operational efficiency.
           </p>
         </div>
       </section>
@@ -106,43 +109,34 @@ const CaseStudy = () => {
             {" "}
             <img src={card2} alt="" />
           </div>
-          <h3 className={styles.cardTitle}>Unkempt Green Spaces</h3>
+          <h3 className={styles.cardTitle}>Frequent Power Failures</h3>
           <p className={styles.cardText}>
-          Lawns and gardens were overgrown with weeds, and plants lacked proper care, diminishing the township’s aesthetic value.
-
-          </p>
+          Regular electrical disruptions hampered tenant operations, causing frustration and financial losses.    </p>
         </div>
         <div className={styles.card}>
           <div className={styles.cardIcon}>
             <img src={card2} alt="" />
           </div>
-          <h3 className={styles.cardTitle}>Drainage Issues</h3>
+          <h3 className={styles.cardTitle}>High Energy Consumption</h3>
           <p className={styles.cardText}>
-          Poor irrigation and drainage systems led to waterlogging in some areas, affecting plant health and usability of the spaces.
-
-          </p>
+          Outdated electrical systems and inefficient lighting significantly increased energy costs.   </p>
         </div>
         <div className={styles.card}>
           <div className={styles.cardIcon}>
             {" "}
             <img src={card2} alt="" />
           </div>
-          <h3 className={styles.cardTitle}>Inconsistent Maintenance
-          </h3>
+          <h3 className={styles.cardTitle}>Safety Hazards</h3>
           <p className={styles.cardText}>
-          A lack of a structured maintenance schedule resulted in irregular upkeep, with seasonal plants dying off and shrubs growing haphazardly.
-
-          </p>
-        </div>   <div className={styles.card}>
+          Old wiring, overloaded circuits, and unmaintained panels posed risks of electrical fires and other accidents.   </p>
+        </div>  <div className={styles.card}>
           <div className={styles.cardIcon}>
             {" "}
             <img src={card2} alt="" />
           </div>
-          <h3 className={styles.cardTitle}>Sustainability Gaps
-          </h3>
+          <h3 className={styles.cardTitle}>Inadequate Maintenance</h3>
           <p className={styles.cardText}>
-          The green spaces were not aligned with sustainable practices, relying on water-intensive plants and inefficient irrigation.
-
+          The lack of a systematic approach to electrical maintenance led to recurring issues and increased downtime.
           </p>
         </div>
       </section>
@@ -151,36 +145,37 @@ const CaseStudy = () => {
           <div className={styles.approachleft}>
             <h1>The Virat Approach</h1>
             <p>
-            Virat Facility Management implemented a tailored strategy to address these challenges and rejuvenate the township’s landscapes.
+            Virat Facility Management took a structured, hands-on approach to address the client’s electrical challenges effectively.
             </p>
           </div>
           <div className={styles.approachright}>
             <div>
-              <h1>01. Thorough Assessment</h1>
+              <h1>01. Detailed Electrical Audit</h1>
               <p>
-              VFM’s horticulture experts conducted a detailed survey of the township’s green areas to understand soil conditions, plant health, and irrigation needs.
-              </p>
+              VFM’s certified electricians conducted a thorough inspection of the electrical infrastructure, identifying outdated equipment, inefficiencies, and safety hazards.</p>
             </div>
             <div>
-              <h1>02. Landscape Redesign</h1>
+              <h1>02. System Upgrades</h1>
               <p>
-              A new landscape design was introduced, incorporating native and drought-resistant plants to enhance aesthetics while conserving resources.     </p>
+              Key systems, including wiring, circuit breakers, and switchboards, were upgraded to modern, energy-efficient alternatives. </p>
             </div>
             <div>
-              <h1>03. Irrigation System Revamp</h1>
+              <h1>03. Energy Optimization</h1>
               <p>
-              Modern drip irrigation and sprinkler systems were installed to ensure efficient water distribution and eliminate water logging issues.
-              </p>
+              VFM installed LED lighting throughout the complex and introduced motion-sensor technology in common areas to reduce energy consumption.   </p>
             </div>
             <div>
-              <h1>04. Regular Maintenance Program</h1>
+              <h1>04. Enhanced Safety Measures</h1>
               <p>
-              A structured maintenance plan was implemented, covering lawn mowing, pruning, fertilization, and pest control to keep the greenery thriving year-round.
-              </p>
-            </div>    <div>
-              <h1>05. Community Engagement</h1>
+              Surge protectors, fire-resistant cables, and modern grounding systems were installed to eliminate safety risks. </p>
+            </div>   <div>
+              <h1>05. Preventive Maintenance Program</h1>
               <p>
-              VFM conducted workshops for residents, encouraging them to participate in maintaining and enjoying the green spaces, fostering a sense of ownership and pride. </p>
+              A regular maintenance schedule was implemented to ensure timely inspections, repairs, and replacements, reducing future disruptions. </p>
+            </div>  <div>
+              <h1>06. 24/7 Support Team</h1>
+              <p>
+              A dedicated team of on-call electricians was assigned to provide immediate assistance in case of emergencies. </p>
             </div>
           </div>
         </div>
@@ -202,9 +197,9 @@ const CaseStudy = () => {
                 {" "}
                 <img src={card2} alt="" />
               </div>
-              <h3 className={styles.cardTitle}>Revitalized Green Spaces</h3>
+              <h3 className={styles.cardTitle}>Uninterrupted Power Supply</h3>
               <p className={styles.cardText}>
-              The once-neglected lawns and gardens were transformed into lush, vibrant areas that became the pride of the township.   </p>{" "}
+              Electrical disruptions were reduced to nearly zero, ensuring smooth operations for all tenants.  </p>{" "}
             </div>
           </SwiperSlide>{" "}
           <SwiperSlide className="casestudy_cardr">
@@ -213,9 +208,9 @@ const CaseStudy = () => {
                 {" "}
                 <img src={card2} alt="" />
               </div>
-              <h3 className={styles.cardTitle}>Enhanced Usability</h3>
+              <h3 className={styles.cardTitle}>Energy Savings</h3>
               <p className={styles.cardText}>
-              Recreational spaces were made more accessible and enjoyable, becoming popular spots for community gatherings and activities.   </p>{" "}
+              Energy consumption dropped by 35%, significantly lowering utility costs and aligning the complex with sustainability goals.  </p>{" "}
             </div>
           </SwiperSlide>{" "}
           <SwiperSlide className="casestudy_cardr">
@@ -224,33 +219,31 @@ const CaseStudy = () => {
                 {" "}
                 <img src={card2} alt="" />
               </div>
-              <h3 className={styles.cardTitle}>Water Conservation</h3>
+              <h3 className={styles.cardTitle}>Improved Safety Standards</h3>
               <p className={styles.cardText}>
-              The shift to native plants and efficient irrigation systems resulted in a 30% reduction in water usage
+              With modern safety measures in place, the risk of electrical accidents was completely mitigated, boosting tenant confidence.  </p>{" "}
+            </div>
+          </SwiperSlide>{" "}
+          <SwiperSlide className="casestudy_cardr">
+            <div className={styles.card}>
+              <div className={styles.cardIcon}>
+                {" "}
+                <img src={card2} alt="" />
+              </div>
+              <h3 className={styles.cardTitle}>Tenant Satisfaction</h3>
+              <p className={styles.cardText}>
+              Enhanced electrical reliability and reduced energy bills improved tenant retention and attracted new businesses to the complex.
               </p>{" "}
             </div>
-          </SwiperSlide>{" "}
-          <SwiperSlide className="casestudy_cardr">
+          </SwiperSlide>    <SwiperSlide className="casestudy_cardr">
             <div className={styles.card}>
               <div className={styles.cardIcon}>
                 {" "}
                 <img src={card2} alt="" />
               </div>
-              <h3 className={styles.cardTitle}>Improved Aesthetics and Property Value              </h3>
+              <h3 className={styles.cardTitle}>Future-Proof Infrastructure</h3>
               <p className={styles.cardText}>
-              The beautifully maintained landscapes increased the township’s visual appeal, boosting resident satisfaction and property values.
-
-              </p>{" "}
-            </div>
-          </SwiperSlide>   <SwiperSlide className="casestudy_cardr">
-            <div className={styles.card}>
-              <div className={styles.cardIcon}>
-                {" "}
-                <img src={card2} alt="" />
-              </div>
-              <h3 className={styles.cardTitle}>Community Spirit</h3>
-              <p className={styles.cardText}>
-              The workshops and engagement activities brought residents closer, creating a stronger sense of community.
+              The upgraded electrical systems ensured long-term reliability, reducing maintenance costs and extending the lifecycle of the infrastructure.
               </p>{" "}
             </div>
           </SwiperSlide>
@@ -260,17 +253,16 @@ const CaseStudy = () => {
         <h1> Testimonial from the Client</h1>
         <p>
           {" "}
-          "Virat Facility Management has breathed new life into our township. Their team’s expertise and dedication are evident in every corner of our landscaped spaces. Not only have they made our environment more beautiful and sustainable, but they’ve also brought our community together. It’s been a transformative experience for all of us."
-
-        </p>
-        <p> — Resident Welfare Association Chairperson
-        </p>
+          "Virat Facility Management has been a game-changer for our commercial complex. Their expertise in electrical services not only resolved our immediate challenges but also transformed our infrastructure into a modern, efficient, and safe system. The tenants are happier, and we’ve seen a significant drop in energy costs. Partnering with VFM was one of our best decisions."
+          </p>
+        <p>— Facility Manager, Commercial Complex</p>
       </section> <section className={styles.introSection}>
         <div className={styles.introTextContainer}>
           <h2 className={styles.introTitle}>Conclusion</h2>
           <p className={styles.introText}>
-          Virat Facility Management’s horticulture and landscape services demonstrate their ability to combine technical expertise with creativity and sustainability. By focusing on tailored solutions and engaging the community, they turned a challenging project into a model for green living.
-          This case study showcases how VFM’s commitment to excellence helps clients create and maintain spaces that are not just beautiful but also functional and sustainable, enriching lives and the environment.   </p>
+          Virat Facility Management’s electrical services demonstrate their ability to address complex challenges with innovative and client-focused solutions. By prioritizing safety, efficiency, and sustainability, VFM ensured their client’s electrical systems were not just functional but future-ready.
+This case study underscores VFM’s commitment to empowering businesses through reliable and transformative facility management solutions.
+</p>
         </div>
         <div className={styles.introImageContainer}>
           <img
@@ -281,32 +273,31 @@ const CaseStudy = () => {
         </div>
       </section>
       <div className="services-cards">
-        <div className="Serviceecards">
-        <h1> Our Services</h1>
-          <Swiper
-            spaceBetween={swiperSettings.spaceBetween}
-            slidesPerView={swiperSettings.slidesPerView}
-            // pagination={{ clickable: true }}
-            // navigation
-          >
-            {services.map((service, index) => (
-              <SwiperSlide key={index}>
-                <div className="servcard">
-                  <div
-                    className="card-image"
-                    style={{ backgroundImage: `url(${service.img})` }}
-                  ></div>
-                  <div className="card-content">
-                    <h2>{service.title}</h2>
-                    <img src={service.icon} alt={`${service.title} icon`} />
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-      </div>
-     
+             <div className="Serviceecards">
+             <h1> Our Services</h1>
+               <Swiper
+                 spaceBetween={swiperSettings.spaceBetween}
+                 slidesPerView={swiperSettings.slidesPerView}
+                 // pagination={{ clickable: true }}
+                 // navigation
+               >
+                 {services.map((service, index) => (
+                   <SwiperSlide key={index}>
+                     <div className="servcard">
+                       <div
+                         className="card-image"
+                         style={{ backgroundImage: `url(${service.img})` }}
+                       ></div>
+                       <div className="card-content">
+                         <h2>{service.title}</h2>
+                         <img src={service.icon} alt={`${service.title} icon`} />
+                       </div>
+                     </div>
+                   </SwiperSlide>
+                 ))}
+               </Swiper>
+             </div>
+           </div>
     </>
   );
 };

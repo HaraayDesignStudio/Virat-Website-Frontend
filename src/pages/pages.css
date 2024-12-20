@@ -367,6 +367,14 @@
   font-size: 24px;
 }
 .Serviceecards {
+  background-color: #E6F1FF;
+  margin: 50px 10px 0px;
+  padding: 10px ;
+  h1{
+    margin: 20px 0 ;
+    text-align: center;
+    font-size: 64px;
+  }
 }
 .services-cards {
   display: flex;
@@ -374,7 +382,7 @@
   overflow: hidden;
   width: 100%;
   gap: 20px;
-  justify-content: center;
+  justify-content: center; margin-bottom: 20px;
 }
 .Serviceecards {
   width: 100%;
@@ -618,7 +626,7 @@
   }
   .testimonila-trust-client p {
     margin-right: 170px;
-    margin-top: -82px;
+    /* margin-top: -82px; */
     font-size: 70px;
   }
   .service-back-img {
@@ -2155,25 +2163,29 @@ textarea::placeholder {
 }
 
 .services-background img {
-  height: 700px;
+  height: 600px;
 }
 .service-on-text {
-  width: 50%;
+  width: 80%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 10px;
   position: absolute;
-  bottom: 20%;
+  bottom: 30%;
   left: 10%;
-  font-weight: bold;
+  font-weight: bold;text-align: center;
 }
 .service-on-text h1 {
   font-family: bwvirat;
   margin-left: 30px;
-  font-size: 70px;
+  font-size: 64px;
   font-weight: 700;
   line-height: 84px;
-  text-align: left;
+  text-align: center;
+}
+.service-on-text p {
+  width: 80.%; margin: 0 auto;
+  text-align: center !important;
 }
 
 .services-first-box {
@@ -2181,32 +2193,41 @@ textarea::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  padding: 40px 40px;
+  gap: 10px;
+  padding: 10px 40px; 
+
 }
 .services-first-box h1 {
   font-family: bwvirat;
-  font-size: 50px;
+  font-size: 48px;
   margin-bottom: 20px;
 }
 .services-first-box .text-p2 {
-  width: 60%;
-  font-size: 18px;
+  max-width: 95%;
+  font-size: 20px; text-align: justify;
 }
 .text-p {
   font-size: 18px;
+  width: 95%;
 }
 .services-first-box .text-h2 {
   font-family: bwvirat;
-  font-size: 30px;
+  font-size: 32px;
   margin: 20px 0;
 }
 .services-first-box .image-content {
-  height: 100%;
+  height: 100%!important;
   object-fit: cover;
+} .services-first-box .image-content {
+       /* Ensure the image container takes up full width */
+  min-height: 100% !important;       /* Ensure the image container takes up full height */
+
 }
+
+
 .service-cards {
   padding: 80px 40px;
+ 
   justify-content: space-between !important;
 }
 .service-cards .vlaues-card-container {
@@ -2215,40 +2236,65 @@ textarea::placeholder {
     rgba(108, 26, 0, 0.44) 40%,
     rgba(0, 0, 0, 0) 100%
   );
+  max-height: 540px;
   max-width: 425px;
-  padding: 80px 15px;
+  padding: 80px 15px;  border-radius: 30px;
 }
 .services-details .values-card-two {
   padding-right: 40px !important;
-}
+} .vlaues-card-container img{width: 100px;
+height: 100px; object-fit: contain;}
 .service-cards .values-card-name {
   font-family: virat;
-  font-size: 44px;
+  font-size: 36px;
   line-height: 62.92px;
   font-weight: bold;
 }
 .service-cards .values-card-disc {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 300;
   line-height: 23px;
   text-align: left;
   color: #000;
 }
 .image-content .second-image {
-  width: 600px;
+  width: 300px;
+  height: 350px;
+  object-fit: contain;
 }
 .services-bottom-disc {
   padding: 100px 40px;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.servicesdisctxt{
+  display: flex;
+  flex-direction: column;
+  p{  font-size: 20px;
+  text-decoration: none
+  ;}
 }
 .services-bottom-disc h1 {
   font-family: bwvirat;
-  font-size: 60px;
-  line-height: 80px;
+  font-size: 48px;
+  line-height: 50px;
   margin-bottom: 50px;
+  margin: 20px 0 30px 0;
 }
 .services-bottom-disc p {
-  font-size: 16px;
+  font-size: 22px;
+  text-decoration: none;
+  width: 80%;
+  line-height: 130%;
+  margin: 0 auto;
+  a{
+    /* color: #ff5a36; */
+    font-size: 20px;font-weight: normal;
+    text-decoration: none;
+  }
+  
 }
 
 .service-only-two {
@@ -2275,13 +2321,13 @@ textarea::placeholder {
     font-size: 26px;
   }
   .services-first-box .text-h2 {
-    font-size: 20px;
+    font-size: 24px;
   }
   .text-p,
   .services-first-box .text-p2 {
     width: 100%;
-    font-size: 15px;
-  }
+    font-size: 20px;
+  font-family: virat;  }
   .service-cards {
     padding: 80px 10px;
   }
@@ -2317,7 +2363,11 @@ textarea::placeholder {
     margin-bottom: 20px;
   }
   .services-bottom-disc p {
-    font-size: 14px;
+    font-size: 18px;
+    text-decoration: none;
+    width: 100%;
+    text-align: justify;
+    font-family: virat;
   }
 }
 
@@ -2341,7 +2391,7 @@ textarea::placeholder {
   padding: 50px 40px;
 }
 .services-bottom-disc-2 p {
-  font-size: 18px;
+  font-size: 18px;     text-decoration: none;
 }
 
 @media (max-width: 1050px) {
@@ -2356,6 +2406,9 @@ textarea::placeholder {
   }
 }
 @media (max-width: 700px) {
+  .services-bottom-disc img{
+    display: none;
+  }
   .serivce-two .change-2 {
     width: 520px;
     font-size: 35px;
@@ -2377,7 +2430,7 @@ textarea::placeholder {
     height: 100%;
   }
   .service-on-text h1 {
-    font-size: 40px;
+    font-size: 48px;
     margin-left: 0;
     line-height: 1.2;
   }
@@ -2389,7 +2442,7 @@ textarea::placeholder {
     padding: 0 10px;
   }
   .service-on-text p {
-    font-size: 11px;
+    font-size: 18px;
   }
   .services-first-box {
     padding: 40px 10px;
@@ -2401,7 +2454,7 @@ textarea::placeholder {
     width: 100%;
   }
   .services-bottom-disc h1 {
-    font-size: 24px;
+    font-size: 36px;
     line-height: 30px;
   }
   .service-cards-wrapper {
@@ -2433,15 +2486,15 @@ textarea::placeholder {
   }
   .service-cards .vlaues-card-container {
     padding: 15px;
-    height: 350px;
+    height: 450px;
   }
   .service-cards .values-card-name {
-    font-size: 25px;
+    font-size: 35px;
     line-height: 30px;
   }
   .service-cards .values-card-disc {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 16px; text-align: justify;
   }
   .serivce-two .change-2 {
     width: 100%;
@@ -2456,7 +2509,7 @@ textarea::placeholder {
     width: 230px;
   }
   .services-first-box h1 {
-    font-size: 21px;
+    font-size: 36px;
   }
   .image-content .service-2-img {
     width: 100%;
@@ -2634,5 +2687,85 @@ textarea::placeholder {
   .casestudy_see_more {
     font-size: 0.9rem;
     padding: 8px 16px;
+  }
+}
+.firsttxtimg {
+       /* Stretch the image to fill the container width */
+  height: 100%; 
+  margin: 0;
+  min-height: 100%;       /* Stretch the image to fill the container height */
+  object-fit: fill;  /* Ensure the image maintains aspect ratio and covers the entire container */
+}
+
+
+.contactSection {
+  position: relative;
+  width: 100%;
+  height: 400px;
+
+  @media (max-width: 768px) {
+    height: 600px;
+  }
+
+  .mapContainer {
+    width: 100%;
+    height: 100%;
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  }
+
+  .contactCard {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 10px;
+    }
+
+    .contactItem {
+      display: flex;
+      align-items: center;
+      margin: 10px 20px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .icon {
+        font-size: 24px;
+        margin-right: 10px;
+
+        @media (max-width: 768px) {
+          margin-right: 0;
+          margin-bottom: 5px;
+        }
+      }
+
+      h3 {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 16px;
+        color: #555;
+      }
+    }
   }
 }

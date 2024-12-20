@@ -111,18 +111,19 @@ const Navbar = () => {
               <div
                 className={
                   selectedTab === "services"
-                    ? "line-indication selected-line"
+                    ? "line-indication selected-line selectedtab"
                     : "line-indication"
                 }
               ></div>
-              <p>Services {isService ? "▲" : "▼"}</p>
+              <p>Services {isService ? <svg className="svgg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path fill="white" d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/></svg> : <svg className="svgg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ffffff" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>}</p>
             </Link>
             {isService && (
-              <>
+              <div className="servicestab">
+                <div className="servicesubtab">
                 <Link
                   to="/services/house-keeping"
                   onClick={() => handleTabClick("house-keeping")}
-                  className={selectedTab === "house-keeping" ? "selected" : ""}
+                  className={selectedTab === "house-keeping" ? "selectedtabb" : ""}
                 >
                   <div
                     className={
@@ -137,7 +138,7 @@ const Navbar = () => {
                   to="/services/horticulture-landscaping"
                   onClick={() => handleTabClick("horticulture-landscaping")}
                   className={
-                    selectedTab === "horticulture-landscaping" ? "selected" : ""
+                    selectedTab === "horticulture-landscaping" ? "selectedtabb" : ""
                   }
                 >
                   <div
@@ -152,7 +153,7 @@ const Navbar = () => {
                 <Link
                   to="/services/mechanical"
                   onClick={() => handleTabClick("mechanical")}
-                  className={selectedTab === "mechanical" ? "selected" : ""}
+                  className={selectedTab === "mechanical" ? "selectedtabb" : ""}
                 >
                   <div
                     className={
@@ -166,7 +167,7 @@ const Navbar = () => {
                 <Link
                   to="/services/plumbing"
                   onClick={() => handleTabClick("plumbing")}
-                  className={selectedTab === "plumbing" ? "selected" : ""}
+                  className={selectedTab === "plumbing" ? "selectedtabb" : ""}
                 >
                   <div
                     className={
@@ -180,7 +181,7 @@ const Navbar = () => {
                 <Link
                   to="/services/eletrical"
                   onClick={() => handleTabClick("eletrical")}
-                  className={selectedTab === "eletrical" ? "selected" : ""}
+                  className={selectedTab === "eletrical" ? "selectedtabb" : ""}
                 >
                   <div
                     className={
@@ -189,9 +190,9 @@ const Navbar = () => {
                         : "line-indication"
                     }
                   ></div>
-                  <p>Eletrical</p>
-                </Link>
-              </>
+                  <p>Electrical</p>
+                </Link> </div>
+              </div>
             )}
             <Link
               to="/human-sustainability"
