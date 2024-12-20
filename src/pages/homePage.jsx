@@ -17,7 +17,7 @@ import ServiceBrandCarousel1 from "../components/serviceBrandCarousel1.jsx";
 import TestimonialsCard from "../components/testimonilaCard";
 import ButtonCom from "../components/buttonCom";
 // import ServiceBrandCarousel2 from "../components/serviceBrandCarousel2";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import scrollimg from "../assets/scrollimg.svg";
 import serviceimg1 from "../assets/service1.webp";
 import serviceimg2 from "../assets/service2.webp";
@@ -158,7 +158,7 @@ const HomePage = () => {
           Virat was founded because of our passion for hygiene ,organizing and
           creating a healthy space for all, which we developed into a much
           larger scale that today is known as virat facility management.
-          <div className="herosecbtn">Explore Services</div>
+          <Link to="/services" className="herosecbtn">Explore Services</Link>
         </p>
         <div className="herodesignwhite"></div>
         <div className="heroscrollbtn" id="scroll-button">
