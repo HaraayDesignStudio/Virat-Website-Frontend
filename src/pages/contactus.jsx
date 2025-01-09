@@ -87,7 +87,7 @@ const ContactUs = () => {
       <iframe
         title="Map"
         className="responsive-map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.486246762396!2d73.81792857509635!3d18.52043647419378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf3c5400d4b9%3A0x28762a0fce39c2c4!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1681628737187!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7539.459930366044!2d72.86337742817217!3d19.119498752877575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1734072198756!5m2!1sen!2sin"
         allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
