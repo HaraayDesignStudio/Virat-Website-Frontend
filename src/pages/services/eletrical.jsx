@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import homepageimage from "../../assets/service-back.png";
+import homepageimage from "../../assets/electricalheroimg.png";
 import homekeeping from "../../assets/service5.png";
 import ValuesCard from "../../components/valuesCard";
 import card2 from "../../assets/elastrations/03.png";

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import homepageimage from "../../assets/service-back.png";
+import homepageimage from "../../assets/houseserviceheroimg.png";
 import homekeeping from "../../assets/housekeeping-services-500x500.webp";
 import ValuesCard from "../../components/valuesCard";
 import card2 from "../../assets/elastrations/03.png";
@@ -46,7 +46,7 @@ const HouseKeeping = () => {
             appearance and functionality of your workplace.
           </p>
         </div>
-{/* <Stats/> */}
+<Stats/>
 </div> 
       <div className="services-first-box">
         <div className="text-content">

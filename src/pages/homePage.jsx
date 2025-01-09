@@ -82,6 +82,12 @@ const HomePage = () => {
     { img: serviceimg3, icon: serviceicon3, title: "Mechanical" ,link: "services/mechanical" ,linkc: "/casestudy/mechanical"},
     { img: serviceimg4, icon: serviceicon4, title: "Plumbing",link: "services/plumbing" ,linkc: "/casestudy/plumbing"},
     { img: serviceimg5, icon: serviceicon5, title: "Electrical" ,link: "services/electrical" ,linkc: "/casestudy/electrical"},
+  ];  const services2 = [
+    { img: serviceimg1, icon: serviceicon1, title: "HealthCare" ,link: "/services/house-keeping" ,linkc: "/casestudy/housekeeping"},
+    { img: serviceimg2, icon: serviceicon2, title: "Township Facility Management" ,link: "services/horticulture-landscaping"  ,linkc: "/casestudy/horticulture-landscaping"},
+    { img: serviceimg3, icon: serviceicon3, title: "Recidential Facility Management" ,link: "services/mechanical" ,linkc: "/casestudy/mechanical"},
+    { img: serviceimg4, icon: serviceicon4, title: "Corporate Properties",link: "services/plumbing" ,linkc: "/casestudy/plumbing"},
+    { img: serviceimg5, icon: serviceicon5, title: "Commercial Complex" ,link: "services/electrical" ,linkc: "/casestudy/electrical"},
   ];
   useEffect(() => {
     const scrollButton = document.getElementById("scroll-button");
@@ -346,7 +352,7 @@ const HomePage = () => {
           navigation
           className="casestudy_swiper"
         >
-          {services.map((service) => (
+          {services2.map((service) => (
             <SwiperSlide key={service.id} className="casestudy_card">
 
               <Link to={service.linkc}>

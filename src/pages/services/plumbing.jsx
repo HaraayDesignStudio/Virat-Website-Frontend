@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import homepageimage from "../../assets/service-back.png";
+import homepageimage from "../../assets/plumbingheroimg.png";
 import homekeeping from "../../assets/service4.png";
 import ValuesCard from "../../components/valuesCard";
 import card2 from "../../assets/elastrations/03.png";
@@ -49,7 +49,7 @@ const Plumbing = () => {
             interrupting the operation and achieving exceptional results.  
           </p>
         </div>
-{/* <Stats/> */}
+<Stats/>
 </div> 
       <div className="services-first-box">
         <div className="text-content">

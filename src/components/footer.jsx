@@ -39,12 +39,16 @@ const Footer = () => {
           <div className="footer-right">
             <div className="footer-box">
               <FooterCom
-                onClick={() => window.open("mailto:vfm.services2017@gmail.com")}
+                onClick={() => {
+                  window.location.href = `mailto:vfm.services2017@gmail.com?subject=Enquiry`;
+                }}
                 name={"Email us"}
-                link={"vfm.services2017@gmail.com"}
                 img={footerImage}
               />
-              <FooterCom name={"Visit us"} link={""} img={footerImage} />
+              <Link to="/contact-us">
+                {" "}
+                <FooterCom name={"Visit us"} img={footerImage} />
+              </Link>
             </div>
             <div className="footer-social">
               <p className="socialmedia-head">Socialmedia</p>
@@ -55,7 +59,11 @@ const Footer = () => {
                 >
                   LinkedIn <LiaLinkedinIn />
                 </Link>
-                <Link>
+                <Link
+                  onClick={() => {
+                    window.open(`https://wa.me/9146076185`, "_blank");
+                  }}
+                >
                   WhatsApp <IoLogoWhatsapp />
                 </Link>
               </div>

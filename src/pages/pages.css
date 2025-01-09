@@ -1636,7 +1636,7 @@
   position: relative;
   background-image: url("../assets/footer-mobile.png");
   background-size: cover;
-  height: 100vh;
+  height: 110vh;
   display: flex;
   padding: 60px 60px;
   padding-top: 100px;
@@ -1690,8 +1690,8 @@
 }
 .link-mobile {
   background-color: #d9d9d9;
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -2164,6 +2164,7 @@ textarea::placeholder {
 
 .services-background img {
   height: 600px;
+  object-fit: cover;
 }
 .service-on-text {
   width: 80%;
@@ -2172,20 +2173,30 @@ textarea::placeholder {
   gap: 10px;
   position: absolute;
   bottom: 30%;
-  left: 10%;
+  left: 5%;
   font-weight: bold;text-align: center;
 }
 .service-on-text h1 {
   font-family: bwvirat;
-  margin-left: 30px;
+  /* margin-left: 30px; */
   font-size: 64px;
   font-weight: 700;
   line-height: 84px;
-  text-align: center;
+  text-align: left;
+  color: white;
+  text-wrap: nowrap;
 }
+
 .service-on-text p {
-  width: 80.%; margin: 0 auto;
-  text-align: center !important;
+  width: 50% !important;
+   margin: 0 ;
+
+  text-align: left !important;
+  color: white;
+  font-size: 20px;
+  font-family: virat;
+  font-weight: normal;
+  
 }
 
 .services-first-box {
@@ -2196,6 +2207,9 @@ textarea::placeholder {
   gap: 10px;
   padding: 10px 40px; 
 
+} .headmargindiv{
+ font-size: 60px !important;
+ line-height: 60px !important;
 }
 .services-first-box h1 {
   font-family: bwvirat;
@@ -2800,4 +2814,68 @@ height: 100px; object-fit: contain;}
 a{
   /* color: #007bff; */
   text-decoration: none;
+}
+
+/* map in contact us page */
+.map-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 20px auto;
+
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .responsive-map {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .map-info {
+    margin-top: 10px;
+    text-align: center;
+
+    h4 {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    a {
+      font-size: 0.9rem;
+      color: #007bff;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .map-container {
+    width: 90%;
+    padding: 10px;
+
+    .responsive-map {
+      height: 250px;
+    }
+  }
+}
+
+
+.contact-discq{
+  color: #000;
+  font-family: virat;
+  font-size: 20px;
+  
 }

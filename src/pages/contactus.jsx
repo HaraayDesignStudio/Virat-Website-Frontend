@@ -83,10 +83,21 @@ const ContactUs = () => {
         <div>
           <p className="contact-heading">Contact us</p>
         </div>
+        <div className="map-container">
+      <iframe
+        title="Map"
+        className="responsive-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.486246762396!2d73.81792857509635!3d18.52043647419378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf3c5400d4b9%3A0x28762a0fce39c2c4!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1681628737187!5m2!1sen!2sin"
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+     
+    </div>
         <div>
-          <p className="contact-disc">
-            If you have any inquiry get in touch with us. We’ll be happy to help
-            you
+          <p className="contact-discq">
+          As a trusted provider of facility management services, we are dedicated to offer
+customized and affordable pricing to meet the unique needs of our unique clients.
           </p>
           <div className="links-mobile">
             <Link className="link-mobile" to="/"><IoLogoWhatsapp /></Link>

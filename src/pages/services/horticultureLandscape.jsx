@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import homepageimage from "../../assets/service-back.png";
+import homepageimage from "../../assets/hoticultureheroimg.png";
 import homekeeping from "../../assets/service2.png";
 import ValuesCard from "../../components/valuesCard";
 import card2 from "../../assets/elastrations/03.png";
@@ -37,7 +37,7 @@ const HorticultureLandscape = () => {
       <div className="image-container-homepage services-background">
         <img src={homepageimage} alt="homepage" />
         <div className="service-on-text serivce-two">
-          <h1 className="change-2">Horticulture and Landscaping Maintenance</h1>
+          <h1 className="change-2 headmargindiv">Horticulture and <br /> Landscaping Maintenance</h1>
           <p>
             Welcome At Virat Facility Management, we understand that an exterior
             environment is an essential part of the organizational environment
@@ -47,7 +47,7 @@ const HorticultureLandscape = () => {
             business a professional appeal.
           </p>
         </div>
-{/* <Stats/> */}
+<Stats/>
 </div> 
       <div className="services-first-box">
         <div className="text-content">

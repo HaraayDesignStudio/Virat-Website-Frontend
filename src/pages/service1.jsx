@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate ,Link} from "react-router-dom";
 import { BsArrowDown } from "react-icons/bs";
 import abtheroimg from "../assets/serviceabt.jpg";
 import styles from "./Services.module.css";
@@ -61,11 +61,18 @@ const Service = () => {
     return () => window.removeEventListener("resize", updateSwiperSettings);
   }, []);
   const services = [
-    { image: serviceimg1, icon: serviceicon1, title: "House Keeping" },
-    { image: serviceimg2, icon: serviceicon2, title: "Gardening" },
-    { image: serviceimg3, icon: serviceicon3, title: "Mechanical" },
-    { image: serviceimg4, icon: serviceicon4, title: "Plumbing" },
-    { image: serviceimg5, icon: serviceicon5, title: "Electrical" },
+    { image: serviceimg1, icon: serviceicon1, title: "House Keeping"  ,link: "/services/housekeeping"},
+    { image: serviceimg2, icon: serviceicon2, title: "Gardening" ,link: "services/horticulture-landscaping" },
+    { image: serviceimg3, icon: serviceicon3, title: "Mechanical"  ,link: "services/mechanical"},
+    { image: serviceimg4, icon: serviceicon4, title: "Plumbing" ,link: "services/plumbing" },
+    { image: serviceimg5, icon: serviceicon5, title: "Electrical"  ,link: "services/electrical"},
+  ];
+  const services2 = [
+    { img: serviceimg1, icon: serviceicon1, title: "HealthCare" ,link: "/services/house-keeping" ,linkc: "/casestudy/housekeeping"},
+    { img: serviceimg2, icon: serviceicon2, title: "Township Facility Management" ,link: "services/horticulture-landscaping"  ,linkc: "/casestudy/horticulture-landscaping"},
+    { img: serviceimg3, icon: serviceicon3, title: "Recidential Facility Management" ,link: "services/mechanical" ,linkc: "/casestudy/mechanical"},
+    { img: serviceimg4, icon: serviceicon4, title: "Corporate Properties",link: "services/plumbing" ,linkc: "/casestudy/plumbing"},
+    { img: serviceimg5, icon: serviceicon5, title: "Commercial Complex" ,link: "services/electrical" ,linkc: "/casestudy/electrical"},
   ];
   return (
     <>
@@ -108,8 +115,8 @@ const Service = () => {
           {/* Cards */}
           <div className={styles.cardsContainer}>
             {services.map((service, index) => (
-              <div className={styles.card} key={index}>
-                <img src={service.image} alt={service.title} />
+              <div className={styles.card} key={index}> <Link to={service.link}>
+                <img src={service.image} alt={service.title} /> </Link>
                 <div className={styles.cardText}>
                   <h3>{service.title}</h3>
                   <img src={service.icon} alt={`${service.title} icon`} />
@@ -131,10 +138,11 @@ const Service = () => {
             navigation
             className="casestudy_swiper"
           >
-            {services.map((service) => (
+            {services2.map((service) => (
               <SwiperSlide key={service.id} className="casestudy_card">
                 <div className="casestudy_image_container">
-                  <img src={service.image} alt={service.title} />
+                  <Link to={service.linkc}>
+                  <img src={service.img} alt={service.title} /></Link>
                 </div>
                 <p className="casestudy_title">{service.title}</p>
               </SwiperSlide>
