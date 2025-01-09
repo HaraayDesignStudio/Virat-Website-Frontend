@@ -2470,7 +2470,8 @@ height: 100px; object-fit: contain;}
     height: 100%;
   }
   .service-on-text h1 {
-    font-size: 48px;
+    width: 80%;
+    font-size: 32px;
     margin-left: 0;
     line-height: 1.2;
   }
@@ -2482,7 +2483,9 @@ height: 100px; object-fit: contain;}
     padding: 0 10px;
   }
   .service-on-text p {
-    font-size: 18px;
+    font-size: 16px;
+    width: 80% !important;
+    text-align: justify !important;
   }
   .services-first-box {
     padding: 40px 10px;
@@ -2537,9 +2540,9 @@ height: 100px; object-fit: contain;}
     line-height: 16px; text-align: justify;
   }
   .serivce-two .change-2 {
-    width: 100%;
-    font-size: 22px;
-    line-height: 28px;
+    width: 80%;
+    font-size: 32px !important;
+    line-height: 32px !important;
   }
   .serivce-two p {
     width: 100%;

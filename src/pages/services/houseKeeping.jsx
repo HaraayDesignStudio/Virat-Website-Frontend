@@ -46,8 +46,8 @@ const HouseKeeping = () => {
             appearance and functionality of your workplace.
           </p>
         </div>
-<Stats/>
-</div> 
+
+</div> <Stats/>
       <div className="services-first-box">
         <div className="text-content">
           <h1 className="text-h1">
