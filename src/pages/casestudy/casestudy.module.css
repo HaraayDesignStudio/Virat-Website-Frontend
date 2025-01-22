@@ -135,13 +135,13 @@
   }
 }
 
-.introText {
-  font-size: 24px;
-  text-align: left;
+.introText {font-family: virat;
+  font-size: 22px;
+  text-align: justify;
   width: 100%;
   line-height: 130%;
   @media (max-width: 768px) {
-    font-size: 18px;
+    font-size: 14px; text-align: justify;
   }
 }
 
@@ -195,6 +195,7 @@
     }
   }
   .overviewText {
+    font-family: virat;
     font-size: 20px;
     text-align: center;
     /* width: 100%; */
@@ -202,7 +203,7 @@
     margin: 0 auto;
     line-height: 150%;
     @media (max-width: 768px) {
-      font-size: 18px;
+      font-size: 14px;
       line-height: 130%;
       text-align: justify;
       width: 100%;
@@ -220,13 +221,17 @@
   padding: 2rem;
 
   @media (max-width: 768px) {
-    flex-direction: row;
+    flex-direction: row;  
+  justify-content: start;
+   padding: 10px 10px;
+    flex-wrap: nowrap; overflow-x: auto;
   }
 }
 
 .card {
   flex: 1 1 calc(33.333% - 1.5rem);
   max-width: 300px;
+  min-height: 270px;
   background: linear-gradient(135deg, #fdfbfb, #ebedee);
   border-radius: 10px;
   padding: 1.5rem;
@@ -238,6 +243,10 @@
     rgba(108, 26, 0, 0.44) 40%,
     rgba(0, 0, 0, 0) 100%
   );
+  @media (max-width: 768px) {
+   min-width: 250px;
+  }
+
 }
 
 .card:hover {
@@ -268,6 +277,9 @@
   text-align: left;
   margin: 20px 0;
   font-family: bwvirat;
+  @media (max-width: 768px) {
+  font-size: 20px;
+  }
 }
 
 .cardText {
@@ -275,6 +287,9 @@
   color: #1c2325;
   text-align: left;
   font-family: bwviratlight;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -326,6 +341,7 @@
           text-align: center;
           font-size: 36px;
           margin-left: 0;
+          margin-bottom: 10px;
         }
       }
       p {
@@ -338,7 +354,7 @@
         line-height: 150%;
         @media (max-width: 768px) {
           width: 100%;
-          font-size: 18px;
+          font-size: 14px;
           text-align: justify;
           padding: 0 10px;
         }
@@ -362,13 +378,14 @@
           margin-bottom: 30px;
           text-align: left;
           @media (max-width: 768px) {
-            font-size: 22px;
+            font-size: 20px;
             width: 100%;
+            margin-bottom: 10px;
           }
         }
         p {
           font-family: virat;
-          font-size: 20px;
+          font-size: 16px;
           text-align: left;
           /* width: 100%; */
           width: 80%;
@@ -377,7 +394,7 @@
           width: 100%;
 
           @media (max-width: 768px) {
-            font-size: 16px;
+            font-size: 14px; text-align: justify;
           }
         }
       }
@@ -436,9 +453,10 @@
     text-align: left;
     /* margin-left: 10%; */
     @media (max-width: 768px) {
-      text-align: center;
+      text-align: left;
       font-size: 36px;
       margin-left: 0;
+      margin-bottom: 10px;
     }
   }
   p {
@@ -452,7 +470,7 @@
     width: 100%;
 
     @media (max-width: 768px) {
-      font-size: 16px;
+      font-size: 14px; text-align: justify; 
     }
   }
 }

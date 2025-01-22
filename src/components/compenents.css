@@ -872,10 +872,10 @@ padding: 0;
   padding: 40px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  /* gap: 10px; */
   border: 0.5px solid rgba(255, 255, 255, 0.6);
   background: #fff;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .vlaues-card-container img {
   width: 118px;

@@ -19,19 +19,20 @@ import serviceicon5 from "../../assets/serviceicon5.svg";
 // swiper
 import { Swiper, SwiperSlide } from "swiper/react"; // Core Swiper
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules"; // Navigation and Pagination modules
-
+import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 //
 const CaseStudy = () => {
-  const services = [
-    { img: serviceimg1, icon: serviceicon1, title: "House Keeping" },
-    { img: serviceimg2, icon: serviceicon2, title: "Gardening" },
-    { img: serviceimg3, icon: serviceicon3, title: "Mechanical" },
-    { img: serviceimg4, icon: serviceicon4, title: "Plumbing" },
-    { img: serviceimg5, icon: serviceicon5, title: "Electrical" },
-  ];
+ 
+   const services = [
+     { img: serviceimg1, icon: serviceicon1, title: "House Keeping"  ,link: "/services/house-keeping"},
+     { img: serviceimg2, icon: serviceicon2, title: "Gardening" ,link: "/services/horticulture-landscaping" },
+     { img: serviceimg3, icon: serviceicon3, title: "Mechanical"  ,link: "/services/mechanical"},
+     { img: serviceimg4, icon: serviceicon4, title: "Plumbing" ,link: "/services/plumbing" },
+     { img: serviceimg5, icon: serviceicon5, title: "Electrical"  ,link: "/services/electrical"},
+   ];
   // swiper setting
   const [swiperSettings, setSwiperSettings] = useState({
     slidesPerView: 4, // Default value
@@ -276,7 +277,7 @@ const CaseStudy = () => {
           >
             {services.map((service, index) => (
               <SwiperSlide key={index}>
-                <div className="servcard">
+              <Link to={service.link}>  <div className="servcard">
                   <div
                     className="card-image"
                     style={{ backgroundImage: `url(${service.img})` }}
@@ -285,7 +286,7 @@ const CaseStudy = () => {
                     <h2>{service.title}</h2>
                     <img src={service.icon} alt={`${service.title} icon`} />
                   </div>
-                </div>
+                </div></Link>
               </SwiperSlide>
             ))}
           </Swiper>

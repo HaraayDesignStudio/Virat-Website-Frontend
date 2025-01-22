@@ -61,18 +61,18 @@ const Service = () => {
     return () => window.removeEventListener("resize", updateSwiperSettings);
   }, []);
   const services = [
-    { image: serviceimg1, icon: serviceicon1, title: "House Keeping"  ,link: "/services/housekeeping"},
-    { image: serviceimg2, icon: serviceicon2, title: "Gardening" ,link: "services/horticulture-landscaping" },
-    { image: serviceimg3, icon: serviceicon3, title: "Mechanical"  ,link: "services/mechanical"},
-    { image: serviceimg4, icon: serviceicon4, title: "Plumbing" ,link: "services/plumbing" },
-    { image: serviceimg5, icon: serviceicon5, title: "Electrical"  ,link: "services/electrical"},
+    { image: serviceimg1, icon: serviceicon1, title: "House Keeping"  ,link: "/services/house-keeping"},
+    { image: serviceimg2, icon: serviceicon2, title: "Gardening" ,link: "/services/horticulture-landscaping" },
+    { image: serviceimg3, icon: serviceicon3, title: "Mechanical"  ,link: "/services/mechanical"},
+    { image: serviceimg4, icon: serviceicon4, title: "Plumbing" ,link: "/services/plumbing" },
+    { image: serviceimg5, icon: serviceicon5, title: "Electrical"  ,link: "/services/electrical"},
   ];
   const services2 = [
     { img: serviceimg1, icon: serviceicon1, title: "HealthCare" ,link: "/services/house-keeping" ,linkc: "/casestudy/housekeeping"},
-    { img: serviceimg2, icon: serviceicon2, title: "Township Facility Management" ,link: "services/horticulture-landscaping"  ,linkc: "/casestudy/horticulture-landscaping"},
-    { img: serviceimg3, icon: serviceicon3, title: "Recidential Facility Management" ,link: "services/mechanical" ,linkc: "/casestudy/mechanical"},
-    { img: serviceimg4, icon: serviceicon4, title: "Corporate Properties",link: "services/plumbing" ,linkc: "/casestudy/plumbing"},
-    { img: serviceimg5, icon: serviceicon5, title: "Commercial Complex" ,link: "services/electrical" ,linkc: "/casestudy/electrical"},
+    { img: serviceimg2, icon: serviceicon2, title: "Township Facility Management" ,link: "/services/horticulture-landscaping"  ,linkc: "/casestudy/horticulture-landscaping"},
+    { img: serviceimg3, icon: serviceicon3, title: "Recidential Facility Management" ,link: "/services/mechanical" ,linkc: "/casestudy/mechanical"},
+    { img: serviceimg4, icon: serviceicon4, title: "Corporate Properties",link: "/services/plumbing" ,linkc: "/casestudy/plumbing"},
+    { img: serviceimg5, icon: serviceicon5, title: "Commercial Complex" ,link: "/services/electrical" ,linkc: "/casestudy/electrical"},
   ];
   return (
     <>
