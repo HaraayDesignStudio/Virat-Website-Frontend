@@ -151,11 +151,7 @@ const HomePage = () => {
 
   return (
     <div className="homepage-container">
-<div class="whatsapp-icon">
-    <a href="https://wa.me/1234567890" target="_blank">
-        <img src={whatsapp} alt="WhatsApp" />
-    </a>
-</div>
+
 
       <div className="image-container-homepage">
         <img src={homepageimage} alt="homepage" />

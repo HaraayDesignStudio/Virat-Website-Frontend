@@ -17,12 +17,18 @@ import Casestudyhousekeeping from "./pages/casestudy/Casestudyhousekeeping";
 import Casestudymechanical from "./pages/casestudy/Casestudymechanical";
 import Casestudyplumbing from "./pages/casestudy/Casestudyplumbing"; 
 import Casestudyelectrical from "./pages/casestudy/Casestudyelectrical"; 
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./components/ScrollToTop"; 
+import whatsapp from "./assets/whatsapp.png";
+
 function App() {
   return (
     <BrowserRouter>      <ScrollToTop/>
       <Navbar />
-
+<div class="whatsapp-icon">
+    <a href="https://wa.me/+919930233901" target="_blank">
+        <img src={whatsapp} alt="WhatsApp" />
+    </a>
+</div>
       <Routes>     
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<Aboutus />} />
