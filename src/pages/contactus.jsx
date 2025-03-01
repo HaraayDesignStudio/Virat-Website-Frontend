@@ -29,7 +29,7 @@ const ContactUs = () => {
 
   const handleSubmission = async (e) => {
     e.preventDefault();
-
+console.log("hii")
     if (
       name.trim() === "" ||
       email.trim() === "" ||
@@ -93,21 +93,23 @@ const ContactUs = () => {
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
      
-    </div>
+    </div>    
         <div>
           <p className="contact-discq">
           As a trusted provider of facility management services, we are dedicated to offer
 customized and affordable pricing to meet the unique needs of our unique clients.
           </p>
           <div className="links-mobile">
-            <Link className="link-mobile" to="/"><IoLogoWhatsapp /></Link>
+          <a className="link-mobile"  href="https://wa.me/+919930233901" target="_blank"><IoLogoWhatsapp /></a>
             <Link className="link-mobile" to="https://www.linkedin.com/company/virat-facility-management-services/" target="_blank"><LiaLinkedinIn /></Link>
+            <p className="link_phoneno">Phone : +91 9930233901</p>
           </div>
         </div>
       </div>
       <div className="links-mobile2">
-            <Link className="link-mobile" to="/"><IoLogoWhatsapp /></Link>
-            <Link className="link-mobile" to="https://www.linkedin.com/company/virat-facility-management-services/" target="_blank"><LiaLinkedinIn /></Link>
+      <a className="link-mobile"  href="https://wa.me/+919930233901" target="_blank"><IoLogoWhatsapp /></a>
+            <Link className="link-mobile" to="https://www.linkedin.com/company/virat-facility-management-services/" target="_blank"><LiaLinkedinIn /></Link>  <p className="link_phoneno">Phone : +91 9930233901</p>
+         
           </div>
       <div>
         <form className="form-contact">
@@ -161,7 +163,9 @@ customized and affordable pricing to meet the unique needs of our unique clients
             />
             <div className="hr-input"></div>
           </div>
-          <ButtonComponents2 name={"Submit now"} link={handleSubmission} />
+          
+          <ButtonComponents2 name={"Submit now"} onClickFun={handleSubmission} />
+
         </form>
       </div>
       {isSuccessAlert && (

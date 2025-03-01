@@ -12,6 +12,7 @@ import boy from "../../assets/boy.png";
 import girl from "../../assets/girl.png";
 import Stats from "../../components/Stats.jsx"
 import homekeeping2 from "../../assets/girl-base.png"; 
+import FAQ from "../../components/FAQ.jsx";
 const MechanicalServices = () => {
   const navigate = useNavigate();
 
@@ -32,6 +33,38 @@ const MechanicalServices = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+
+const faqs = [
+  {
+    question: "What mechanical services do you offer?",
+    answer: "Virat Facility Management offers comprehensive mechanical services, including regular maintenance, emergency repairs, equipment installation, and upgrades. Our services are designed to ensure that all mechanical systems in your commercial space operate optimally, enhancing equipment longevity and reducing operational disruptions."
+  },
+  {
+    question: "Do you offer preventive maintenance plans for mechanical systems?",
+    answer: "Yes, we offer preventive maintenance solution plans designed to avoid breakdowns and extend the lifespan of your mechanical equipment. These plans include regular checkups, thorough repairs, and proper alignments, all aimed at ensuring your systems run efficiently and reliably."
+  },
+  {
+    question: "What are the costs involved in your mechanical services, and how transparent is your pricing?",
+    answer: "Our mechanical source solutions pricing is competitive and transparent, with no hidden fees. Costs vary depending on the services required, such as maintenance, repairs, or installations. We provide detailed estimates upfront, ensuring you understand all expenses before any work begins."
+  },
+  {
+    question: "What safety protocols do you follow while performing mechanical maintenance in occupied office spaces?",
+    answer: "We adhere to strict safety protocols, including using protective equipment, securing work areas, and minimizing disruptions to your office environment. Our technicians follow industry best practices to ensure safety while performing maintenance in occupied spaces, prioritizing both your employees and our workers' safety."
+  },
+  {
+    question: "Are your technicians certified and experienced in mechanical repairs?",
+    answer: "Yes, our technicians are highly skilled, certified, and experienced in handling all types of mechanical repairs. They undergo continuous training to stay updated with the latest technologies and industry practices, ensuring they deliver top-notch service every time."
+  },
+  {
+    question: "How do you ensure the quality and reliability of your mechanical services?",
+    answer: "We ensure quality and reliability by employing skilled technicians, using the best available technologies, and adhering to industry best practices. Our comprehensive maintenance checks and prompt emergency responses are designed to keep your systems functioning optimally, reducing downtime and ensuring long-term reliability."
+  },
+  {
+    question: "Are your mechanical services compliant with industry standards and regulations?",
+    answer: "Yes, our professional mechanical services are fully compliant with all relevant industry standards and regulations. We prioritize adherence to safety and quality guidelines, ensuring that our work meets or exceeds the required benchmarks for mechanical maintenance and installations."
+  }
+];
   return (
     <div className="homepage-container services-details">
       <div className="image-container-homepage services-background">
@@ -168,6 +201,7 @@ const MechanicalServices = () => {
         </div>
         <img src={girl} alt="" />
       </div>
+      <FAQ faqs={faqs} />
     </div>
   );
 };

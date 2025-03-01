@@ -45,6 +45,7 @@ import {
   ReactCompareSlider,
   ReactCompareSliderImage,
 } from "react-compare-slider";
+import FAQ from "../components/FAQ.jsx";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -149,6 +150,29 @@ const HomePage = () => {
   const image1 = comapre1;
   const image2 = comapre2;
 
+  const faqs = [
+    {
+      question: "How can I get a quote for facility management services?",
+      answer: "You can obtain a quote by contacting Virat facilities management consultants directly through their website, phone, or email. Provide details about your specific needs and requirements, and their team will assess your request and offer a customized quote tailored to your facility management needs."
+    },
+    {
+      question: "What makes Virat Facility Management different from other facility management companies?",
+      answer: "Virat Facility Management stands out because it focuses on human sustainability, community support, and environmental preservation. Virat facility management solutions prioritize employee well-being, promote work-life balance, and actively engage in community initiatives. Their holistic approach ensures superior service quality, client satisfaction, and a commitment to sustainable practices."
+    },
+    {
+      question: "How does Virat maintain cost efficiency while delivering high-quality services?",
+      answer: "Virat Facility Management maintains cost efficiency through strategic resource allocation, continuous process optimization, and employee training. By focusing on sustainability, reducing waste, and implementing innovative solutions, Virat ensures high-quality services without compromising efficiency, thus offering clients cost-effective solutions that meet their needs."
+    },
+    {
+      question: "Are your Virat Facility Management staff trained and experienced?",
+      answer: "Virat facilities management providers are highly trained and experienced professionals. The company emphasizes continuous training and skill development to ensure that employees are well-equipped to provide exceptional service. This commitment to training ensures that clients receive the highest quality facility management services."
+    },
+    {
+      question: "What is the process for starting a new service agreement with Virat Facility Management?",
+      answer: "To start a new service agreement, contact Virat Facility Management to discuss your specific needs. Their team will assess your requirements, provide a customized service proposal, and work with you to finalize terms. Once agreed, a facility management service contract is drawn up, and services are initiated as per the agreement."
+    }
+  ];
+  
   return (
     <div className="homepage-container">
 
@@ -348,8 +372,8 @@ const HomePage = () => {
           navigation
           className="casestudy_swiper"
         >
-          {services2.map((service) => (
-            <SwiperSlide key={service.id} className="casestudy_card">
+        {services2.map((service, index) => (
+  <SwiperSlide key={service.id || index} className="casestudy_card">
 
               <Link to={service.linkc}>
               <div className="casestudy_image_container">
@@ -467,15 +491,16 @@ const HomePage = () => {
           </div>
         </div>
       </div>{" "}
+      <FAQ faqs={faqs} />
       {/* contact  */}
       <div className="contactSection">
         {/* Map Background */}
         <div className="mapContainer">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7539.459930366044!2d72.86337742817217!3d19.119498752877575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1734072198756!5m2!1sen!2sin"
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
 

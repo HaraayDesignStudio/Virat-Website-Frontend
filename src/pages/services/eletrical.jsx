@@ -11,6 +11,7 @@ import ele3 from "../../assets/ele3.png";
 import boy from "../../assets/boy.png";
 import girl from "../../assets/girl.png";
 import Stats from "../../components/Stats.jsx";
+import FAQ from "../../components/FAQ.jsx";
 const Eletrical = () => {
   const navigate = useNavigate();
 
@@ -31,6 +32,34 @@ const Eletrical = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+
+const faqs = [
+  {
+    question: "What types of electrical services do you offer?",
+    answer: "Virat Facility Management offers a wide range of electrical services, including AMC maintenance, preventive checks, electrical installations, and upgrades. Our services ensure that your electrical systems are safe, functional, and compliant with industry standards, tailored to meet the unique needs of your business."
+  },
+  {
+    question: "Are your electricians licensed and certified?",
+    answer: "Yes, our electricians are fully licensed, certified, and highly trained professionals. Our professional electricians possess the necessary qualifications to handle all types of electrical work, ensuring that our services are delivered with the highest standards of safety, quality, and compliance with legal requirements."
+  },
+  {
+    question: "Do you provide emergency electrical services?",
+    answer: "Yes, we offer emergency electrical services under the Annual Maintenance Contracts to address unexpected issues promptly. Our professional electricians are always on standby to respond quickly, minimizing downtime and disruptions. We prioritize getting your systems back online as swiftly as possible, ensuring continuous business operations."
+  },
+  {
+    question: "How do you ensure the safety of your electrical services?",
+    answer: "We ensure safety by adhering to strict industry standards and regulations, using the latest technology, and employing highly trained electricians. Our electrical consultation services include thorough inspections, preventive maintenance, and compliance checks to mitigate risks and guarantee the safety of your electrical systems."
+  },
+  {
+    question: "Can you assist with electrical system design and installation for new constructions?",
+    answer: "Yes, we provide comprehensive electrical system design and installation services for new constructions. We work closely with you to select the best solutions that meet your requirements, ensuring that your electrical systems are installed correctly and operate efficiently from the start."
+  },
+  {
+    question: "What industries do you provide electrical services for?",
+    answer: "We provide professional electrical services across various industries, including commercial, industrial, and institutional, hospitality sectors. Our experience and expertise enable us to cater to the unique electrical needs of different businesses, ensuring safety, efficiency, and compliance in every project we undertake."
+  }
+];
   return (
     <div className="homepage-container services-details">
       <div className="image-container-homepage services-background">
@@ -172,6 +201,7 @@ const Eletrical = () => {
         </div>
         <img src={girl} alt="" />
       </div>
+      <FAQ faqs={faqs} />
     </div>
   );
 };

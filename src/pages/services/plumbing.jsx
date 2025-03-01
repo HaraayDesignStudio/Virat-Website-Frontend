@@ -15,6 +15,7 @@ import Stats from "../../components/Stats.jsx"
 
 import boy from "../../assets/boy.png"
 import girl from "../../assets/girl.png"
+import FAQ from "../../components/FAQ.jsx";
 const Plumbing = () => {
   const navigate = useNavigate();
 
@@ -35,6 +36,29 @@ const Plumbing = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const faqs = [
+    {
+      question: "Are plumbing services available for new projects?",
+      answer: "Yes, Virat Facility Management provides plumbing services for new projects, including installations and upgrades. Our professionals ensure that your plumbing systems are installed to the highest standards, tailored to your specific needs, and optimized for maximum efficiency right from the start."
+    },
+    {
+      question: "Are your plumbing technicians experienced in working with complex industrial systems?",
+      answer: "Yes, our plumbing technicians have extensive experience working with complex industrial systems. They are skilled in handling various plumbing challenges, from simple repairs to large-scale industrial installations, ensuring that all plumbing repair services are delivered with precision and professionalism."
+    },
+    {
+      question: "How can we request a consultation or quote for your services?",
+      answer: "To request online plumber services or consultation or quote, you can contact us directly through our website or call us. Our team will discuss your specific needs, provide professional advice, and offer a detailed quote tailored to your project requirements."
+    },
+    {
+      question: "What industries do you serve with your plumbing services?",
+      answer: "We serve a wide range of industries, including commercial, industrial, and institutional sectors. Our professional plumbing services are customized to meet the unique needs of each industry, ensuring optimal functionality, efficiency, and compliance with industry standards."
+    },
+    {
+      question: "Are professional plumbing services licensed and insured?",
+      answer: "Yes, our professional plumbing services are fully licensed and insured. We prioritize safety and compliance, ensuring that all work is conducted by skilled plumber service providers according to industry regulations, and providing our clients with peace of mind and reliable, high-quality service."
+    }
+  ];
+
   return (
     <div className="homepage-container services-details">
       <div className="image-container-homepage services-background">
@@ -174,6 +198,7 @@ const Plumbing = () => {
       <img src={girl} alt="" />
 
       </div>
+      <FAQ faqs={faqs} />
     </div>
   );
 };

@@ -37,7 +37,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer-right">
-            <div className="footer-box">
+            {/* <div className="footer-box">
               <FooterCom
                 onClick={() => {
                   window.location.href = `mailto:vfm.services2017@gmail.com?subject=Enquiry`;
@@ -49,7 +49,7 @@ const Footer = () => {
                 {" "}
                 <FooterCom name={"Visit us"} img={footerImage} />
               </Link>
-            </div>
+            </div> */}
             <div className="footer-social">
               <p className="socialmedia-head">Socialmedia</p>
               <div className="socialmedia-icons">
@@ -61,7 +61,7 @@ const Footer = () => {
                 </Link>
                 <Link
                   onClick={() => {
-                    window.open(`https://wa.me/9146076185`, "_blank");
+                    window.open(`https://wa.me/9930233901`, "_blank");
                   }}
                 >
                   WhatsApp <IoLogoWhatsapp />

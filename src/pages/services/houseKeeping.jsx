@@ -11,7 +11,7 @@ import card3 from "../../assets/clean3.png"
 import boy from "../../assets/boy.png"
 import girl from "../../assets/girl.png"
 import Stats from "../../components/Stats.jsx"
-
+import FAQ from "../../components/FAQ.jsx";
 const HouseKeeping = () => {
   const navigate = useNavigate();
 
@@ -33,6 +33,25 @@ const HouseKeeping = () => {
     };
   }, []);
 
+  const faqs = [
+    {
+      question: "How do you get started with our housekeeping services for our corporate or industrial facility?",
+      answer: "To get started with our housekeeping services, contact Virat Facility Management to discuss your facility’s needs. Our team will assess your requirements, customize a housekeeping plan, and provide a proposal. Once agreed, services are initiated promptly, ensuring a clean and organized workspace tailored to your specific environment."
+    },
+    {
+      question: "What is your approach to maintaining high standards of cleanliness in banking environments?",
+      answer: "Virat Facility Management ensures high cleanliness standards by employing specialized cleaning protocols used for corporate housekeeping services that focus on high-traffic areas, frequently touched surfaces, and secure zones. We use advanced technology and eco-friendly products, ensuring a safe, sanitized, and professional environment that meets the specific needs of banking institutions."
+    },
+    {
+      question: "Do you provide housekeeping services for both residential and commercial properties?",
+      answer: "Yes, Virat Facility Management offers professional housekeeping services for both residential and commercial properties. We customize our cleaning solutions to meet the unique needs of each space, whether it’s luxury gated communities or a corporate office, banks, commercial office spaces, REITs, IT Hubs, ensuring a pristine environment that enhances both appearance and functionality."
+    },
+    {
+      question: "How do I choose the right housekeeping solutions for my specific needs?",
+      answer: "To choose the right housekeeping solutions, consult with Virat Facility Management. Our experts will assess your space, understand your specific requirements, and recommend tailored services that best meet your needs. We ensure that the chosen solutions align with your goals for cleanliness, efficiency, and sustainability."
+    }
+  ];
+  
   return (
     <div className="homepage-container services-details">
       <div className="image-container-homepage services-background">
@@ -178,7 +197,7 @@ const HouseKeeping = () => {
         </div>
       <img src={girl} alt="" />
 
-      </div>
+      </div>  <FAQ faqs={faqs} />
     </div>
   );
 };

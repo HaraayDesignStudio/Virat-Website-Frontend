@@ -295,15 +295,15 @@
 
 .our-services-section {
   margin-bottom: 50px;
-  padding: 60px 50px 100px 50px;
+  padding: 60px 50px 10px 50px;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  /* gap: 100px; */
   background-color: #e6f1ff;
 }
 @media (max-width: 768px) {
   .our-services-section {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     padding: 60px 5px 100px 30px;
   }
   .our-services-headings-part {
@@ -385,7 +385,8 @@
   overflow: hidden;
   width: 100%;
   gap: 20px;
-  justify-content: center; margin-bottom: 20px;
+  justify-content: center;
+   margin-bottom: 20px;
 }
 .Serviceecards {
   width: 100%;
@@ -663,7 +664,7 @@
     bottom: -75px;
   }
   .our-services-section {
-    gap: 160px;
+    gap: 20px;
   }
   .brand-scroller-head p {
     font-size: 55px;
@@ -713,7 +714,7 @@
     display: none;
   }
   .our-services-section {
-    margin: 100px 20px;
+    margin: 10px 20px;
   }
   .service-back-img {
     height: 1050px;
@@ -791,7 +792,7 @@
     font-size: 30px;
   }
   .our-services-section {
-    gap: 80px;
+    gap: 0px;
   }
   .service-brand-scroller {
     flex-direction: column;
@@ -891,7 +892,7 @@
     width: 100%;
   }
   .our-services-section {
-    margin: 40px 10px;
+    margin: 10px 10px;
   }
   .out-service-content {
     gap: 15px;
@@ -2892,4 +2893,16 @@ a{
   font-family: virat;
   font-size: 20px;
   
+}
+
+.link_phoneno{
+ 
+  margin: auto 0;
+  font-family: virat;
+
+  font-size: 24px;
+  
+@media screen and (max-width: 768px) {
+  font-size: 18px;
+}
 }

@@ -11,7 +11,7 @@ import homekeeping2 from "../../assets/girl-base.png";
 import boy from "../../assets/boy.png"
 import girl from "../../assets/girl.png"
 import Stats from "../../components/Stats.jsx"
-
+import FAQ from "../../components/FAQ.jsx";
 const HorticultureLandscape = () => {
   const navigate = useNavigate();
 
@@ -169,6 +169,7 @@ const HorticultureLandscape = () => {
       <img src={girl} alt="" />
 
       </div>
+      {/* <FAQ faqs={faqs} /> */}
     </div>
   );
 };
