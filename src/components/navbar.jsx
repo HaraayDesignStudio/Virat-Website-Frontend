@@ -101,22 +101,7 @@ const Navbar = () => {
               ></div>
               <p>About</p>
             </Link> 
-{/*  */}
-{/* <Link
-              to="/services"
-              onClick={() => handleTabClick("about")}
-              className={selectedTab === "about" ? "selected" : ""}
-            >
-              <div
-                className={
-                  selectedTab === "about"
-                    ? "line-indication selected-line"
-                    : "line-indication"
-                }
-              ></div>
-              <p>Our Services</p>
-            </Link> */}
-            {/*  */}
+
             <Link
             
           
@@ -292,9 +277,9 @@ const Navbar = () => {
                 <div className="servicesubtab">
                   <Link
                     to="/casestudy/housekeeping"
-                    onClick={() => handleTabClick("house-keeping")}
+                    onClick={() => handleTabClick("HealthCare")}
                     className={
-                      selectedTab === "house-keeping" ? "selectedtabb" : ""
+                      selectedTab === "HealthCare" ? "selectedtabb" : ""
                     }
                   >
                     <div
@@ -308,16 +293,16 @@ const Navbar = () => {
                   </Link>
                   <Link
                     to="/casestudy/electrical"
-                    onClick={() => handleTabClick("horticulture-landscaping")}
+                    onClick={() => handleTabClick("Commercial")}
                     className={
-                      selectedTab === "horticulture-landscaping"
+                      selectedTab === "Commercial"
                         ? "selectedtabb"
                         : ""
                     }
                   >
                     <div
                       className={
-                        selectedTab === "horticulture-landscaping"
+                        selectedTab === "Commercial"
                           ? "line-indication selected-line"
                           : "line-indication"
                       }
@@ -326,14 +311,14 @@ const Navbar = () => {
                   </Link>
                   <Link
                     to="/casestudy/plumbing"
-                    onClick={() => handleTabClick("mechanical")}
+                    onClick={() => handleTabClick("Corporate")}
                     className={
-                      selectedTab === "mechanical" ? "selectedtabb" : ""
+                      selectedTab === "Corporate" ? "selectedtabb" : ""
                     }
                   >
                     <div
                       className={
-                        selectedTab === "mechanical"
+                        selectedTab === "Corporate"
                           ? "line-indication selected-line"
                           : "line-indication"
                       }
@@ -342,12 +327,12 @@ const Navbar = () => {
                   </Link>
                   <Link
                     to="/casestudy/mechanical"
-                    onClick={() => handleTabClick("plumbing")}
-                    className={selectedTab === "plumbing" ? "selectedtabb" : ""}
+                    onClick={() => handleTabClick("Residential")}
+                    className={selectedTab === "Residential" ? "selectedtabb" : ""}
                   >
                     <div
                       className={
-                        selectedTab === "plumbing"
+                        selectedTab === "Residential"
                           ? "line-indication selected-line"
                           : "line-indication"
                       }
@@ -356,14 +341,14 @@ const Navbar = () => {
                   </Link>
                   <Link
                     to="/casestudy/horticulture-landscaping"
-                    onClick={() => handleTabClick("eletrical")}
+                    onClick={() => handleTabClick("Township")}
                     className={
-                      selectedTab === "eletrical" ? "selectedtabb" : ""
+                      selectedTab === "Township" ? "selectedtabb" : ""
                     }
                   >
                     <div
                       className={
-                        selectedTab === "eletrical"
+                        selectedTab === "Township"
                           ? "line-indication selected-line"
                           : "line-indication"
                       }

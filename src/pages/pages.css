@@ -327,7 +327,7 @@
     padding: 60px 5px 100px 30px;
   }
   .our-services-headings-part {
-    margin-left: 10px;
+    /* margin-left: 10px; */
   }
   .service-heading img {
     margin-left: 80px;
@@ -636,6 +636,11 @@ width: 80%;
 @media (max-width: 1500px) {
   .brand-scroller-head p {
     font-size: 80px;
+    /* background-color: red; */
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
   .testimonial-card-one {
     gap: 35px;
@@ -768,7 +773,7 @@ width: 80%;
     font-size: 40px;
   }
   .about-us-section .about-background-img {
-    /* height: 950px; */
+    height: 700px;
     object-fit: cover;
   }
   .about-content-part {
@@ -869,7 +874,7 @@ width: 80%;
   }
   /* Case  */
   .testimonila-section .about-background-img {
-    height: auto;
+    height: auto !;
     object-fit: cover;
   }
   .card-wrapper img {
@@ -912,12 +917,16 @@ width: 80%;
   }
   .about-us-section {
     margin: 30px 0;
+    max-height: 110vh;
   }
   .about-content-heading {
     width: 100%;
   }
   .our-services-section {
-    margin: 10px 10px;
+    /* margin: 10px 10px; */
+    width: 100%;
+    margin: 0;
+    /* padding: 30px; */
   }
   .out-service-content {
     gap: 15px;
@@ -933,6 +942,7 @@ width: 80%;
   }
   .testimonila-section {
     margin: 100px 0 0 0;
+    height: auto;
   }
   .testimonila-trust-client p {
     font-size: 50px;
@@ -1648,7 +1658,7 @@ width: 80%;
     line-height: 20px;
   }
   .about-content-text {
-    width: 90%;
+    /* width: 90%; */
     padding: 20px;
     margin: 0 auto;
     border-radius: 30px;
@@ -2765,6 +2775,7 @@ line-height: 110%;
   }
 
   .casestudy_see_more {
+    margin: 15px auto;
     font-size: 0.9rem;
     padding: 8px 16px;
   }
