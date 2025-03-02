@@ -799,6 +799,17 @@ div , a{  background-color: #ffffff38;
     padding: 15px 40px;
     border: 0.481px solid #fff;
   }
+  .servicesubtab a {
+    margin: 5px;
+    padding: 5px;
+    width: 100% 
+    
+  }
+  .servicesubtab a p{
+    line-height: 120%;
+    margin: 0;
+    width: 100%;
+  }
   .footer-get-in-touch {
     font-size: 55px;
   }
@@ -898,7 +909,7 @@ div , a{  background-color: #ffffff38;
     }
   }
   .footer-box div ,a{
-    width: 60%;
+
     flex-direction: row;
   }
   .footercom {
@@ -1046,6 +1057,11 @@ div , a{  background-color: #ffffff38;
   }
   .footer-wrapper .footer-background {
     height: 950px;
+  } .nowrapp {
+    
+   width: 100%;
+  
+   
   }
 }
 /* ---- Footer Mobile ---- */
@@ -1163,13 +1179,20 @@ div , a{  background-color: #ffffff38;
   .heading-card {
     left: 20px;
   }
-  .drawer-content a {
+  .wrapp {
     font-size: 20px;
+   width: 100%;
+   
   }
 }
 @media (max-width: 500px) {
   .heading-card {
     left: none;
+  }
+  .wrapp {
+    font-size: 20px;
+   width: 100%;
+   
   }
   .button-for-landing {
     width: 160px;

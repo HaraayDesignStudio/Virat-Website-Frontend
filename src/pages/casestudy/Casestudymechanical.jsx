@@ -42,7 +42,7 @@ const CaseStudy = () => {
   const updateSwiperSettings = () => {
     const width = window.innerWidth;
 
-    if (width <= 450) {
+    if (width <= 550) {
       setSwiperSettings({
         slidesPerView: 1, // 1 card per view for mobile
         spaceBetween: 20, // 50px space between slides

@@ -14,7 +14,9 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const handleDrawerToggle = () => {
-    setDrawerOpen(!drawerOpen);
+    setIsService(false)
+    setIsServes(false)
+    setDrawerOpen(!drawerOpen); 
   };
 
   const handleCloseDrawer = () => {
@@ -245,7 +247,7 @@ const Navbar = () => {
                     : "line-indication"
                 }
               ></div>
-              <p>
+              <p className="nowrapp">
                 Industry We Serves{" "}
                 {isServes ? (
                   <svg
@@ -373,7 +375,7 @@ const Navbar = () => {
                     : "line-indication"
                 }
               ></div>
-              <p>Human Sustainability</p>
+              <p className="nowrapp">Human Sustainability</p>
             </Link>
             <Link
               onClick={() => handleTabClick("download-brochure")}
