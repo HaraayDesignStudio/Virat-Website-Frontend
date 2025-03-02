@@ -9,7 +9,9 @@ import { Link } from "react-router-dom";
 import footerImage from "../assets/elastrations/Profesionalism.png";
 import { LiaLinkedinIn } from "react-icons/lia";
 import pdf from "../assets/virat brochure-1.pdf";
-
+import { IoIosArrowRoundForward } from "react-icons/io";
+import linklogo from "../assets/linklogo.png"
+import whatsapplogo from "../assets/whatsapplogo.png"
 const Footer = () => {
   const downloadBrochure = () => {
     console.log("Download Brochure");
@@ -50,21 +52,36 @@ const Footer = () => {
                 <FooterCom name={"Visit us"} img={footerImage} />
               </Link>
             </div> */}
+            <div className="footer-box">
+              <Link to="/contact-us">
+                <img src={footerImage} alt="" />
+                <h3>Visit us </h3>
+               <IoIosArrowRoundForward className="footercom-icon" />   </Link>
+              <div   onClick={() => {
+                  window.location.href = `mailto:vfm.services2017@gmail.com?subject=Enquiry`;
+                }}>
+                <img src={footerImage} alt="" />
+                <h3>Email us </h3>
+               <IoIosArrowRoundForward className="footercom-icon" />
+              </div>
+            </div>
             <div className="footer-social">
-              <p className="socialmedia-head">Socialmedia</p>
+              <p className="socialmedia-head">Social media</p>
               <div className="socialmedia-icons">
                 <Link
                   to="https://www.linkedin.com/company/virat-facility-management-services/"
                   target="_blank"
                 >
-                  LinkedIn <LiaLinkedinIn />
+                  {/* LinkedIn <LiaLinkedinIn /> */}
+                  <img src={linklogo} alt="" />
                 </Link>
                 <Link
                   onClick={() => {
                     window.open(`https://wa.me/9930233901`, "_blank");
                   }}
                 >
-                  WhatsApp <IoLogoWhatsapp />
+                  {/* WhatsApp <IoLogoWhatsapp /> */}
+                  <img src={whatsapplogo} alt="" />
                 </Link>
               </div>
             </div>
@@ -81,7 +98,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="footer-wrapper-mobile">
+      {/* <div className="footer-wrapper-mobile">
         <div className="footer-image-mobile">
           <img src={footermobile} alt="footerimage" />
           <p className="footer-mobile-heading">
@@ -123,7 +140,7 @@ const Footer = () => {
             Made by HaraayDesignStudio
           </Link>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

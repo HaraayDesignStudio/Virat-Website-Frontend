@@ -408,10 +408,10 @@ const HomePage = () => {
                 Don’t believe us, hear it from our clients:
               </p>
             </div>
-            <Swiper
+            <Swiper className="testimonial-card-one-swiper"
               modules={[Navigation, Pagination]}
-              spaceBetween={150}
-              slidesPerView={3}
+              spaceBetween={5}
+              slidesPerView={2}
               pagination={swiperSettings.pagination}
               navigation={swiperSettings.navigation}
             >
@@ -506,7 +506,7 @@ const HomePage = () => {
 
         {/* Contact Card */}
         <div className="contactCard">
-          <div className="contactItem">
+          <div className="contactItem spacce">
             <span className="icon">📍</span>
             <div>
               <h3>Our Location</h3>
