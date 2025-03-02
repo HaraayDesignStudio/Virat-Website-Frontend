@@ -2320,8 +2320,15 @@ textarea::placeholder {
   padding: 10px 15px;  border-radius: 30px;
 }
 .services-details .values-card-two {
-  padding-right: 40px !important;
-} .vlaues-card-container img{width: 100px;
+  padding-right: 40px !important; 
+  
+}
+.services-details{
+  overflow-x: hidden;
+
+}
+
+  .vlaues-card-container img{width: 100px;
 height: 100px; object-fit: contain;}
 .service-cards .values-card-name {
   font-family: virat;
@@ -2514,15 +2521,17 @@ height: 100px; object-fit: contain;}
 @media (max-width: 500px) {
   .image-container-homepage img {
     height: 100%;
+    /* object-position: 50% -10%; */
   }
   .service-on-text h1 {
     width: 80%;
     font-size: 32px;
     margin-left: 0;
     line-height: 1.2;
+    text-wrap: wrap;
   }
   .service-on-text {
-    width: 100%;
+    width: 95%;
     bottom: 10px;
     left: 0;
 line-height: 110%;

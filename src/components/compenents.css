@@ -897,6 +897,10 @@ div , a{  background-color: #ffffff38;
       width: 60%;
     }
   }
+  .footer-box div ,a{
+    width: 60%;
+    flex-direction: row;
+  }
   .footercom {
     /* width: 270px; */
   }
