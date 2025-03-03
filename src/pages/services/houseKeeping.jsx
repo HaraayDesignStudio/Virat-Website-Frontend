@@ -138,9 +138,9 @@ const HouseKeeping = () => {
           </h1>
           <p className="text-p">
             Here at{" "}
-            <Link to="/" className="links-on-text">
+            {/* <Link to="/" className="links-on-text"> */}
               Virat Facility Management
-            </Link>
+            {/* </Link> */}
             , we pay keen attention to detail and ensure that we deliver only
             the best. Our staff is comprised of qualified personnel who are
             skilled in meeting all cleaning challenges and guaranteeing quality
