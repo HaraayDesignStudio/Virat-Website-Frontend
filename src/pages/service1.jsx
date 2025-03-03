@@ -155,7 +155,7 @@ const Service = () => {
           {/* Map Background */}
           <div className={styles.mapContainer}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7539.459930366044!2d72.86337742817217!3d19.119498752877575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1734072198756!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4482.987307807888!2d72.86167056498516!3d19.119586808955507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c92eb66f0d3f%3A0x209e1cd3b5b0cb8c!2ssecure%201%20security%20service!5e0!3m2!1sen!2sin!4v1740985782963!5m2!1sen!2sin"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
