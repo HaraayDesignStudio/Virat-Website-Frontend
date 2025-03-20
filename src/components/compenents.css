@@ -736,7 +736,7 @@ padding: 0;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: 350px;
+  width: auto;
 }
 .socialmedia-head {
   font-weight: bold;

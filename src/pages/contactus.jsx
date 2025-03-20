@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import ButtonComponents2 from "../components/buttonComponents2";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { LiaLinkedinIn } from "react-icons/lia";
-
+import { Helmet } from "react-helmet-async";
 // API key
 // https://virat-backend.onrender.com/
 
@@ -78,7 +78,10 @@ console.log("hii")
   };
 
   return (
-    <div className="contact-container">
+    <div className="contact-container">    <Helmet>
+        <title>We Are Here to Help You - Contact Us - VFMS</title>
+        <meta name="description" content="Reach out to VFMS for any queries or assistance. Our dedicated support team is here to help you with all your needs. Contact us today for prompt support." />
+      </Helmet>
       <div className="contact-first">
         <div>
           <p className="contact-heading">Contact us</p>

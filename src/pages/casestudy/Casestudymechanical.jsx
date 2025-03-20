@@ -22,7 +22,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules"; // Nav
 
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
+import "swiper/css/pagination"; import { Helmet } from "react-helmet-async";
 //
 const CaseStudy = () => {
   const services = [
@@ -70,10 +70,13 @@ const CaseStudy = () => {
   }, []);
   return (
     <>
-      <section className={styles.heroSection}>
+      <section className={styles.heroSection}>  <Helmet>
+                  <title>Expert Residential Facility Management - VFMS</title>
+                  <meta name="description" content="VFMS ensures safe, efficient homes with expert mechanical services, delivering innovative and reliable solutions for seamless residential complex management." />
+                </Helmet>
         <div className={styles.heroContent}>
           <h1 className={styles.titlea}>
-          Excellence in Mechanical Services
+          Residential Facility Management
           </h1>
         </div>
       </section>{" "}

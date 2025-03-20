@@ -13,7 +13,7 @@ import card6 from "../assets/elastrations/Customer Satisfaction_02.png";
 import mainImage from "../assets/elastrations/Continuous Improvement.png";
 import { useNavigate } from "react-router-dom";
 import { BsArrowUp } from "react-icons/bs";
-
+import { Helmet } from "react-helmet-async";
 const Aboutus = () => {
   const containerRef = useRef(null);
   const navigate = useNavigate();
@@ -43,6 +43,10 @@ const Aboutus = () => {
 
   return (
     <div className="about-wrapper">
+      <Helmet>
+    <title>About Us - VFMS</title>
+    <meta name="description" content="Meet VFMS: Your trusted facility management partner. Learn about our story, mission & team of experts dedicated to delivering top-notch services & solutions." />
+  </Helmet>
       <div className="about-section-animation">
         <div className="about-animation-image">
           <img src={mainImage} alt="mainimage" />

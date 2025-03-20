@@ -20,9 +20,10 @@ import Casestudyelectrical from "./pages/casestudy/Casestudyelectrical";
 import ScrollToTop from "./components/ScrollToTop"; 
 import whatsapp from "./assets/whatsapp.png";
 import List from "./pages/List.jsx";
-
+import { HelmetProvider } from "react-helmet-async";
 function App() {
   return (
+    <HelmetProvider>
     <BrowserRouter>      <ScrollToTop/>
       <Navbar />
 <div className="whatsapp-icon">
@@ -65,7 +66,7 @@ function App() {
 />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </BrowserRouter> </HelmetProvider>
   );
 }
 

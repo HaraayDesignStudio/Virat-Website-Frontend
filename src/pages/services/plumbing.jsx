@@ -12,7 +12,7 @@ import homekeeping2 from "../../assets/girl-base.png";
 
 import Stats from "../../components/Stats.jsx"
 
-
+import { Helmet } from "react-helmet-async";
 import boy from "../../assets/boy.png"
 import girl from "../../assets/girl.png"
 import FAQ from "../../components/FAQ.jsx";
@@ -60,11 +60,14 @@ const Plumbing = () => {
   ];
 
   return (
-    <div className="homepage-container services-details">
+    <div className="homepage-container services-details">  <Helmet>
+                <title>Professional Plumbing Services - VFMS</title>
+                <meta name="description" content="VFMS: India's premier plumbing repair services provider. From industrial plumbing to online plumber services, count on us for expertise and efficiency." />
+              </Helmet>
       <div className="image-container-homepage services-background">
         <img src={homepageimage} alt="homepage" />
         <div className="service-on-text serivce-two">
-          <h1 className="change-2">Plumbing Services</h1>
+          <h1 className="change-2">Professional Industrial Plumbing Services</h1>
           <p>
             At Virat Facility Management, we have realized the impact of the
             proper functioning of the plumbing systems in enhancing productivity

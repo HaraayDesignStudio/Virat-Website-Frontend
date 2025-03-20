@@ -20,7 +20,7 @@ import serviceicon5 from "../../assets/serviceicon5.svg";
 // swiper
 import { Swiper, SwiperSlide } from "swiper/react"; // Core Swiper
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules"; // Navigation and Pagination modules
-
+import { Helmet } from "react-helmet-async";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -71,10 +71,13 @@ const CaseStudy = () => {
   }, []);
   return (
     <>
-      <section className={styles.heroSection}>
+      <section className={styles.heroSection}> <Helmet>
+            <title>Corporate Property Maintenance & Facility Management - VFMS</title>
+            <meta name="description" content="VFMS provides expert corporate property maintenance, solving plumbing issues to improve tenant experience and keep buildings running efficiently." />
+          </Helmet>
         <div className={styles.heroContent}>
           <h1 className={styles.titlea}>
-          Redefining Plumbing Services with Precision and Care
+          Corporate Property Maintenance & Facility Management
           </h1>
         </div>
       </section>{" "}

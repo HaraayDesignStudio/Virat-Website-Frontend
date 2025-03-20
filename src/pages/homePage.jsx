@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import homepageimage from "../assets/Hero Section.webp";
 import aboutsection from "../assets/Rectangle 137.png";
 import testimonials from "../assets/126276-abstract-3d-orange-black-and-white-curved-lines-texture-background 1 (1).png";
@@ -175,7 +176,11 @@ const HomePage = () => {
   
   return (
     <div className="homepage-container">
-
+<Helmet>
+        <title>Facility Management Services - VFMS</title>
+        <meta name="description" content="Discover top-tier facility management solutions with VFMS, your trusted company in India. As expert consultants, we provide professional facility services." />
+       
+      </Helmet>
 
       <div className="image-container-homepage">
         <img src={homepageimage} alt="homepage" />

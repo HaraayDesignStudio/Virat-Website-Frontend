@@ -18,7 +18,7 @@ import serviceicon3 from "../../assets/serviceicon3.svg";
 import serviceicon4 from "../../assets/serviceicon4.svg";
 import serviceicon5 from "../../assets/serviceicon5.svg";
 // swiper
-
+import { Helmet } from "react-helmet-async";
 
 import { Swiper, SwiperSlide } from "swiper/react"; // Core Swiper electricalconclusion.png
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules"; // Navigation and Pagination modules
@@ -73,10 +73,13 @@ const CaseStudy = () => {
   }, []);
   return (
     <>
-      <section className={styles.heroSection}>
+      <section className={styles.heroSection}> <Helmet>
+                  <title>Professional Facility Management for Commercial Complexes - VFMS</title>
+                  <meta name="description" content="Keep your commercial complex clean, efficient & well-managed with VFMS expert facility services. Customized solutions for a spotless, productive workspace." />
+                </Helmet>
         <div className={styles.heroContent}>
           <h1 className={styles.titlea}>
-          Powering Excellence through Electrical Services
+          Professional Facility Management for Commercial Complexes
           </h1>
         </div>
       </section>{" "}

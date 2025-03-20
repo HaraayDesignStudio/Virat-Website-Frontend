@@ -3,6 +3,7 @@ import "./pages.css";
 import img2 from "../assets/126276-abstract-3d-orange-black-and-white-curved-lines-texture-background 1 (1).png";
 import { BsArrowUp } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const HumanSustainbility = () => {
   const navigate = useNavigate();
@@ -12,7 +13,10 @@ const HumanSustainbility = () => {
   }, [navigate]);
 
   return (
-    <div className="sustain-wrapper">
+    <div className="sustain-wrapper">  <Helmet>
+            <title>Human Sustainability - VFMS</title>
+            <meta name="description" content="At Virat Facility Management, human sustainability drives success through unity, equality, and a focus on employee well-being and work-life balance." />
+          </Helmet>
       <div className="heading-sustain">
         <p className="heading-text-sustain">Human Sustainability </p>
         <p className="disc-text-sustain">

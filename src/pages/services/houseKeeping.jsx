@@ -11,7 +11,7 @@ import card3 from "../../assets/clean3.png";
 import boy from "../../assets/boy.png";
 import girl from "../../assets/girl.png";
 import Stats from "../../components/Stats.jsx";
-import FAQ from "../../components/FAQ.jsx";
+import FAQ from "../../components/FAQ.jsx"; import { Helmet } from "react-helmet-async";
 const HouseKeeping = () => {
   const navigate = useNavigate();
 
@@ -61,11 +61,14 @@ const HouseKeeping = () => {
   ];
 
   return (
-    <div className="homepage-container services-details">
+    <div className="homepage-container services-details">  <Helmet>
+            <title>Professional Housekeeping Services - VFMS</title>
+            <meta name="description" content="Discover VFMS, your expert housekeeping service provider in India. We offer top-notch corporate housekeeping services and tailored housekeeping solutions." />
+          </Helmet>
       <div className="image-container-homepage services-background">
         <img src={homepageimage} alt="homepage" />
         <div className="service-on-text">
-          <h1>House Keeping Solutions</h1>
+          <h1>Professional Housekeeping Services</h1>
           <p>
             Welcome to the backbone of Virat Facility Management services,
             housekeeping, and all the services it entails. We know how important

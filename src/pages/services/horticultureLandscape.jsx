@@ -11,7 +11,7 @@ import homekeeping2 from "../../assets/girl-base.png";
 import boy from "../../assets/boy.png"
 import girl from "../../assets/girl.png"
 import Stats from "../../components/Stats.jsx"
-import FAQ from "../../components/FAQ.jsx";
+import FAQ from "../../components/FAQ.jsx";  import { Helmet } from "react-helmet-async";
 const HorticultureLandscape = () => {
   const navigate = useNavigate();
 
@@ -33,7 +33,10 @@ const HorticultureLandscape = () => {
     };
   }, []);
   return (
-    <div className="homepage-container services-details">
+    <div className="homepage-container services-details"> <Helmet>
+                <title>Landscape and Horticultural Services - VFMS</title>
+                <meta name="description" content="VFMS crafts stunning outdoor landscapes with professional landscaping and horticultural services in India. Elevate your space with us today!" />
+              </Helmet>
       <div className="image-container-homepage services-background">
         <img src={homepageimage} alt="homepage" />
         <div className="service-on-text serivce-two">

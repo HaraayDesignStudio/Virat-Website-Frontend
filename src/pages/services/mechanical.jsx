@@ -12,7 +12,7 @@ import boy from "../../assets/boy.png";
 import girl from "../../assets/girl.png";
 import Stats from "../../components/Stats.jsx"
 import homekeeping2 from "../../assets/girl-base.png"; 
-import FAQ from "../../components/FAQ.jsx";
+import FAQ from "../../components/FAQ.jsx";  import { Helmet } from "react-helmet-async";
 const MechanicalServices = () => {
   const navigate = useNavigate();
 
@@ -66,11 +66,14 @@ const faqs = [
   }
 ];
   return (
-    <div className="homepage-container services-details">
+    <div className="homepage-container services-details"> <Helmet>
+                <title>Mechanical Service Solutions - VFMS</title>
+                <meta name="description" content="Experience professional mechanical services with VFMS. Leading provider in corporate and industrial mechanical solutions across India. Efficient and reliable." />
+              </Helmet>
       <div className="image-container-homepage services-background">
         <img src={homepageimage} alt="homepage" />
         <div className="service-on-text serivce-two">
-          <h1 className="change-2">Mechanical Services</h1>
+          <h1 className="change-2">Professional Mechanical Services</h1>
           <p>
             Welcome to Virat Facility Management – your one-stop solution for
             all mechanical services. We appreciate that many of your office

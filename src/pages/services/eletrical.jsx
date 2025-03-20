@@ -12,6 +12,7 @@ import boy from "../../assets/boy.png";
 import girl from "../../assets/girl.png";
 import Stats from "../../components/Stats.jsx";
 import FAQ from "../../components/FAQ.jsx";
+ import { Helmet } from "react-helmet-async";
 const Eletrical = () => {
   const navigate = useNavigate();
 
@@ -61,11 +62,14 @@ const faqs = [
   }
 ];
   return (
-    <div className="homepage-container services-details">
+    <div className="homepage-container services-details">  <Helmet>
+                <title>Professional Electrical Services - VFMS</title>
+                <meta name="Get top-notch electrical maintenance and consultation services in India with VFMS. Specializing in industrial and commercial electrical solutions. Contact us today!" />
+              </Helmet>
       <div className="image-container-homepage services-background">
         <img src={homepageimage} alt="homepage" />
         <div className="service-on-text serivce-two">
-          <h1 className="change-2">Electrical Services</h1>
+          <h1 className="change-2">Professional Industrial Electrical Services</h1>
           <p>
             At Virat Facility Management, we appreciate the importance of
             properly working electrical systems for the continuity of business

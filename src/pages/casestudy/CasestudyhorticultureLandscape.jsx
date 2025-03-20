@@ -23,8 +23,9 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules"; // Nav
 
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
-//
+import "swiper/css/pagination"; 
+import { Helmet } from "react-helmet-async";
+// 
 const CaseStudy = () => {
   const services = [
     { img: serviceimg1, icon: serviceicon1, title: "House Keeping" },
@@ -71,10 +72,13 @@ const CaseStudy = () => {
   }, []);
   return (
     <>
-      <section className={styles.heroSection}>
+      <section className={styles.heroSection}><Helmet>
+                  <title>Expert Township Facility Management  - VFMS</title>
+                  <meta name="description" content="VFMS specializes in expert township facility management, offering sustainable landscaping, horticulture, and maintenance to enhance aesthetics and functionality." />
+                </Helmet>
         <div className={styles.heroContent}>
           <h1 className={styles.titlea}>
-          Cultivating Excellence in Horticulture & Landscaping
+          Township Facility Management
           </h1>
         </div>
       </section>{" "}

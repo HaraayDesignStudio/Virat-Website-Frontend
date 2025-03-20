@@ -22,7 +22,8 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules"; // Nav
 import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
+import "swiper/css/pagination"; 
+import { Helmet } from "react-helmet-async";
 //
 const CaseStudy = () => {
  
@@ -71,10 +72,13 @@ const CaseStudy = () => {
   }, []);
   return (
     <>
-      <section className={styles.heroSection}>
+      <section className={styles.heroSection}> <Helmet>
+                  <title>Expert Healthcare Facility Management Services - VFMS</title>
+                  <meta name="description" content="VFMS specializes in healthcare facility management, offering expert housekeeping and hygiene solutions for hospitals, clinics, and medical centers." />
+                </Helmet>
         <div className={styles.heroContent}>
           <h1 className={styles.titlea}>
-            Redefining Housekeeping Services with Excellence
+          Healthcare Facility Management Services
           </h1>
         </div>
       </section>{" "}
